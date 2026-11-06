@@ -1,0 +1,8 @@
+﻿node_modules/
+public/
+db.json
+*.log
+.deploy*/
+.claude/
+raw-data/
+

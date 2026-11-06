@@ -1,0 +1,197 @@
+<%
+const a = page.airport, ed = page.ed || {};
+const regs = airport_regions(a), lines = airport_lines(a);
+const mm = a.derived.minMonthly;
+const keys = ['month', 'quarter', 'halfyear', 'year', 'twoyear', 'threeyear'];
+const used = keys.filter(k => a.plans.cycle.some(p => p.prices[k] !== undefined));
+const cs = a.clashSupport || { status: 'unknown', displayName: 'Clash 兼容待核实', evidence: '', howTo: null, sourceRaw: {} };
+const csTone = { supported: 'ok', unsupported: 'warn', unknown: 'mid' }[cs.status] || 'mid';
+page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+  { '@type': 'ListItem', position: 1, name: '首页', item: 'https://clashnote.blog/' },
+  { '@type': 'ListItem', position: 2, name: '机场推荐', item: 'https://clashnote.blog/airports/' },
+  { '@type': 'ListItem', position: 3, name: a.name, item: abs(page.path) } ] });
+const cta = a.referralUrl || a.officialUrl;
+const ctaRel = a.referralUrl ? 'sponsored nofollow noopener noreferrer' : 'nofollow noopener noreferrer';
+%>
+<div class="wrap"><nav class="crumbs" aria-label="面包屑"><a href="/">首页</a><span>/</span><a href="/airports/">机场推荐</a><span>/</span><span aria-current="page"><%= a.name %></span></nav></div>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">编辑顺序 #<%= String(a.rank).padStart(2, '0') %> · 共 17 家</p>
+    <h1><%= page.title %></h1>
+    <p class="lead"><%= ed.lead || a.positioning %></p>
+    <p class="badges"><%- clash_badge(cs) %>
+      <% if (a.nativeIp) { %><span class="badge badge-info">资料称：原生 IP</span><% } %>
+      <% if (a.residentialIp) { %><span class="badge badge-info">资料称：住宅 IP</span><% } %>
+    </p>
+  </div>
+</section>
+
+<div class="wrap detail-grid">
+  <div class="detail-main">
+
+    <section class="d-sec" id="overview">
+      <h2>品牌概况</h2>
+      <div class="prose">
+        <% if (a.advantage) { %><p>资料给出的主要优势：<%= a.advantage %>。</p><% } %>
+        <% if (a.audience) { %><p>资料列出的适合人群：<%= a.audience %>。</p><% } %>
+        <% if (ed.take) { %><p><strong>编辑提示：</strong><%= ed.take %></p><% } %>
+      </div>
+      <dl class="fact-grid">
+        <div><dt>月付起价</dt><dd><% if (mm) { %><%= yuan(mm.price) %><small> / <%= mm.plan %> · <%= gb(mm.gb) %></small><% } else { %>未提供<% } %></dd></div>
+        <div><dt>最大月流量</dt><dd><%= gb(a.derived.maxMonthlyGB) %></dd></div>
+        <div><dt>节点地区</dt><dd><%= a.regions || '未提供' %></dd></div>
+        <div><dt>各地区节点数</dt><dd><%= a.regionCounts || '未提供' %></dd></div>
+        <div><dt>线路类型</dt><dd><%= a.lineTypeText || (a.lineDetail ? '见下方' : '未提供') %></dd></div>
+        <div><dt>倍率</dt><dd><%= a.multiplier || '未提供' %></dd></div>
+        <div><dt>同时在线设备</dt><dd><%= a.devices || '未提供' %></dd></div>
+        <div><dt>支持系统</dt><dd><%= a.platforms || '未提供' %></dd></div>
+      </dl>
+      <% if (a.lineDetail) { %><p class="muted pre-line"><strong>各地区线路：</strong><br><%= a.lineDetail %></p><% } %>
+    </section>
+
+    <section class="d-sec" id="clash">
+      <h2>Clash 兼容说明</h2>
+      <div class="callout callout-<%= csTone %>">
+        <p><strong><%= cs.displayName %></strong></p>
+        <p><strong>核实依据：</strong><%= cs.evidence || '暂无' %>。</p>
+        <p class="tiny">核验日期：<%= cs.lastVerified || '尚未联网核验服务商后台或实际订阅' %></p>
+      </div>
+      <% if (cs.status === 'supported' && cs.howTo) { %>
+      <h3>如何获取适用 Clash 的订阅</h3>
+      <ol class="steps-list"><% cs.howTo.forEach(function(s){ %><li><%= s %></li><% }) %></ol>
+      <p class="tiny">以上步骤来自站长提供的信息，本站没有、也不会公开任何订阅链接或令牌。获取后请到 <a href="/posts/clash-verge-rev-import-subscription/">订阅导入教程</a> 查看导入方法。</p>
+      <% } else if (cs.status === 'supported') { %>
+      <p>该状态来自站长转述：服务商运营方已确认支持导入 Clash，但<strong>具体订阅获取方式（是否需联系客服、哪些套餐可用）未公开</strong>，请先向客服确认。本站不提供也不公开任何订阅链接或令牌，获取后请参考 <a href="/posts/clash-verge-rev-import-subscription/">订阅导入教程</a>。</p>
+      <% } else if (cs.status === 'unknown') { %>
+      <p>该状态表示<strong>尚未确认</strong>，不是"支持"也不是"不支持"。购买前请向服务商客服确认是否提供 Clash / Mihomo 兼容订阅，并先读 <a href="/posts/clash-verge-rev-import-subscription/">订阅导入教程</a> 中的核对清单。</p>
+      <% } else if (cs.status === 'unsupported') { %>
+      <p>请直接使用该机场的官方客户端，不要购买网上转售的订阅来强行导入。</p>
+      <% } %>
+      <h3>品牌资料原文（早期记录）</h3>
+      <ul class="kv-list">
+        <li><span>使用方式</span><span><%= a.usage || '未提供' %></span></li>
+        <li><span>订阅链接</span><span><%= cs.sourceRaw.subscription || a.subscription || '未提供' %></span></li>
+        <li><span>第三方客户端</span><span><%= cs.sourceRaw.thirdParty || a.thirdParty || '未提供' %></span></li>
+        <li><span>下载渠道</span><span><%= a.download || '未提供' %></span></li>
+      </ul>
+      <p class="tiny">官方客户端不等同于 Clash 客户端；官方客户端账号登录与 Clash 订阅是两种不同机制。</p>
+    </section>
+
+    <section class="d-sec" id="plans">
+      <h2>套餐与价格</h2>
+      <p class="muted">以下价格抄录自资料文件，单位人民币，周期按资料原文标注；年付价格是一次性付款总额，不等于月付。</p>
+      <% if (a.plans.cycle.length) { %>
+      <h3>周期套餐（每月重置流量）</h3>
+      <div class="table-wrap"><table class="tbl">
+        <thead><tr><th>套餐</th><th>月流量</th><% used.forEach(function(k){ %><th><%= cycle_label(k) %></th><% }) %><th>月付 ¥/GB</th></tr></thead>
+        <tbody><% a.plans.cycle.forEach(function(p){ %>
+          <tr><td><%= p.name %><% if (p.limited) { %> <span class="badge badge-mid">限时</span><% } %></td><td><%= gb(p.trafficGB) %></td>
+            <% used.forEach(function(k){ %><td><%= p.prices[k] !== undefined ? yuan(p.prices[k]) : '—' %></td><% }) %>
+            <td><%= p.perGbMonthly ? '¥' + p.perGbMonthly : '—' %></td></tr>
+        <% }) %></tbody>
+      </table></div>
+      <% } %>
+      <% if (a.longCycleNotes.length) { %><p class="muted"><strong>长周期说明：</strong><%= a.longCycleNotes.join('；') %></p><% } %>
+
+      <% [['small', '年付小包'], ['onetime', '不限时流量包（流量不过期，用完为止）'], ['custom', '独享 / 定制线路']].forEach(function(g){ if (a.plans[g[0]].length) { %>
+      <h3><%= g[1] %></h3>
+      <div class="table-wrap"><table class="tbl">
+        <thead><tr><th>名称</th><th>流量</th><th>价格</th><th>备注</th></tr></thead>
+        <tbody><% a.plans[g[0]].forEach(function(p){ %>
+          <tr><td><%= p.name %></td><td><%= p.trafficGB ? gb(p.trafficGB) + (p.trafficPeriod === 'month' ? ' / 月' : '') : '未提供' %></td>
+            <td><%= p.once !== null ? yuan(p.once) + '（一次性）' : (p.prices.year ? yuan(p.prices.year) + ' / 年' : (p.prices.month ? yuan(p.prices.month) + ' / 月' : '未提供')) %></td>
+            <td><%= p.note || '—' %></td></tr>
+        <% }) %></tbody>
+      </table></div>
+      <% } }) %>
+      <p class="note-line">月付 ¥/GB 仅在有明确月付价与月流量时计算，用于同口径参考。年付小包、不限时流量包与月付套餐不可直接比较。</p>
+    </section>
+
+    <section class="d-sec" id="traffic">
+      <h2>流量规则与优惠码</h2>
+      <% if (a.trafficRules.length) { %><ul class="bullets"><% a.trafficRules.forEach(function(t){ %><li><%= t %></li><% }) %></ul><% } else { %><p>资料未提供流量规则。</p><% } %>
+      <% if (a.coupon) { %>
+      <div class="coupon">
+        <div><span class="muted">资料所列优惠码</span><code class="code-chip"><%= a.coupon.code %></code></div>
+        <ul class="bullets">
+          <li>折扣：<%= a.coupon.discount || '资料未标注' %></li>
+          <li>适用：<%= a.coupon.applies || '资料未标注' %></li>
+          <% if (a.coupon.excludes) { %><li>不适用：<%= a.coupon.excludes %></li><% } %>
+          <% if (a.coupon.limit) { %><li>限制：<%= a.coupon.limit %></li><% } %>
+          <li>优惠是否生效、实付金额以结算页为准。</li>
+        </ul>
+      </div>
+      <% } %>
+    </section>
+
+    <section class="d-sec" id="apps">
+      <h2>流媒体与 AI（资料自述）</h2>
+      <p class="muted">下列为品牌资料所列，不代表本站测试，也不作持续可用保证。</p>
+      <dl class="fact-grid">
+        <div><dt>流媒体</dt><dd><%= a.streaming.length ? a.streaming.join('、') : '未提供' %></dd></div>
+        <div><dt>AI 工具</dt><dd><%= a.ai.length ? a.ai.join('、') : '未提供' %></dd></div>
+        <% if (a.crossBorder) { %><div><dt>跨境 / 社交</dt><dd><%= a.crossBorder %></dd></div><% } %>
+      </dl>
+    </section>
+
+    <% if (a.measured) { %>
+    <section class="d-sec" id="measured">
+      <h2>资料提供方的晚高峰记录</h2>
+      <div class="callout callout-mid"><p><strong>凭证不足：</strong><%= a.measured.evidence %>。以下仅作线索，不作为本站结论。</p></div>
+      <ul class="kv-list">
+        <li><span>测试时间</span><span><%= a.measured.time %></span></li>
+        <li><span>测试网络</span><span><%= a.measured.network %></span></li>
+        <% a.measured.rows.forEach(function(r){ var i = r.indexOf('：'); %><li><span><%= r.slice(0, i) %></span><span><%= r.slice(i + 1) %></span></li><% }) %>
+        <li><span>流媒体与 AI</span><span><%= a.measured.apps %></span></li>
+        <li><span>原资料结论</span><span><%= a.measured.conclusion %></span></li>
+      </ul>
+      <p>如何看待这类数据，见 <a href="/posts/how-to-read-speedtest-images/">《如何正确阅读机场节点测速图》</a>。</p>
+    </section>
+    <% } %>
+
+    <% if ((ed.fit && ed.fit.length) || (ed.watch && ed.watch.length)) { %>
+    <section class="d-sec" id="fit">
+      <h2>适合与需要留意</h2>
+      <div class="two-col pros-cons">
+        <% if (ed.fit && ed.fit.length) { %><div><h3>资料显示的适合场景</h3><ul class="bullets"><% ed.fit.forEach(function(x){ %><li><%= x %></li><% }) %></ul></div><% } %>
+        <% if (ed.watch && ed.watch.length) { %><div><h3>购买前需要留意</h3><ul class="bullets"><% ed.watch.forEach(function(x){ %><li><%= x %></li><% }) %></ul></div><% } %>
+      </div>
+    </section>
+    <% } %>
+
+    <% if (ed.faq && ed.faq.length) { %>
+    <section class="d-sec" id="faq">
+      <h2><%= a.name %> 常见问题</h2>
+      <div class="faq-list"><% ed.faq.forEach(function(f){ %><details><summary><%= f.q %></summary><div class="faq-a"><p><%- f.a %></p></div></details><% }) %></div>
+    </section>
+    <% } %>
+
+    <section class="d-sec" id="source">
+      <h2>数据来源</h2>
+      <ul class="kv-list">
+        <li><span>资料文件</span><span><%= a.sourceFile %></span></li>
+        <li><span>资料日期</span><span>资料文件未标注日期（站内导入日期 2026-11-06）</span></li>
+        <li><span>本站实测</span><span><%= a.measured ? '无（仅有资料提供方文字记录，见上）' : '无' %></span></li>
+        <li><span>商业关系</span><span><%= a.referralUrl ? '本页入口为推广链接（sponsored），注册购买可能为本站带来佣金' : '本页入口为官网，资料中未提供推广链接' %></span></li>
+      </ul>
+    </section>
+
+    <nav class="pn" aria-label="上一家下一家">
+      <% if (page.prevA) { %><a class="pn-prev" href="/airports/<%= page.prevA.slug %>/"><small>上一家 #<%= String(page.prevA.rank).padStart(2, '0') %></small><strong><%= page.prevA.name %></strong></a><% } else { %><span></span><% } %>
+      <% if (page.nextA) { %><a class="pn-next" href="/airports/<%= page.nextA.slug %>/"><small>下一家 #<%= String(page.nextA.rank).padStart(2, '0') %></small><strong><%= page.nextA.name %></strong></a><% } %>
+    </nav>
+  </div>
+
+  <aside class="detail-side">
+    <div class="side-card">
+      <h2><%= a.name %></h2>
+      <p class="muted">月付起价 <strong class="big"><%= mm ? yuan(mm.price) : '未提供' %></strong></p>
+      <% if (cta) { %><a class="btn btn-primary btn-block" href="<%= cta %>" target="_blank" rel="<%= ctaRel %>"><%= a.referralUrl ? '前往官网注册' : '访问官网' %> <svg class="ic"><use href="#i-ext"/></svg></a><% } %>
+      <% if (a.referralUrl) { %><p class="tiny">推广链接（sponsored）。只通过官网注册购买，价格以结算页为准。</p><% } else { %><p class="tiny">资料中未提供推广链接，仅提供官网入口。</p><% } %>
+      <a class="btn btn-ghost btn-block" href="/compare/?add=<%= a.slug %>">加入对比</a>
+      <ul class="side-links">
+        <li><a href="#plans">套餐与价格</a></li><li><a href="#clash">Clash 兼容</a></li><li><a href="#traffic">流量与优惠码</a></li><li><a href="#source">数据来源</a></li>
+      </ul>
+    </div>
+  </aside>
+</div>

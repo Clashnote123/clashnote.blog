@@ -1,0 +1,25 @@
+{
+  "removedClaims": [
+    {
+      "where": "breezenet.最大优势",
+      "original": "入门档每 GB 约 ¥0.13，在 34 家中并列第 1"
+    },
+    {
+      "where": "dalaoyun.最大优势",
+      "original": "入门价低于 34 家中位数，晚高峰不限速，不限设备"
+    },
+    {
+      "where": "wanglang.品牌定位",
+      "original": "主打超大流量档位，商业档每月 2000 GB，在 34 家中排第 1"
+    },
+    {
+      "where": "lingmao.最大优势",
+      "original": "年付 Big 每 GB 约 ¥0.082，34 家中最低"
+    },
+    {
+      "where": "kuajie.最大优势",
+      "original": "每 GB 单价低，顶档 1800 GB 在 34 家中并列第 2"
+    }
+  ],
+  "unparsedPlanLines": []
+}

@@ -1,0 +1,3312 @@
+[
+  {
+    "id": "lingdongyun",
+    "rank": 1,
+    "slug": "lingdongyun",
+    "name": "灵动云",
+    "englishName": null,
+    "aliases": [],
+    "sourceFile": "01_灵动云.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://varnexa.lingdongaff.com/#/?code=HHoxxHGa",
+    "positioning": "主打 IEPL / IPLC 专线，全节点 1x 倍率、不限设备，月付 ¥20 起",
+    "advantage": "长周期折扣最低三年付 75 折，全节点 1x 倍率，不限设备",
+    "audience": "大流量用户、需要独享 IP 的跨境电商、偶尔使用不想按月续费的人",
+    "regions": "香港、台湾、日本、新加坡、美国，共 5 个地区，60 个节点",
+    "regionCounts": "香港 20、台湾 10、日本 10、新加坡 10、美国 10",
+    "lineTypeText": "IEPL 专线 + BGP 智能调度，穿云套餐为 IPLC 专线",
+    "lineDetail": null,
+    "multiplier": "全节点统一 1x 倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "拂风",
+          "raw": "拂风：100 GB/月，月付 ¥20｜季付 ¥57｜半年付 ¥108｜年付 ¥204｜两年付 ¥384｜三年付 ¥540",
+          "trafficGB": 100,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 108,
+            "twoyear": 384,
+            "threeyear": 540,
+            "month": 20,
+            "quarter": 57,
+            "year": 204
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.2
+        },
+        {
+          "name": "驭浪",
+          "raw": "驭浪：300 GB/月，月付 ¥50｜季付 ¥142.5｜半年付 ¥270｜年付 ¥510｜两年付 ¥960｜三年付 ¥1350",
+          "trafficGB": 300,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 270,
+            "twoyear": 960,
+            "threeyear": 1350,
+            "month": 50,
+            "quarter": 142.5,
+            "year": 510
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "破晓",
+          "raw": "破晓：700 GB/月，月付 ¥100｜季付 ¥285｜半年付 ¥540｜年付 ¥1020｜两年付 ¥1920｜三年付 ¥2700",
+          "trafficGB": 700,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 540,
+            "twoyear": 1920,
+            "threeyear": 2700,
+            "month": 100,
+            "quarter": 285,
+            "year": 1020
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.143
+        },
+        {
+          "name": "凌霄",
+          "raw": "凌霄：1500 GB/月，月付 ¥180｜季付 ¥513｜半年付 ¥972｜年付 ¥1836｜两年付 ¥3456｜三年付 ¥4860",
+          "trafficGB": 1500,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 972,
+            "twoyear": 3456,
+            "threeyear": 4860,
+            "month": 180,
+            "quarter": 513,
+            "year": 1836
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.12
+        }
+      ],
+      "small": [
+        {
+          "name": "穿云（IPLC 专线）",
+          "raw": "穿云（IPLC 专线）：70 GB/月，¥99/年（每 30 天刷新）",
+          "trafficGB": 70,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 99
+          },
+          "once": null,
+          "note": "每 30 天刷新",
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "闲云",
+          "raw": "闲云：150 GB，¥199",
+          "trafficGB": 150,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 199,
+          "note": null,
+          "limited": false
+        },
+        {
+          "name": "惊云",
+          "raw": "惊云：400 GB，¥499",
+          "trafficGB": 400,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 499,
+          "note": null,
+          "limited": false
+        },
+        {
+          "name": "飞云",
+          "raw": "飞云：800 GB，¥899",
+          "trafficGB": 800,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 899,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "custom": [
+        {
+          "name": "至尊私人定制",
+          "raw": "至尊私人定制：500 GB/月，¥680/月（独立带宽、专属公网 IP，约 2–3 个工作日交付）",
+          "trafficGB": 500,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 680
+          },
+          "once": null,
+          "note": "独立带宽、专属公网 IP，约 2–3 个工作日交付",
+          "limited": false
+        }
+      ]
+    },
+    "longCycleNotes": [
+      "季付 95 折、半年付 9 折、年付 85 折、两年付 8 折、三年付 75 折"
+    ],
+    "trafficRules": [
+      "周期套餐流量每月重置，未用完的流量不结转到下月",
+      "月内流量用完，可购买同档重置包，价格等于该套餐月付价",
+      "穿云套餐从购买日起每 30 天刷新 70 GB",
+      "所有套餐不限速"
+    ],
+    "devices": "不限同时在线设备数",
+    "platforms": null,
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "已暂停提供（平台遭遇异常流量攻击，为保护节点安全，暂停第三方客户端订阅链接）",
+    "thirdParty": "暂不支持导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用；已购套餐不受影响，登录客户端即可继续使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Disney+",
+      "HBO",
+      "YouTube",
+      "TikTok",
+      "Abema",
+      "Spotify"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Claude",
+      "Midjourney"
+    ],
+    "crossBorder": "至尊私人定制适合跨境电商、独立站与 TikTok 直播",
+    "nativeIp": false,
+    "residentialIp": false,
+    "coupon": {
+      "code": "ld888",
+      "discount": "8 折",
+      "applies": "拂风、驭浪、破晓、凌霄四档周期套餐（含长周期）",
+      "excludes": "穿云、不限时流量包、至尊私人定制",
+      "limit": null
+    },
+    "service": {
+      "客服渠道": "Crisp 在线客服、工单、Telegram 公告频道",
+      "客服时间": "工单 24 小时内回复",
+      "退款": "可申请退款与升级补差价，具体条件以平台指引为准",
+      "试用": "无免费试用",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "supported",
+      "displayName": "支持导入 Clash",
+      "evidence": "站长在《全站统一开发指令》中声明：通过客服/工单领取适用 Clash 客户端的订阅配置；同一份品牌资料注明官方公开订阅链接已暂停提供（平台遭遇异常流量攻击）。支持依据为站长声明，未经服务商公开文档或实际订阅验证",
+      "lastVerified": null,
+      "subscriptionAvailable": null,
+      "method": "contact-support",
+      "howTo": [
+        "在官网用户中心通过 Crisp 在线客服或工单联系客服（资料：工单 24 小时内回复）",
+        "说明需要「适用于 Clash 客户端的订阅配置」，按客服指引领取",
+        "订阅含个人凭证，不要公开或转发；网上出售的订阅不是官方渠道",
+        "领取后按《Clash Verge Rev 正确导入订阅链接》导入"
+      ],
+      "sourceRaw": {
+        "subscription": "已暂停提供（平台遭遇异常流量攻击，为保护节点安全，暂停第三方客户端订阅链接）",
+        "thirdParty": "暂不支持导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 20,
+        "plan": "拂风",
+        "gb": 100
+      },
+      "maxMonthlyGB": 1500,
+      "cyclePlanCount": 4
+    },
+    "measured": {
+      "time": "2026-10-28 晚高峰（21:26–21:45）",
+      "network": "中国联通",
+      "rows": [
+        "香港：下载 10.8 Mbps / 上传 16 Mbps，延迟 84ms，抖动 6ms",
+        "新加坡：下载 13.2 Mbps / 上传 18.7 Mbps，延迟 64ms，抖动 18ms",
+        "美国：下载 7.07 Mbps / 上传 9.06 Mbps，延迟 101ms，抖动 23ms"
+      ],
+      "apps": "YouTube 香港 720p 播放顺畅；ChatGPT 香港、新加坡可用；Claude 三地均无法连接；Netflix 连接较慢",
+      "conclusion": "适合网页、AI 与 720p 视频，不适合 1080p 以上或大文件下载",
+      "evidence": "资料文件内文字记录；未附截图、工具名称、设备与原始数据"
+    }
+  },
+  {
+    "id": "muguang-jiasu",
+    "rank": 2,
+    "slug": "muguang-jiasu",
+    "name": "暮光加速",
+    "englishName": null,
+    "aliases": [],
+    "sourceFile": "02_暮光加速.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://varnexa.twilightaff.com/#/?code=rkRvrsRc",
+    "positioning": "大流量档位机场，至尊版每月 1500 GB 只要 ¥180，全节点 1x、不限速",
+    "advantage": "大流量性价比高，四大系统都有客户端，24 小时客服",
+    "audience": "流量用得多的人、多设备用户、需要独享线路的人",
+    "regions": "香港、台湾、日本、新加坡、美国，共 5 个地区，55 个节点",
+    "regionCounts": null,
+    "lineTypeText": "BGP 智能路由 + IPLC 专线出口",
+    "lineDetail": null,
+    "multiplier": "全节点 1x 倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "基础版",
+          "raw": "基础版：120 GB/月，月付 ¥20｜季付 ¥57｜半年付 ¥103｜年付 ¥204",
+          "trafficGB": 120,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 103,
+            "month": 20,
+            "quarter": 57,
+            "year": 204
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "标准版",
+          "raw": "标准版：240 GB/月，月付 ¥40｜季付 ¥114｜半年付 ¥216｜年付 ¥408",
+          "trafficGB": 240,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 216,
+            "month": 40,
+            "quarter": 114,
+            "year": 408
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "旗舰版",
+          "raw": "旗舰版：700 GB/月，月付 ¥100｜季付 ¥285｜半年付 ¥540｜年付 ¥1020",
+          "trafficGB": 700,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 540,
+            "month": 100,
+            "quarter": 285,
+            "year": 1020
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.143
+        },
+        {
+          "name": "至尊版",
+          "raw": "至尊版：1500 GB/月，月付 ¥180｜季付 ¥513｜半年付 ¥972｜年付 ¥1836",
+          "trafficGB": 1500,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 972,
+            "month": 180,
+            "quarter": 513,
+            "year": 1836
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.12
+        }
+      ],
+      "small": [
+        {
+          "name": "年付轻量版",
+          "raw": "年付轻量版：70 GB/月，¥109/年（每 30 天刷新）",
+          "trafficGB": 70,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 109
+          },
+          "once": null,
+          "note": "每 30 天刷新",
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "轻量包",
+          "raw": "轻量包：150 GB，¥219",
+          "trafficGB": 150,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 219,
+          "note": null,
+          "limited": false
+        },
+        {
+          "name": "标准包",
+          "raw": "标准包：400 GB，¥529",
+          "trafficGB": 400,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 529,
+          "note": null,
+          "limited": false
+        },
+        {
+          "name": "大容量包",
+          "raw": "大容量包：800 GB，¥959",
+          "trafficGB": 800,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 959,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "custom": [
+        {
+          "name": "独享私人定制节点",
+          "raw": "独享私人定制节点：500 GB/月，¥680/月（独立带宽、独立公网 IP，需工单咨询）",
+          "trafficGB": 500,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 680
+          },
+          "once": null,
+          "note": "独立带宽、独立公网 IP，需工单咨询",
+          "limited": false
+        }
+      ]
+    },
+    "longCycleNotes": [],
+    "trafficRules": [
+      "周期套餐流量每月重置，未用完的流量不结转到下月",
+      "年付轻量版每 30 天刷新 70 GB",
+      "所有套餐不限速"
+    ],
+    "devices": "不限同时在线设备数",
+    "platforms": "Windows、macOS、iOS、Android",
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+    "thirdParty": "不推荐导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Hulu",
+      "HBO",
+      "Disney+",
+      "DAZN"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "crossBorder": null,
+    "nativeIp": false,
+    "residentialIp": false,
+    "coupon": {
+      "code": "mm88",
+      "discount": "8 折",
+      "applies": "周期套餐",
+      "excludes": "年付轻量版",
+      "limit": null
+    },
+    "service": {
+      "客服渠道": "工单",
+      "客服时间": "24 小时",
+      "退款": "提供退款，具体条件请先询问客服",
+      "试用": "无免费试用",
+      "付款方式": "支付宝；微信、USDT 需联系客服",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "supported",
+      "displayName": "支持导入 Clash",
+      "evidence": "站长转述：该服务商运营方已向站长确认支持导入 Clash（2026-11-07，为口头/转述确认，未取得书面记录或截图）；品牌资料早期记载与之不同：仅写\"不推荐\"导入第三方客户端（避免订阅外泄），未明确支持也未明确不支持，待向服务商确认",
+      "lastVerified": "2026-11-07",
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+        "thirdParty": "不推荐导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 20,
+        "plan": "基础版",
+        "gb": 120
+      },
+      "maxMonthlyGB": 1500,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  },
+  {
+    "id": "breezenet",
+    "rank": 3,
+    "slug": "breezenet",
+    "name": "微风网络",
+    "englishName": "Breezenet",
+    "aliases": [
+      "Breezenet"
+    ],
+    "sourceFile": "03_微风网络.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://downloadshare.breezenetttt.sbs/#/?code=eS6rgePR",
+    "positioning": "低单价入门机场，每 GB 成本低，不限设备、所有设备共享流量",
+    "advantage": "入门档每 GB 约 ¥0.13",
+    "audience": "关注每 GB 单价的人、学生与轻度用户、多设备用户",
+    "regions": "香港、台湾、日本、新加坡、美国，共 5 个地区，53 个节点",
+    "regionCounts": "香港 14、日本 14（含直连）、新加坡 10、美国 10、台湾 5",
+    "lineTypeText": "全 IPLC 专线",
+    "lineDetail": null,
+    "multiplier": null,
+    "plans": {
+      "cycle": [
+        {
+          "name": "乘风（Riding）",
+          "raw": "乘风（Riding）：200 GB/月，月付 ¥25｜季付 ¥67｜半年付 ¥127｜年付 ¥240",
+          "trafficGB": 200,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 127,
+            "month": 25,
+            "quarter": 67,
+            "year": 240
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.125
+        },
+        {
+          "name": "破风（Breaking）",
+          "raw": "破风（Breaking）：500 GB/月，月付 ¥55｜季付 ¥148｜半年付 ¥280｜年付 ¥528",
+          "trafficGB": 500,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 280,
+            "month": 55,
+            "quarter": 148,
+            "year": 528
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.11
+        },
+        {
+          "name": "御风（Mastery）",
+          "raw": "御风（Mastery）：1200 GB/月，月付 ¥125｜季付 ¥337｜半年付 ¥637｜年付 ¥998",
+          "trafficGB": 1200,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 637,
+            "month": 125,
+            "quarter": 337,
+            "year": 998
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.104
+        }
+      ],
+      "small": [
+        {
+          "name": "清风（Breeze）",
+          "raw": "清风（Breeze）：60 GB/月，¥99/年（从购买日起每月自动重置）",
+          "trafficGB": 60,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 99
+          },
+          "once": null,
+          "note": "从购买日起每月自动重置",
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "微风·不限时",
+          "raw": "微风·不限时：100 GB，¥100",
+          "trafficGB": 100,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 100,
+          "note": null,
+          "limited": true
+        },
+        {
+          "name": "信风·不限时",
+          "raw": "信风·不限时：270 GB，¥200",
+          "trafficGB": 270,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 200,
+          "note": null,
+          "limited": true
+        },
+        {
+          "name": "长风·不限时",
+          "raw": "长风·不限时：570 GB，¥370",
+          "trafficGB": 570,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 370,
+          "note": null,
+          "limited": true
+        }
+      ],
+      "custom": []
+    },
+    "longCycleNotes": [],
+    "trafficRules": [
+      "周期套餐从购买日起按月重置，未用完的流量不结转到下月",
+      "不限时流量永不过期，用完为止",
+      "所有套餐不限速"
+    ],
+    "devices": "不限同时在线设备数，所有设备共用同一份流量",
+    "platforms": "Windows 10 及以上、macOS 10.15 及以上、Android 5.0 及以上、iOS 15 及以上（iOS 通过 Nextin 登录）",
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不提供（2026 年 10 月起新订单只能使用官方客户端，老用户原有订阅不受影响）",
+    "thirdParty": "不支持导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Disney+",
+      "HBO Max",
+      "TikTok"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "crossBorder": null,
+    "nativeIp": false,
+    "residentialIp": true,
+    "coupon": {
+      "code": "weifeng90",
+      "discount": "9 折",
+      "applies": "乘风、破风、御风",
+      "excludes": "清风、信风、长风",
+      "limit": null
+    },
+    "service": {
+      "客服时间": "7×24 小时在线，夜间由 AI 客服值守",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "supported",
+      "displayName": "支持导入 Clash",
+      "evidence": "站长转述：该服务商运营方已向站长确认支持导入 Clash（2026-11-07，为口头/转述确认，未取得书面记录或截图）；品牌资料早期记载与之不同：2026 年 10 月起新订单不提供订阅、不支持导入第三方客户端；老用户原有订阅不受影响",
+      "lastVerified": "2026-11-07",
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不提供（2026 年 10 月起新订单只能使用官方客户端，老用户原有订阅不受影响）",
+        "thirdParty": "不支持导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 25,
+        "plan": "乘风（Riding）",
+        "gb": 200
+      },
+      "maxMonthlyGB": 1200,
+      "cyclePlanCount": 3
+    },
+    "measured": null
+  },
+  {
+    "id": "feimaoyun",
+    "rank": 4,
+    "slug": "feimaoyun",
+    "name": "飞猫云",
+    "englishName": null,
+    "aliases": [],
+    "sourceFile": "04_飞猫云.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://flycat1.flycatvipaff.cc/#/?code=Gja6RpJ8",
+    "positioning": "多地区覆盖的 IPLC 专线机场，入门 ¥25/月含 150 GB，另有 ¥84 学生年付版",
+    "advantage": "节点地区最广之一（含韩国、东南亚、欧洲、南美），单节点最高 2.5Gbps",
+    "audience": "学生、需要小众地区节点的人、需要独享原生 IP 的人、多设备用户",
+    "regions": "香港、台湾、日本、新加坡、美国、韩国、马来西亚、越南、菲律宾、泰国、印度、英国、法国、德国、阿根廷等，共 57 个节点",
+    "regionCounts": "香港 20、台湾 10、日本 10、新加坡 10、美国 10、韩国 3",
+    "lineTypeText": "全 IPLC 专线",
+    "lineDetail": null,
+    "multiplier": "全节点 1x 倍率，高峰不降速",
+    "plans": {
+      "cycle": [
+        {
+          "name": "星耀版",
+          "raw": "星耀版：150 GB/月，月付 ¥25｜季付 ¥67｜半年付 ¥127｜年付 ¥240",
+          "trafficGB": 150,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 127,
+            "month": 25,
+            "quarter": 67,
+            "year": 240
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "星环版",
+          "raw": "星环版：300 GB/月，月付 ¥45｜季付 ¥121｜半年付 ¥229｜年付 ¥432",
+          "trafficGB": 300,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 229,
+            "month": 45,
+            "quarter": 121,
+            "year": 432
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.15
+        },
+        {
+          "name": "银河版",
+          "raw": "银河版：600 GB/月，月付 ¥85｜季付 ¥229｜半年付 ¥433｜年付 ¥816",
+          "trafficGB": 600,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 433,
+            "month": 85,
+            "quarter": 229,
+            "year": 816
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.142
+        },
+        {
+          "name": "宇宙版",
+          "raw": "宇宙版：1000 GB/月，月付 ¥150｜季付 ¥400｜半年付 ¥750｜年付 ¥1360",
+          "trafficGB": 1000,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 750,
+            "month": 150,
+            "quarter": 400,
+            "year": 1360
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.15
+        }
+      ],
+      "small": [
+        {
+          "name": "学生版",
+          "raw": "学生版：50 GB/月，¥84/年",
+          "trafficGB": 50,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 84
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "不限时套餐",
+          "raw": "不限时套餐：1000 GB，¥680（用完可付费重置，¥612）",
+          "trafficGB": 1000,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 680,
+          "note": "用完可付费重置，¥612",
+          "limited": true
+        }
+      ],
+      "custom": [
+        {
+          "name": "定制套餐",
+          "raw": "定制套餐：500 GB/月，¥550/月（独享原生 IP、可选地区、独立带宽，细节以客服报价为准）",
+          "trafficGB": 500,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 550
+          },
+          "once": null,
+          "note": "独享原生 IP、可选地区、独立带宽，细节以客服报价为准",
+          "limited": false
+        }
+      ]
+    },
+    "longCycleNotes": [
+      "年付 8 折、两年付 7 折、三年付 6 折，长期有效"
+    ],
+    "trafficRules": [
+      "季付及以上从购买日起每 30 天刷新流量，未用完的流量不结转",
+      "高峰不降速，单节点最高 2.5Gbps"
+    ],
+    "devices": "不限同时在线设备数",
+    "platforms": null,
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+    "thirdParty": "不推荐导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Disney+",
+      "TikTok"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "crossBorder": null,
+    "nativeIp": true,
+    "residentialIp": false,
+    "coupon": {
+      "code": "flycat888",
+      "discount": "8 折",
+      "applies": "季付及以上周期套餐",
+      "excludes": "月付",
+      "limit": "新用户专享"
+    },
+    "service": {
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "supported",
+      "displayName": "支持导入 Clash",
+      "evidence": "站长转述：该服务商运营方已向站长确认支持导入 Clash（2026-11-07，为口头/转述确认，未取得书面记录或截图）；品牌资料早期记载与之不同：仅写\"不推荐\"导入第三方客户端（避免订阅外泄），未明确支持也未明确不支持，待向服务商确认",
+      "lastVerified": "2026-11-07",
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+        "thirdParty": "不推荐导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 25,
+        "plan": "星耀版",
+        "gb": 150
+      },
+      "maxMonthlyGB": 1000,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  },
+  {
+    "id": "dalaoyun",
+    "rank": 5,
+    "slug": "dalaoyun",
+    "name": "大佬云",
+    "englishName": null,
+    "aliases": [],
+    "sourceFile": "05_大佬云.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://a01vipaff.dalaoyunaff.com/#/?code=yN6HqG0d",
+    "positioning": "2026 年 9 月新上线的低价专线机场，最低月付 ¥19.99，全节点 1x、不限设备",
+    "advantage": "晚高峰不限速，不限设备",
+    "audience": "预算有限、想先买一个月试试的人，多设备用户，用量不大想年付的人",
+    "regions": "香港、台湾、日本、新加坡、美国、韩国，共 6 个地区，60 个节点",
+    "regionCounts": null,
+    "lineTypeText": "IEPL 专线",
+    "lineDetail": null,
+    "multiplier": "周期套餐全节点 1x 倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "初云·福利版",
+          "raw": "初云·福利版：120 GB/月，¥19.99/月",
+          "trafficGB": 120,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 19.99
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "初云·进阶版",
+          "raw": "初云·进阶版：150 GB/月，¥25/月",
+          "trafficGB": 150,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 25
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "凌云·基础版",
+          "raw": "凌云·基础版：300 GB/月，月付 ¥43｜季付 ¥123｜年付 ¥408",
+          "trafficGB": 300,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 43,
+            "quarter": 123,
+            "year": 408
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.143
+        },
+        {
+          "name": "御云·高级版",
+          "raw": "御云·高级版：600 GB/月，月付 ¥73｜季付 ¥210｜年付 ¥696",
+          "trafficGB": 600,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 73,
+            "quarter": 210,
+            "year": 696
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.122
+        }
+      ],
+      "small": [
+        {
+          "name": "年付活动包",
+          "raw": "年付活动包：60 GB/月，¥96/年",
+          "trafficGB": 60,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 96
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "闲云·随心包",
+          "raw": "闲云·随心包：78 GB，¥99",
+          "trafficGB": 78,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 99,
+          "note": null,
+          "limited": false
+        },
+        {
+          "name": "悠云·长享包",
+          "raw": "悠云·长享包：160 GB，¥199",
+          "trafficGB": 160,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 199,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "custom": []
+    },
+    "longCycleNotes": [
+      "没有半年付"
+    ],
+    "trafficRules": [
+      "周期套餐流量每月重置，未用完的流量不结转到下月",
+      "晚高峰不限速，单节点最高 2.5Gbps"
+    ],
+    "devices": "不限同时在线设备数",
+    "platforms": "Windows、macOS、Android（官方客户端），iOS（通过 Nextin）",
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不提供（只能使用官方客户端）",
+    "thirdParty": "不支持导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Disney+",
+      "TikTok"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "crossBorder": null,
+    "nativeIp": true,
+    "residentialIp": false,
+    "coupon": {
+      "code": "dly88",
+      "discount": "7 折",
+      "applies": null,
+      "excludes": null,
+      "limit": null
+    },
+    "service": {
+      "客服时间": "7×24 小时真人客服",
+      "试用": "官方不提供试用",
+      "付款方式": "仅支持支付宝",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "supported",
+      "displayName": "支持导入 Clash",
+      "evidence": "站长转述：该服务商运营方已向站长确认支持导入 Clash（2026-11-07，为口头/转述确认，未取得书面记录或截图）；品牌资料早期记载与之不同：不提供订阅链接，只能使用官方客户端，不支持导入第三方客户端",
+      "lastVerified": "2026-11-07",
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不提供（只能使用官方客户端）",
+        "thirdParty": "不支持导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 19.99,
+        "plan": "初云·福利版",
+        "gb": 120
+      },
+      "maxMonthlyGB": 600,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  },
+  {
+    "id": "yinxingren",
+    "rank": 6,
+    "slug": "yinxingren",
+    "name": "隐形人",
+    "englishName": null,
+    "aliases": [],
+    "sourceFile": "06_隐形人.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://varnexa.invisibleaff.com/#/?code=PoecAA0c",
+    "positioning": "大流量、多地区的专线机场，入门月付 ¥24 含 144 GB，顶档每月 1600 GB",
+    "advantage": "流量大、地区多，钻石穹顶 1600 GB 约 ¥0.12/GB",
+    "audience": "流量用得多的人、需要多个出口地区的人、需要独享带宽的人",
+    "regions": "香港、台湾、日本、新加坡、美国、韩国、德国、法国、英国等，共 50+ 个节点",
+    "regionCounts": "香港 20、台湾 10、日本 10、新加坡 10、美国 10、韩国 2",
+    "lineTypeText": "IEPL 专线 + BGP 智能优化",
+    "lineDetail": null,
+    "multiplier": "全节点 1x 倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "白银纪元",
+          "raw": "白银纪元：144 GB/月，月付 ¥24｜季付 ¥68.4｜半年付 ¥129.6｜年付 ¥244.8",
+          "trafficGB": 144,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 129.6,
+            "month": 24,
+            "quarter": 68.4,
+            "year": 244.8
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "黄金序列",
+          "raw": "黄金序列：360 GB/月，月付 ¥48｜季付 ¥136.8｜半年付 ¥259.2｜年付 ¥489.6",
+          "trafficGB": 360,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 259.2,
+            "month": 48,
+            "quarter": 136.8,
+            "year": 489.6
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.133
+        },
+        {
+          "name": "铂金至臻",
+          "raw": "铂金至臻：750 GB/月，月付 ¥105｜季付 ¥299.25｜半年付 ¥567｜年付 ¥1071",
+          "trafficGB": 750,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 567,
+            "month": 105,
+            "quarter": 299.25,
+            "year": 1071
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.14
+        },
+        {
+          "name": "钻石穹顶",
+          "raw": "钻石穹顶：1600 GB/月，月付 ¥185｜季付 ¥527.25｜半年付 ¥999｜年付 ¥1887",
+          "trafficGB": 1600,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 999,
+            "month": 185,
+            "quarter": 527.25,
+            "year": 1887
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.116
+        }
+      ],
+      "small": [
+        {
+          "name": "星耀风暴",
+          "raw": "星耀风暴：80 GB/月，¥109/年（每 30 天刷新）",
+          "trafficGB": 80,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 109
+          },
+          "once": null,
+          "note": "每 30 天刷新",
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "小流量包",
+          "raw": "小流量包：160 GB，¥229（限 1 台设备）",
+          "trafficGB": 160,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 229,
+          "note": "限 1 台设备",
+          "limited": false
+        },
+        {
+          "name": "标准流量包",
+          "raw": "标准流量包：420 GB，¥549（限 2 台设备）",
+          "trafficGB": 420,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 549,
+          "note": "限 2 台设备",
+          "limited": false
+        },
+        {
+          "name": "精英流量包",
+          "raw": "精英流量包：1000 GB，¥1199（限 3 台设备）",
+          "trafficGB": 1000,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 1199,
+          "note": "限 3 台设备",
+          "limited": false
+        }
+      ],
+      "custom": [
+        {
+          "name": "王者定制版（独享带宽）",
+          "raw": "王者定制版（独享带宽）：500 GB/月，¥680/月",
+          "trafficGB": 500,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 680
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ]
+    },
+    "longCycleNotes": [
+      "季付 95 折、半年付 9 折、年付 85 折"
+    ],
+    "trafficRules": [
+      "周期套餐流量每月重置，未用完的流量不结转到下月",
+      "所有套餐不限速"
+    ],
+    "devices": "周期套餐不限设备；一次性流量包限 1 / 2 / 3 台",
+    "platforms": "Windows、macOS、Linux、iOS、Android",
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+    "thirdParty": "不推荐导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Disney+",
+      "Prime Video",
+      "BBC",
+      "Abema",
+      "TVer"
+    ],
+    "ai": [
+      "ChatGPT",
+      "GitHub Copilot",
+      "Hugging Face"
+    ],
+    "crossBorder": null,
+    "nativeIp": false,
+    "residentialIp": false,
+    "coupon": {
+      "code": "yxr888",
+      "discount": null,
+      "applies": null,
+      "excludes": null,
+      "limit": null
+    },
+    "service": {
+      "退款": "支持不满意退款，适用范围以条款为准",
+      "试用": "无免费试用",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "supported",
+      "displayName": "支持导入 Clash",
+      "evidence": "站长转述：该服务商运营方已向站长确认支持导入 Clash（2026-11-07，为口头/转述确认，未取得书面记录或截图）；品牌资料早期记载与之不同：仅写\"不推荐\"导入第三方客户端（避免订阅外泄），未明确支持也未明确不支持，待向服务商确认",
+      "lastVerified": "2026-11-07",
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+        "thirdParty": "不推荐导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 24,
+        "plan": "白银纪元",
+        "gb": 144
+      },
+      "maxMonthlyGB": 1600,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  },
+  {
+    "id": "tiziyun",
+    "rank": 7,
+    "slug": "tiziyun",
+    "name": "梯子云",
+    "englishName": "LadderCloud",
+    "aliases": [
+      "LadderCloud"
+    ],
+    "sourceFile": "07_梯子云.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://varnexa.ladderaff.com/#/?code=NSTRhs22",
+    "positioning": "大流量档位机场，顶档每月 1600 GB，入门月付 ¥25 含 125 GB",
+    "advantage": "大流量、长周期折扣清楚，全节点 1x",
+    "audience": "流量用量大的人、需要独享 IP 的人、偶尔使用的人、多设备用户",
+    "regions": "香港、台湾、日本、新加坡、美国、韩国，共 6 个地区，50+ 个节点",
+    "regionCounts": null,
+    "lineTypeText": "IEPL 专线 + BGP 三网优化与高速中转",
+    "lineDetail": null,
+    "multiplier": "全节点统一 1x 倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "初阶网络·基础视界",
+          "raw": "初阶网络·基础视界：125 GB/月，月付 ¥25｜季付 ¥71.25｜半年付 ¥135｜年付 ¥255",
+          "trafficGB": 125,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 135,
+            "month": 25,
+            "quarter": 71.25,
+            "year": 255
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.2
+        },
+        {
+          "name": "中阶加速·极清多线",
+          "raw": "中阶加速·极清多线：350 GB/月，月付 ¥60｜季付 ¥171｜半年付 ¥324｜年付 ¥612",
+          "trafficGB": 350,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 324,
+            "month": 60,
+            "quarter": 171,
+            "year": 612
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.171
+        },
+        {
+          "name": "高阶专线·全球智联",
+          "raw": "高阶专线·全球智联：750 GB/月，月付 ¥110｜季付 ¥313.5｜半年付 ¥594｜年付 ¥1122",
+          "trafficGB": 750,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 594,
+            "month": 110,
+            "quarter": 313.5,
+            "year": 1122
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.147
+        },
+        {
+          "name": "顶阶商业·全球骨干",
+          "raw": "顶阶商业·全球骨干：1600 GB/月，月付 ¥190｜季付 ¥541.5｜半年付 ¥1026｜年付 ¥1938",
+          "trafficGB": 1600,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 1026,
+            "month": 190,
+            "quarter": 541.5,
+            "year": 1938
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.119
+        }
+      ],
+      "small": [
+        {
+          "name": "天梯随行·年度保活方案",
+          "raw": "天梯随行·年度保活方案：60 GB/月，¥89/年",
+          "trafficGB": 60,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 89
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "永不限时轻量包",
+          "raw": "永不限时轻量包：120 GB，¥169",
+          "trafficGB": 120,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 169,
+          "note": null,
+          "limited": true
+        },
+        {
+          "name": "永不限时标准包",
+          "raw": "永不限时标准包：350 GB，¥449",
+          "trafficGB": 350,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 449,
+          "note": null,
+          "limited": true
+        },
+        {
+          "name": "永不限时精英包",
+          "raw": "永不限时精英包：700 GB，¥849",
+          "trafficGB": 700,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 849,
+          "note": null,
+          "limited": true
+        }
+      ],
+      "custom": [
+        {
+          "name": "云端独享·私人定制专线",
+          "raw": "云端独享·私人定制专线：500 GB/月，¥680/月（独享公网 IP、独立带宽，约 2–3 个工作日交付）",
+          "trafficGB": 500,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 680
+          },
+          "once": null,
+          "note": "独享公网 IP、独立带宽，约 2–3 个工作日交付",
+          "limited": false
+        }
+      ]
+    },
+    "longCycleNotes": [
+      "季付 95 折、半年付 9 折、年付 85 折"
+    ],
+    "trafficRules": [
+      "所有周期套餐每月重置，未用完的流量不结转到下月"
+    ],
+    "devices": "不限同时在线设备数",
+    "platforms": "自研全平台客户端（含 Android、iOS）",
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+    "thirdParty": "不推荐导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Disney+",
+      "YouTube"
+    ],
+    "ai": [
+      "ChatGPT"
+    ],
+    "crossBorder": null,
+    "nativeIp": false,
+    "residentialIp": false,
+    "coupon": {
+      "code": "tzy888",
+      "discount": null,
+      "applies": null,
+      "excludes": null,
+      "limit": null
+    },
+    "service": {
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "unknown",
+      "displayName": "Clash 兼容待核实",
+      "evidence": "品牌资料仅写\"不推荐\"导入第三方客户端（避免订阅外泄），未明确支持也未明确不支持，待向服务商确认",
+      "lastVerified": null,
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+        "thirdParty": "不推荐导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 25,
+        "plan": "初阶网络·基础视界",
+        "gb": 125
+      },
+      "maxMonthlyGB": 1600,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  },
+  {
+    "id": "flyv",
+    "rank": 8,
+    "slug": "flyv",
+    "name": "飞V",
+    "englishName": "FlyV",
+    "aliases": [
+      "FlyV"
+    ],
+    "sourceFile": "08_飞V.md",
+    "sourceDate": null,
+    "officialUrl": "https://flyv.site",
+    "referralUrl": null,
+    "positioning": "主打专线线路和官方客户端，登录即用，不对外发放订阅链接，保护用户隐私和线路稳定",
+    "advantage": null,
+    "audience": null,
+    "regions": "香港、台湾、日本、新加坡、美国，共 5 个地区，60个节点",
+    "regionCounts": null,
+    "lineTypeText": null,
+    "lineDetail": "香港：IEPL 专线 x20节点\n台湾：IEPL 专线 x10节点\n日本：IPLC / IEPL 专线 x10节点\n新加坡：IPLC / IEPL 专线 x10节点\n美国：BGP 直连优化 x10节点",
+    "multiplier": "常规会员套餐全节点统一 1x 倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "入门方案",
+          "raw": "入门方案：150 GB/月，¥25/月",
+          "trafficGB": 150,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 25
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "进阶方案",
+          "raw": "进阶方案：380 GB/月，¥50/月",
+          "trafficGB": 380,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 50
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.132
+        },
+        {
+          "name": "高端方案",
+          "raw": "高端方案：800 GB/月，¥110/月",
+          "trafficGB": 800,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 110
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.138
+        },
+        {
+          "name": "商业方案",
+          "raw": "商业方案：1.8 TB/月，¥190/月",
+          "trafficGB": 1800,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 190
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.106
+        }
+      ],
+      "small": [
+        {
+          "name": "年付标准轻量版",
+          "raw": "年付标准轻量版：65 GB/月，¥99/年",
+          "trafficGB": 65,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 99
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "单次轻量版 · 小流量包",
+          "raw": "单次轻量版 · 小流量包：130 GB，¥189",
+          "trafficGB": 130,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 189,
+          "note": null,
+          "limited": false
+        },
+        {
+          "name": "单次轻量版 · 标准流量包",
+          "raw": "单次轻量版 · 标准流量包：380 GB，¥479",
+          "trafficGB": 380,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 479,
+          "note": null,
+          "limited": false
+        },
+        {
+          "name": "单次轻量版 · 精英流量包",
+          "raw": "单次轻量版 · 精英流量包：600 GB，¥799",
+          "trafficGB": 600,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 799,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "custom": [
+        {
+          "name": "原生 IP · 独享黄金专线",
+          "raw": "原生 IP · 独享黄金专线：500 GB/月，¥680/月（适合 TikTok、跨境电商）",
+          "trafficGB": 500,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 680
+          },
+          "once": null,
+          "note": "适合 TikTok、跨境电商",
+          "limited": false
+        }
+      ]
+    },
+    "longCycleNotes": [
+      "四档周期套餐均提供季付、半年付、年付、二年付、三年付",
+      "季付约为月付总价的 95%",
+      "半年付约为月付总价的 90%",
+      "年付约为月付总价的 85%"
+    ],
+    "trafficRules": [
+      "周期套餐流量每月重置，未用完的流量不结转到下月",
+      "月内流量用完，可购买同档重置包，价格等于该套餐月付价"
+    ],
+    "devices": "常规周期套餐不限同时在线设备数，所有设备共享同一套餐流量",
+    "platforms": "Windows、macOS、Android、iOS",
+    "usage": "官方客户端，用飞V 账号登录即可连接，分流规则已内置",
+    "subscription": "不对外发放，防止订阅外泄被他人盗用导致节点拥挤",
+    "thirdParty": "不支持导入 Clash、小火箭等",
+    "clientNote": null,
+    "download": "仅限官网用户中心；网上出售的「飞V 订阅链接」或网盘分发的「飞V 客户端」均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Disney+",
+      "YouTube Premium",
+      "Prime Video",
+      "Abema",
+      "TVer"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Claude",
+      "Midjourney",
+      "GitHub Copilot 等"
+    ],
+    "crossBorder": null,
+    "nativeIp": true,
+    "residentialIp": false,
+    "coupon": {
+      "code": "fly20",
+      "discount": "8 折（例如入门方案月付折后约 ¥20）",
+      "applies": "入门、进阶、高端、商业四档周期套餐（含长周期）",
+      "excludes": "年付标准轻量版、不限时流量包、独享黄金专线",
+      "limit": "新用户首单专享，每个账号限用一次"
+    },
+    "service": {
+      "客服渠道": "官网用户中心工单",
+      "防骗提醒": "宣称「¥9.9/月」「1 折码」「全场免费」的都不是官方；官方入门价为 ¥25/月，正规优惠码只有 fly20"
+    },
+    "clashSupport": {
+      "status": "supported",
+      "displayName": "支持导入 Clash",
+      "evidence": "站长转述：该服务商运营方已向站长确认支持导入 Clash（2026-11-07，为口头/转述确认，未取得书面记录或截图）；品牌资料早期记载与之不同：不对外发放订阅链接，不支持导入第三方客户端",
+      "lastVerified": "2026-11-07",
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不对外发放，防止订阅外泄被他人盗用导致节点拥挤",
+        "thirdParty": "不支持导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 25,
+        "plan": "入门方案",
+        "gb": 150
+      },
+      "maxMonthlyGB": 1800,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  },
+  {
+    "id": "wanglang",
+    "rank": 9,
+    "slug": "wanglang",
+    "name": "浪网",
+    "englishName": "WaveNet",
+    "aliases": [
+      "WaveNet"
+    ],
+    "sourceFile": "09_浪网.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://varnexa.wavenetaff.com/#/?code=Thua5OyI",
+    "positioning": "主打超大流量档位，商业档每月 2000 GB",
+    "advantage": "流量最大，适合团队与高并发使用",
+    "audience": "流量用量大的人、团队用户、需要定制线路的人、多设备用户",
+    "regions": "香港、台湾、日本、新加坡、美国、韩国，共 6 个地区，50+ 个节点",
+    "regionCounts": null,
+    "lineTypeText": "月付套餐为 BGP 智能调度 + 专线出口，年付标准为全 IPLC 专线",
+    "lineDetail": null,
+    "multiplier": "所有节点 1x 倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "入门",
+          "raw": "入门：150 GB/月，月付 ¥30｜季付 ¥85.5｜半年付 ¥162｜年付 ¥306",
+          "trafficGB": 150,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 162,
+            "month": 30,
+            "quarter": 85.5,
+            "year": 306
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.2
+        },
+        {
+          "name": "进阶",
+          "raw": "进阶：400 GB/月，月付 ¥70｜季付 ¥199.5｜半年付 ¥378｜年付 ¥714",
+          "trafficGB": 400,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 378,
+            "month": 70,
+            "quarter": 199.5,
+            "year": 714
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.175
+        },
+        {
+          "name": "高端",
+          "raw": "高端：800 GB/月，月付 ¥120｜季付 ¥342｜半年付 ¥648｜年付 ¥1224",
+          "trafficGB": 800,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 648,
+            "month": 120,
+            "quarter": 342,
+            "year": 1224
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.15
+        },
+        {
+          "name": "商业",
+          "raw": "商业：2000 GB/月，月付 ¥200｜季付 ¥570｜半年付 ¥1080｜年付 ¥2040",
+          "trafficGB": 2000,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 1080,
+            "month": 200,
+            "quarter": 570,
+            "year": 2040
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.1
+        }
+      ],
+      "small": [
+        {
+          "name": "年付标准（全 IPLC 专线）",
+          "raw": "年付标准（全 IPLC 专线）：80 GB/月，¥119/年",
+          "trafficGB": 80,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 119
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "小流量包",
+          "raw": "小流量包：180 GB，¥239",
+          "trafficGB": 180,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 239,
+          "note": null,
+          "limited": false
+        },
+        {
+          "name": "标准流量包",
+          "raw": "标准流量包：450 GB，¥569",
+          "trafficGB": 450,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 569,
+          "note": null,
+          "limited": false
+        },
+        {
+          "name": "精英流量包",
+          "raw": "精英流量包：900 GB，¥1099",
+          "trafficGB": 900,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 1099,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "custom": [
+        {
+          "name": "定制线路包",
+          "raw": "定制线路包：500 GB/月，¥640/月（独享专线、独立公网 IP，约 2–3 个工作日交付）",
+          "trafficGB": 500,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 640
+          },
+          "once": null,
+          "note": "独享专线、独立公网 IP，约 2–3 个工作日交付",
+          "limited": false
+        }
+      ]
+    },
+    "longCycleNotes": [
+      "季付 95 折、半年付 9 折、年付 85 折"
+    ],
+    "trafficRules": [
+      "未用完的流量不结转到下月",
+      "入门、进阶、商业套餐无速率限制"
+    ],
+    "devices": "不限同时在线设备数",
+    "platforms": "Windows 10 及以上、macOS 10.15 及以上、iOS 12.0 及以上、Android 5.0 及以上",
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+    "thirdParty": "不推荐导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Hulu",
+      "HBO",
+      "Disney+",
+      "DAZN"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "crossBorder": null,
+    "nativeIp": false,
+    "residentialIp": false,
+    "coupon": {
+      "code": "lw888",
+      "discount": "8 折",
+      "applies": null,
+      "excludes": null,
+      "limit": "新用户首单专享"
+    },
+    "service": {
+      "客服时间": "24/7 在线协助",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "supported",
+      "displayName": "支持导入 Clash",
+      "evidence": "站长转述：该服务商运营方已向站长确认支持导入 Clash（2026-11-07，为口头/转述确认，未取得书面记录或截图）；品牌资料早期记载与之不同：仅写\"不推荐\"导入第三方客户端（避免订阅外泄），未明确支持也未明确不支持，待向服务商确认",
+      "lastVerified": "2026-11-07",
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+        "thirdParty": "不推荐导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 30,
+        "plan": "入门",
+        "gb": 150
+      },
+      "maxMonthlyGB": 2000,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  },
+  {
+    "id": "wuyou",
+    "rank": 10,
+    "slug": "wuyou",
+    "name": "无忧",
+    "englishName": null,
+    "aliases": [
+      "无忧链接"
+    ],
+    "sourceFile": "10_无忧.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://wep01.worryfreeaff.com/#/?code=HgKiCWFk",
+    "positioning": "低门槛入门机场，月付 ¥19 起，年付 MINI 只要 ¥79，主打跨境电商与 TikTok",
+    "advantage": "门槛低、全线节点无倍率、不限设备，支持 TikTok 跨区直连",
+    "audience": "预算有限想先试一个月的人、跨境电商与 TikTok 用户、需要备用机场的人",
+    "regions": "香港、台湾、日本、新加坡、美国，另有东南亚、欧美地区，共 50+ 个节点",
+    "regionCounts": null,
+    "lineTypeText": "IPLC 专线",
+    "lineDetail": null,
+    "multiplier": "全线节点 1x，无倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "舒心链接",
+          "raw": "舒心链接：100 GB/月，月付 ¥19｜季付 ¥51｜年付 ¥182",
+          "trafficGB": 100,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 19,
+            "quarter": 51,
+            "year": 182
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.19
+        },
+        {
+          "name": "省心链接",
+          "raw": "省心链接：200 GB/月，月付 ¥33｜季付 ¥89｜年付 ¥316",
+          "trafficGB": 200,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 33,
+            "quarter": 89,
+            "year": 316
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.165
+        },
+        {
+          "name": "随心链接",
+          "raw": "随心链接：500 GB/月，月付 ¥77｜季付 ¥207｜年付 ¥739",
+          "trafficGB": 500,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 77,
+            "quarter": 207,
+            "year": 739
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.154
+        },
+        {
+          "name": "忘忧链接",
+          "raw": "忘忧链接：1000 GB/月，月付 ¥117｜季付 ¥315｜年付 ¥1123",
+          "trafficGB": 1000,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 117,
+            "quarter": 315,
+            "year": 1123
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.117
+        }
+      ],
+      "small": [
+        {
+          "name": "MINI 链接",
+          "raw": "MINI 链接：40 GB/月，¥79/年",
+          "trafficGB": 40,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 79
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "100G 永久不限时",
+          "raw": "100G 永久不限时：100 GB，¥108",
+          "trafficGB": 100,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 108,
+          "note": null,
+          "limited": true
+        },
+        {
+          "name": "300G 永久不限时",
+          "raw": "300G 永久不限时：300 GB，¥298",
+          "trafficGB": 300,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 298,
+          "note": null,
+          "limited": true
+        }
+      ],
+      "custom": []
+    },
+    "longCycleNotes": [
+      "没有半年付"
+    ],
+    "trafficRules": [
+      "周期套餐流量每月重置，未用完的流量不结转到下月",
+      "所有套餐不限速"
+    ],
+    "devices": "不限同时在线设备数",
+    "platforms": "Windows、macOS、iOS、Android",
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不提供（2026 年 10 月起新订单只能使用官方客户端，老用户原有订阅不受影响）",
+    "thirdParty": "不支持导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Disney+",
+      "YouTube",
+      "TikTok"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Gemini"
+    ],
+    "crossBorder": "支持 TikTok 跨区直连与直播",
+    "nativeIp": false,
+    "residentialIp": false,
+    "coupon": {
+      "code": "wuyou666",
+      "discount": "8 折",
+      "applies": null,
+      "excludes": "MINI 链接",
+      "limit": null
+    },
+    "service": {
+      "客服时间": "7×24 小时在线，夜间由 AI 客服值守",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "supported",
+      "displayName": "支持导入 Clash",
+      "evidence": "站长转述：该服务商运营方已向站长确认支持导入 Clash（2026-11-07，为口头/转述确认，未取得书面记录或截图）；品牌资料早期记载与之不同：2026 年 10 月起新订单不提供订阅、不支持导入第三方客户端；老用户原有订阅不受影响",
+      "lastVerified": "2026-11-07",
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不提供（2026 年 10 月起新订单只能使用官方客户端，老用户原有订阅不受影响）",
+        "thirdParty": "不支持导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 19,
+        "plan": "舒心链接",
+        "gb": 100
+      },
+      "maxMonthlyGB": 1000,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  },
+  {
+    "id": "firefly",
+    "rank": 11,
+    "slug": "firefly",
+    "name": "Firefly",
+    "englishName": null,
+    "aliases": [],
+    "sourceFile": "11_Firefly.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://vip02.fireflyaff.com/#/?code=ChuJcdvd",
+    "positioning": "IPLC 专线入门机场，月付 ¥25 含 150 GB，主打低延迟与晚高峰稳定",
+    "advantage": "低延迟、晚高峰稳定",
+    "audience": "常用 AI 办公或深夜追剧的人、多设备用户、用量不大想年付的人",
+    "regions": "香港、台湾、日本、新加坡、美国，共 5 个地区，50+ 个节点",
+    "regionCounts": null,
+    "lineTypeText": "IPLC 专线",
+    "lineDetail": null,
+    "multiplier": null,
+    "plans": {
+      "cycle": [
+        {
+          "name": "Lite",
+          "raw": "Lite：150 GB/月，月付 ¥25｜季付 ¥67｜年付 ¥240",
+          "trafficGB": 150,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 25,
+            "quarter": 67,
+            "year": 240
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "Plus",
+          "raw": "Plus：300 GB/月，月付 ¥45｜季付 ¥121｜年付 ¥432",
+          "trafficGB": 300,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 45,
+            "quarter": 121,
+            "year": 432
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.15
+        },
+        {
+          "name": "Blaze",
+          "raw": "Blaze：600 GB/月，月付 ¥85｜季付 ¥229｜年付 ¥816",
+          "trafficGB": 600,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 85,
+            "quarter": 229,
+            "year": 816
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.142
+        },
+        {
+          "name": "Nova",
+          "raw": "Nova：1000 GB/月，月付 ¥150｜季付 ¥400｜年付 ¥1360",
+          "trafficGB": 1000,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 150,
+            "quarter": 400,
+            "year": 1360
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.15
+        }
+      ],
+      "small": [
+        {
+          "name": "年付版",
+          "raw": "年付版：60 GB/月，¥96/年",
+          "trafficGB": 60,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 96
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "不限时套餐",
+          "raw": "不限时套餐：100 GB，¥100",
+          "trafficGB": 100,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 100,
+          "note": null,
+          "limited": true
+        }
+      ],
+      "custom": []
+    },
+    "longCycleNotes": [
+      "没有半年付"
+    ],
+    "trafficRules": [
+      "周期套餐流量每月重置，未用完的流量不结转到下月"
+    ],
+    "devices": "不限同时在线设备数",
+    "platforms": null,
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不提供（2026 年 10 月起新订单只能使用官方客户端，老用户原有订阅不受影响）",
+    "thirdParty": "不支持导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "YouTube",
+      "Netflix",
+      "Disney+",
+      "HBO"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Gemini",
+      "Meta AI"
+    ],
+    "crossBorder": null,
+    "nativeIp": true,
+    "residentialIp": false,
+    "coupon": {
+      "code": "firefly",
+      "discount": "8 折",
+      "applies": "Lite、Plus、Blaze、Nova",
+      "excludes": "年付版",
+      "limit": "新用户专享"
+    },
+    "service": {
+      "客服时间": "7×24 小时在线，夜间由 AI 客服值守",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "supported",
+      "displayName": "支持导入 Clash",
+      "evidence": "站长转述：该服务商运营方已向站长确认支持导入 Clash（2026-11-07，为口头/转述确认，未取得书面记录或截图）；品牌资料早期记载与之不同：2026 年 10 月起新订单不提供订阅、不支持导入第三方客户端；老用户原有订阅不受影响",
+      "lastVerified": "2026-11-07",
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不提供（2026 年 10 月起新订单只能使用官方客户端，老用户原有订阅不受影响）",
+        "thirdParty": "不支持导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 25,
+        "plan": "Lite",
+        "gb": 150
+      },
+      "maxMonthlyGB": 1000,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  },
+  {
+    "id": "weituyun",
+    "rank": 12,
+    "slug": "weituyun",
+    "name": "唯兔云",
+    "englishName": "OnlyRabbit",
+    "aliases": [
+      "V2云",
+      "OnlyRabbit"
+    ],
+    "sourceFile": "12_唯兔云.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://fast.v2yunvipaff.com/#/?code=sZt4VRYd",
+    "positioning": "低价入门、多地区节点的专线机场，月付 ¥19.9 起含 150 GB",
+    "advantage": "价格低、档位多，其他地区可找客服加开",
+    "audience": "看重每 GB 单价的人、预算有限的人、个人家庭或小团队",
+    "regions": "香港、台湾、日本、新加坡、马来西亚、美国、英国、德国、法国、泰国、菲律宾、印度等，共 50+ 个节点",
+    "regionCounts": "香港 20、台湾 10、日本 10、新加坡 10、美国 10、马来西亚 2、英国 1、德国 1、法国 1",
+    "lineTypeText": "全 IPLC 专线，年付加强专线为 IEPL，另有备用直连节点",
+    "lineDetail": null,
+    "multiplier": "全节点 1x 倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "普通版",
+          "raw": "普通版：150 GB/月，月付 ¥19.9｜季付 ¥53.9｜半年付 ¥101.9｜年付 ¥191.9",
+          "trafficGB": 150,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 101.9,
+            "month": 19.9,
+            "quarter": 53.9,
+            "year": 191.9
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.133
+        },
+        {
+          "name": "进阶版",
+          "raw": "进阶版：200 GB/月，月付 ¥29.9｜季付 ¥80.9｜半年付 ¥152.9｜年付 ¥286.9",
+          "trafficGB": 200,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 152.9,
+            "month": 29.9,
+            "quarter": 80.9,
+            "year": 286.9
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.149
+        },
+        {
+          "name": "专业版",
+          "raw": "专业版：500 GB/月，月付 ¥59.9｜季付 ¥161.9｜半年付 ¥305.9｜年付 ¥547.9",
+          "trafficGB": 500,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 305.9,
+            "month": 59.9,
+            "quarter": 161.9,
+            "year": 547.9
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.12
+        },
+        {
+          "name": "至尊版",
+          "raw": "至尊版：1000 GB/月，月付 ¥119.9｜季付 ¥323.9｜半年付 ¥611.9｜年付 ¥1150.9",
+          "trafficGB": 1000,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 611.9,
+            "month": 119.9,
+            "quarter": 323.9,
+            "year": 1150.9
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.12
+        },
+        {
+          "name": "节假日限时",
+          "raw": "节假日限时：100 GB/月，月付 ¥14.9｜季付 ¥40.9｜半年付 ¥75.9｜年付 ¥149.9（限时开放）",
+          "trafficGB": 100,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 75.9,
+            "month": 14.9,
+            "quarter": 40.9,
+            "year": 149.9
+          },
+          "once": null,
+          "note": "限时开放",
+          "limited": true,
+          "perGbMonthly": 0.149
+        }
+      ],
+      "small": [
+        {
+          "name": "年付版限量款（全 IPLC 专线）",
+          "raw": "年付版限量款（全 IPLC 专线）：45 GB/月，¥79.9/年",
+          "trafficGB": 45,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 79.9
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        },
+        {
+          "name": "年付加强专线（IEPL）",
+          "raw": "年付加强专线（IEPL）：75 GB/月，¥120/年",
+          "trafficGB": 75,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 120
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "永久不限时",
+          "raw": "永久不限时：100 GB，¥100",
+          "trafficGB": 100,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 100,
+          "note": null,
+          "limited": true
+        },
+        {
+          "name": "永久不限时",
+          "raw": "永久不限时：200 GB，¥160",
+          "trafficGB": 200,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 160,
+          "note": null,
+          "limited": true
+        },
+        {
+          "name": "永久不限时",
+          "raw": "永久不限时：500 GB，¥340（续费重置 9 折）",
+          "trafficGB": 500,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 340,
+          "note": "续费重置 9 折",
+          "limited": true
+        }
+      ],
+      "custom": []
+    },
+    "longCycleNotes": [
+      "年付 8 折、两年付 7 折、三年付 6 折，节日活动可再打折"
+    ],
+    "trafficRules": [
+      "周期套餐流量每月重置，未用完的流量不结转到下月",
+      "所有套餐不限速"
+    ],
+    "devices": "不限同时在线设备数",
+    "platforms": null,
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+    "thirdParty": "不推荐导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Hulu",
+      "HBO",
+      "Disney+",
+      "HUGO"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Gemini"
+    ],
+    "crossBorder": "TikTok",
+    "nativeIp": true,
+    "residentialIp": false,
+    "coupon": {
+      "code": "rabbit",
+      "discount": "9 折",
+      "applies": "普通版、进阶版、专业版、至尊版",
+      "excludes": "年付版限量款、年付加强专线",
+      "limit": "新用户专享"
+    },
+    "service": {
+      "客服时间": "全天在线",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "unknown",
+      "displayName": "Clash 兼容待核实",
+      "evidence": "品牌资料仅写\"不推荐\"导入第三方客户端（避免订阅外泄），未明确支持也未明确不支持，待向服务商确认",
+      "lastVerified": null,
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+        "thirdParty": "不推荐导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 19.9,
+        "plan": "普通版",
+        "gb": 150
+      },
+      "maxMonthlyGB": 1000,
+      "cyclePlanCount": 5
+    },
+    "measured": null
+  },
+  {
+    "id": "lingmao",
+    "rank": 13,
+    "slug": "lingmao",
+    "name": "灵猫",
+    "englishName": null,
+    "aliases": [
+      "灵猫网络"
+    ],
+    "sourceFile": "13_灵猫.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://vip02.civetaff.com/#/?code=oL5LiBYi",
+    "positioning": "全 IPLC 专线、不限设备，年付性价比极高",
+    "advantage": "年付 Big 每 GB 约 ¥0.082",
+    "audience": "愿意年付的长期用户、多设备用户、需要直播电商定制线路的人",
+    "regions": "香港、台湾、日本、新加坡、美国，共 5 个地区，50+ 个节点",
+    "regionCounts": null,
+    "lineTypeText": "全 IPLC 专线",
+    "lineDetail": null,
+    "multiplier": "全节点 1x 倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "Small",
+          "raw": "Small：150 GB/月，月付 ¥25｜季付 ¥65｜年付 ¥195",
+          "trafficGB": 150,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 25,
+            "quarter": 65,
+            "year": 195
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "Big",
+          "raw": "Big：300 GB/月，月付 ¥45｜季付 ¥125｜年付 ¥295",
+          "trafficGB": 300,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 45,
+            "quarter": 125,
+            "year": 295
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.15
+        }
+      ],
+      "small": [
+        {
+          "name": "年付小包",
+          "raw": "年付小包：45 GB/月，¥85/年",
+          "trafficGB": 45,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 85
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [],
+      "custom": [
+        {
+          "name": "大流量定制（直播、电商专线）",
+          "raw": "大流量定制（直播、电商专线）：¥999/月，细节以客服报价为准",
+          "trafficGB": null,
+          "trafficPeriod": null,
+          "prices": {
+            "month": 999
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ]
+    },
+    "longCycleNotes": [
+      "没有半年付"
+    ],
+    "trafficRules": [
+      "按订单日每月自动重置流量",
+      "流量用完可购买加油包补充",
+      "不限速，最大带宽 1000Mbps"
+    ],
+    "devices": "不限同时在线设备数",
+    "platforms": null,
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不提供（2026 年 10 月起新订单只能使用官方客户端，老用户原有订阅不受影响）",
+    "thirdParty": "不支持导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Hulu",
+      "HBO",
+      "Disney+",
+      "HUGO"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Gemini"
+    ],
+    "crossBorder": "TikTok",
+    "nativeIp": false,
+    "residentialIp": false,
+    "coupon": {
+      "code": "lingmao",
+      "discount": "8 折",
+      "applies": "Small、Big",
+      "excludes": "年付小包",
+      "limit": null
+    },
+    "service": {
+      "客服时间": "全天在线",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "unknown",
+      "displayName": "Clash 兼容待核实",
+      "evidence": "站长表示 Clash 兼容待核实；品牌资料早期记载：2026 年 10 月起新订单不提供订阅、不支持导入第三方客户端；老用户原有订阅不受影响",
+      "lastVerified": null,
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不提供（2026 年 10 月起新订单只能使用官方客户端，老用户原有订阅不受影响）",
+        "thirdParty": "不支持导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 25,
+        "plan": "Small",
+        "gb": 150
+      },
+      "maxMonthlyGB": 300,
+      "cyclePlanCount": 2
+    },
+    "measured": null
+  },
+  {
+    "id": "quanqiuyun",
+    "rank": 14,
+    "slug": "quanqiuyun",
+    "name": "全球云",
+    "englishName": null,
+    "aliases": [],
+    "sourceFile": "14_全球云.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://sswdh.gcvipaff.com/#/?code=po8R1Rnl",
+    "positioning": "节点规模大的大流量机场，入门月付 ¥20 含 120 GB，顶档每月 1500 GB",
+    "advantage": "节点多、地区广，长周期最低三年付 6 折",
+    "audience": "流量需求大的人、需要独享 IP 的人、多设备用户",
+    "regions": "香港、台湾、日本、新加坡、美国、马来西亚、德国、土耳其、巴西等，共 60+ 个节点",
+    "regionCounts": "香港 20、台湾 10、日本 10、新加坡 10、美国 10",
+    "lineTypeText": "BGP 智能优化 + 专线出口，轻量版为全 IPLC 专线",
+    "lineDetail": null,
+    "multiplier": "全节点 1x 倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "入门方案",
+          "raw": "入门方案：120 GB/月，月付 ¥20｜季付 ¥54｜半年付 ¥102｜年付 ¥192",
+          "trafficGB": 120,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 102,
+            "month": 20,
+            "quarter": 54,
+            "year": 192
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "进阶方案",
+          "raw": "进阶方案：300 GB/月，月付 ¥40｜季付 ¥108｜半年付 ¥204｜年付 ¥384",
+          "trafficGB": 300,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 204,
+            "month": 40,
+            "quarter": 108,
+            "year": 384
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.133
+        },
+        {
+          "name": "高端方案",
+          "raw": "高端方案：700 GB/月，月付 ¥100｜季付 ¥270｜半年付 ¥510｜年付 ¥960",
+          "trafficGB": 700,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 510,
+            "month": 100,
+            "quarter": 270,
+            "year": 960
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.143
+        },
+        {
+          "name": "商业方案",
+          "raw": "商业方案：1500 GB/月，月付 ¥180｜季付 ¥486｜半年付 ¥918｜年付 ¥1728",
+          "trafficGB": 1500,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 918,
+            "month": 180,
+            "quarter": 486,
+            "year": 1728
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.12
+        }
+      ],
+      "small": [
+        {
+          "name": "轻量版（全 IPLC 专线）",
+          "raw": "轻量版（全 IPLC 专线）：59 GB/月，¥99/年",
+          "trafficGB": 59,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 99
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "不限时轻量包",
+          "raw": "不限时轻量包：100 GB，¥100",
+          "trafficGB": 100,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 100,
+          "note": null,
+          "limited": true
+        },
+        {
+          "name": "不限时标准包",
+          "raw": "不限时标准包：400 GB，¥360",
+          "trafficGB": 400,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 360,
+          "note": null,
+          "limited": true
+        },
+        {
+          "name": "不限时大容量包",
+          "raw": "不限时大容量包：800 GB，¥700",
+          "trafficGB": 800,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 700,
+          "note": null,
+          "limited": true
+        }
+      ],
+      "custom": [
+        {
+          "name": "独享私人专线节点",
+          "raw": "独享私人专线节点：500 GB/月，¥680/月（独立带宽、独立公网 IP，约 2–3 个工作日交付）",
+          "trafficGB": 500,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 680
+          },
+          "once": null,
+          "note": "独立带宽、独立公网 IP，约 2–3 个工作日交付",
+          "limited": false
+        }
+      ]
+    },
+    "longCycleNotes": [
+      "季付 9 折、半年付 85 折、年付 8 折、两年付 7 折、三年付 6 折"
+    ],
+    "trafficRules": [
+      "未用完的流量不结转到下月",
+      "所有套餐不限速"
+    ],
+    "devices": "常规套餐不限同时在线设备数",
+    "platforms": "Windows、macOS、iOS、Android、路由器",
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+    "thirdParty": "不推荐导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Hulu",
+      "HBO",
+      "Disney+",
+      "DAZN"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "crossBorder": null,
+    "nativeIp": false,
+    "residentialIp": false,
+    "coupon": {
+      "code": "qq88",
+      "discount": "8 折",
+      "applies": null,
+      "excludes": "独享私人专线节点",
+      "limit": null
+    },
+    "service": {
+      "付款方式": "支付宝、微信、USDT",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "unknown",
+      "displayName": "Clash 兼容待核实",
+      "evidence": "品牌资料仅写\"不推荐\"导入第三方客户端（避免订阅外泄），未明确支持也未明确不支持，待向服务商确认",
+      "lastVerified": null,
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+        "thirdParty": "不推荐导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 20,
+        "plan": "入门方案",
+        "gb": 120
+      },
+      "maxMonthlyGB": 1500,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  },
+  {
+    "id": "kuajie",
+    "rank": 15,
+    "slug": "kuajie",
+    "name": "跨界",
+    "englishName": null,
+    "aliases": [
+      "跨界云"
+    ],
+    "sourceFile": "15_跨界.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://vip02.kuajieaff.com/#/?code=tpRqrYXx",
+    "positioning": "大流量机场，顶档每月 1800 GB 只要 ¥130，入门 ¥20 含 120 GB",
+    "advantage": "每 GB 单价低",
+    "audience": "流量用得多的人、多设备用户、想先小额试用的人",
+    "regions": "香港、台湾、日本、新加坡、美国，共 5 个地区，50+ 个节点",
+    "regionCounts": null,
+    "lineTypeText": "IPLC 专线",
+    "lineDetail": null,
+    "multiplier": "所有节点 1x 倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "轻云 Lite",
+          "raw": "轻云 Lite：120 GB/月，月付 ¥20｜季付 ¥54｜年付 ¥192",
+          "trafficGB": 120,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 20,
+            "quarter": 54,
+            "year": 192
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "跃云 Leap",
+          "raw": "跃云 Leap：330 GB/月，月付 ¥40｜年付 ¥384",
+          "trafficGB": 330,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 40,
+            "year": 384
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.121
+        },
+        {
+          "name": "凌云 Soar",
+          "raw": "凌云 Soar：830 GB/月，月付 ¥90｜年付 ¥864",
+          "trafficGB": 830,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 90,
+            "year": 864
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.108
+        },
+        {
+          "name": "无界 Infinity",
+          "raw": "无界 Infinity：1800 GB/月，月付 ¥130｜年付 ¥1248",
+          "trafficGB": 1800,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 130,
+            "year": 1248
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.072
+        }
+      ],
+      "small": [
+        {
+          "name": "跨界年付版",
+          "raw": "跨界年付版：60 GB/月，¥96/年",
+          "trafficGB": 60,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 96
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [],
+      "custom": []
+    },
+    "longCycleNotes": [],
+    "trafficRules": [
+      "从购买日起算每月流量",
+      "所有套餐不限速"
+    ],
+    "devices": "不限登录设备数",
+    "platforms": "Windows 10 及以上、macOS 10.15 及以上、iOS 12.0 及以上、Android 5.0 及以上",
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+    "thirdParty": "不推荐导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Hulu",
+      "HBO",
+      "Disney+",
+      "DAZN"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Gemini",
+      "Claude"
+    ],
+    "crossBorder": null,
+    "nativeIp": false,
+    "residentialIp": false,
+    "coupon": {
+      "code": "kuajie",
+      "discount": "8 折",
+      "applies": null,
+      "excludes": null,
+      "limit": "新用户专享"
+    },
+    "service": {
+      "客服渠道": "在线客服",
+      "付款方式": "微信、支付宝",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "unknown",
+      "displayName": "Clash 兼容待核实",
+      "evidence": "品牌资料仅写\"不推荐\"导入第三方客户端（避免订阅外泄），未明确支持也未明确不支持，待向服务商确认",
+      "lastVerified": null,
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+        "thirdParty": "不推荐导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 20,
+        "plan": "轻云 Lite",
+        "gb": 120
+      },
+      "maxMonthlyGB": 1800,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  },
+  {
+    "id": "shanyue",
+    "rank": 16,
+    "slug": "shanyue",
+    "name": "闪跃",
+    "englishName": "FlashLeap",
+    "aliases": [
+      "FlashLeap"
+    ],
+    "sourceFile": "16_闪跃.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://vip02.flashleapaff.com/#/?code=mS7mSSyk",
+    "positioning": "纯 IPLC 专线机场，主打晚高峰稳定，入门档约 ¥0.16/GB",
+    "advantage": "IPLC 专线、晚高峰稳定、单价低",
+    "audience": "长期高频使用 AI 或追剧的人、在意 IPLC 线路的人、想一年付一次的人",
+    "regions": "香港、台湾、日本、新加坡、美国，共 5 个地区，50+ 个节点",
+    "regionCounts": null,
+    "lineTypeText": "全 IPLC 专线",
+    "lineDetail": null,
+    "multiplier": null,
+    "plans": {
+      "cycle": [
+        {
+          "name": "闪动 Flicker",
+          "raw": "闪动 Flicker：150 GB/月，月付 ¥24｜季付 ¥64｜年付 ¥230",
+          "trafficGB": 150,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 24,
+            "quarter": 64,
+            "year": 230
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.16
+        },
+        {
+          "name": "飞跃 Leap",
+          "raw": "飞跃 Leap：300 GB/月，月付 ¥44｜季付 ¥118｜年付 ¥422",
+          "trafficGB": 300,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 44,
+            "quarter": 118,
+            "year": 422
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.147
+        },
+        {
+          "name": "瞬移 Teleport",
+          "raw": "瞬移 Teleport：600 GB/月，月付 ¥84｜季付 ¥226｜年付 ¥806",
+          "trafficGB": 600,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 84,
+            "quarter": 226,
+            "year": 806
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.14
+        },
+        {
+          "name": "跃迁 Warp",
+          "raw": "跃迁 Warp：1000 GB/月，月付 ¥134｜季付 ¥369｜年付 ¥1315",
+          "trafficGB": 1000,
+          "trafficPeriod": "month",
+          "prices": {
+            "month": 134,
+            "quarter": 369,
+            "year": 1315
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.134
+        }
+      ],
+      "small": [
+        {
+          "name": "闪跃年付版",
+          "raw": "闪跃年付版：60 GB/月，¥96/年",
+          "trafficGB": 60,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 96
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [],
+      "custom": []
+    },
+    "longCycleNotes": [],
+    "trafficRules": [
+      "以官网说明为准"
+    ],
+    "devices": "以官网说明为准",
+    "platforms": "Windows、macOS、iOS、Android、Linux",
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+    "thirdParty": "不推荐导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Disney+",
+      "HBO"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "crossBorder": "TikTok",
+    "nativeIp": true,
+    "residentialIp": false,
+    "coupon": {
+      "code": "shanyue",
+      "discount": "8 折",
+      "applies": "闪动、飞跃、瞬移、跃迁",
+      "excludes": "闪跃年付版",
+      "limit": null
+    },
+    "service": {
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "unknown",
+      "displayName": "Clash 兼容待核实",
+      "evidence": "品牌资料仅写\"不推荐\"导入第三方客户端（避免订阅外泄），未明确支持也未明确不支持，待向服务商确认",
+      "lastVerified": null,
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不推荐使用，避免订阅外泄被他人盗用导致节点拥挤",
+        "thirdParty": "不推荐导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 24,
+        "plan": "闪动 Flicker",
+        "gb": 150
+      },
+      "maxMonthlyGB": 1000,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  },
+  {
+    "id": "sogoyun",
+    "rank": 17,
+    "slug": "sogoyun",
+    "name": "Sogo云",
+    "englishName": "SOGO Cloud",
+    "aliases": [
+      "SOGO Cloud"
+    ],
+    "sourceFile": "17_Sogo云.md",
+    "sourceDate": null,
+    "officialUrl": null,
+    "referralUrl": "https://wzjc.sogoyunaff.cc/#/?code=EJx2Kerr",
+    "positioning": "IEPL 专线机场，节点地区覆盖最广之一，入门 ¥25 含 150 GB",
+    "advantage": "覆盖 15 个国家和地区，另有 4 档不限时流量",
+    "audience": "需要多个出口地区的人、多设备用户、偶尔使用的人",
+    "regions": "香港、台湾、日本、新加坡、美国、韩国、马来西亚、英国、法国、德国、土耳其、泰国、巴西等，共 55 个节点",
+    "regionCounts": "香港 20、台湾 5、日本 10、新加坡 10、美国 10",
+    "lineTypeText": "IEPL 专线 + 三网 BGP 优化",
+    "lineDetail": null,
+    "multiplier": "全节点 1x 倍率",
+    "plans": {
+      "cycle": [
+        {
+          "name": "基础版",
+          "raw": "基础版：150 GB/月，月付 ¥25｜季付 ¥65｜半年付 ¥120｜年付 ¥250",
+          "trafficGB": 150,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 120,
+            "month": 25,
+            "quarter": 65,
+            "year": 250
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.167
+        },
+        {
+          "name": "优选版",
+          "raw": "优选版：350 GB/月，月付 ¥45｜季付 ¥125｜半年付 ¥245｜年付 ¥485",
+          "trafficGB": 350,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 245,
+            "month": 45,
+            "quarter": 125,
+            "year": 485
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.129
+        },
+        {
+          "name": "强化版",
+          "raw": "强化版：550 GB/月，月付 ¥80｜季付 ¥230｜半年付 ¥450｜年付 ¥850",
+          "trafficGB": 550,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 450,
+            "month": 80,
+            "quarter": 230,
+            "year": 850
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.145
+        },
+        {
+          "name": "顶配版",
+          "raw": "顶配版：1100 GB/月，月付 ¥150｜季付 ¥440｜半年付 ¥870｜年付 ¥1750",
+          "trafficGB": 1100,
+          "trafficPeriod": "month",
+          "prices": {
+            "halfyear": 870,
+            "month": 150,
+            "quarter": 440,
+            "year": 1750
+          },
+          "once": null,
+          "note": null,
+          "limited": false,
+          "perGbMonthly": 0.136
+        }
+      ],
+      "small": [
+        {
+          "name": "小包·年付版",
+          "raw": "小包·年付版：60 GB/月，¥98/年",
+          "trafficGB": 60,
+          "trafficPeriod": "month",
+          "prices": {
+            "year": 98
+          },
+          "once": null,
+          "note": null,
+          "limited": false
+        }
+      ],
+      "onetime": [
+        {
+          "name": "基础餐不限时版",
+          "raw": "基础餐不限时版：120 GB，¥120",
+          "trafficGB": 120,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 120,
+          "note": null,
+          "limited": true
+        },
+        {
+          "name": "优选餐不限时版",
+          "raw": "优选餐不限时版：250 GB，¥220",
+          "trafficGB": 250,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 220,
+          "note": null,
+          "limited": true
+        },
+        {
+          "name": "强化餐不限时版",
+          "raw": "强化餐不限时版：500 GB，¥450",
+          "trafficGB": 500,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 450,
+          "note": null,
+          "limited": true
+        },
+        {
+          "name": "至尊餐不限时版",
+          "raw": "至尊餐不限时版：1000 GB，¥850",
+          "trafficGB": 1000,
+          "trafficPeriod": null,
+          "prices": {},
+          "once": 850,
+          "note": null,
+          "limited": true
+        }
+      ],
+      "custom": []
+    },
+    "longCycleNotes": [],
+    "trafficRules": [
+      "每 30 天刷新流量"
+    ],
+    "devices": "不限同时在线设备数",
+    "platforms": "Windows、macOS、iOS、Android、主流软路由",
+    "usage": "官方客户端，账号登录即可连接",
+    "subscription": "不提供（只能使用自研官方客户端）",
+    "thirdParty": "不支持导入 Clash、小火箭等",
+    "clientNote": "官网客户端由官方统一发布和更新，同样可以安全使用",
+    "download": "仅限官网；网上出售的订阅链接或网盘分发的客户端均非官方渠道",
+    "streaming": [
+      "Netflix",
+      "Disney+",
+      "HBO Max",
+      "Hulu",
+      "YouTube Premium"
+    ],
+    "ai": [
+      "ChatGPT",
+      "Claude",
+      "Midjourney"
+    ],
+    "crossBorder": "TikTok",
+    "nativeIp": false,
+    "residentialIp": false,
+    "coupon": {
+      "code": "SOGO10000",
+      "discount": "9 折",
+      "applies": null,
+      "excludes": null,
+      "limit": null
+    },
+    "service": {
+      "试用": "无免费试用",
+      "防骗提醒": "只通过官网注册购买，价格与优惠以结算页为准"
+    },
+    "clashSupport": {
+      "status": "supported",
+      "displayName": "支持导入 Clash",
+      "evidence": "站长转述：该服务商运营方已向站长确认支持导入 Clash（2026-11-07，为口头/转述确认，未取得书面记录或截图）；品牌资料早期记载与之不同：不提供订阅链接，只能使用自研官方客户端，不支持导入第三方客户端",
+      "lastVerified": "2026-11-07",
+      "subscriptionAvailable": null,
+      "method": null,
+      "howTo": null,
+      "sourceRaw": {
+        "subscription": "不提供（只能使用自研官方客户端）",
+        "thirdParty": "不支持导入 Clash、小火箭等"
+      }
+    },
+    "derived": {
+      "minMonthly": {
+        "price": 25,
+        "plan": "基础版",
+        "gb": 150
+      },
+      "maxMonthlyGB": 1100,
+      "cyclePlanCount": 4
+    },
+    "measured": null
+  }
+]

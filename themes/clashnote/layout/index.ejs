@@ -1,0 +1,122 @@
+<% page.type = 'home';
+const A = site.data.airports;
+const featured = A.slice(0, 5);
+const faqs = (site.data.faq || []).reduce((acc, g) => acc.concat(g.items), []).slice(0, 5);
+const quick = [
+  ['clash-verge-rev-import-subscription', '订阅导入失败'],
+  ['subscription-error-401-403-404', '401 / 403 / 404 报错'],
+  ['no-nodes-after-import', '导入成功但没有节点'],
+  ['subscription-update-failed', '订阅更新失败'],
+  ['clash-rule-global-direct-mode', '规则模式异常'],
+  ['tun-mode-cannot-enable', 'TUN 无法开启'],
+  ['dns-leak-check', 'DNS 泄露检查'],
+  ['all-nodes-timeout', '节点全部超时'],
+  ['connected-but-no-web', '已连接但无法上网']
+];
+const latest = site.posts.sort('-date').limit(6).toArray();
+const wiki = hub_posts('wiki').slice(0, 3);
+%>
+<section class="hero">
+  <div class="wrap hero-in">
+    <p class="eyebrow">Clash 教程 · Mihomo 配置 · 机场资料</p>
+    <h1>让 Clash 使用更简单，<br class="br-m">让机场选择更清晰</h1>
+    <p class="hero-sub">从 Clash Verge Rev 安装、订阅导入，到 DNS、TUN 与节点超时排查；再到 17 家机场的公开资料与 Clash 兼容状态，一站看清。</p>
+    <form class="hero-search" role="search" action="/search/" method="get" data-search-form data-inline>
+      <svg class="ic"><use href="#i-search"/></svg>
+      <input type="search" name="q" placeholder="搜索：订阅导入、DNS 泄露、TUN、节点超时…" autocomplete="off" aria-label="站内搜索">
+      <button type="submit" class="btn btn-primary">搜索</button>
+      <div class="search-results inline-results" aria-live="polite"></div>
+    </form>
+    <p class="hot">热门：
+      <a href="/search/?q=Clash%20Verge%20Rev">Clash Verge Rev</a>
+      <a href="/search/?q=订阅导入">订阅导入</a>
+      <a href="/search/?q=DNS%20泄露">DNS 泄露</a>
+      <a href="/search/?q=TUN">TUN</a>
+      <a href="/search/?q=节点超时">节点超时</a>
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="quad">
+      <a class="q-card" href="/tutorials/"><span class="q-ic"><svg class="ic"><use href="#i-book"/></svg></span><h2>新手入门</h2><p>从安装到跑通第一个节点的完整路径。</p></a>
+      <a class="q-card" href="/clients/"><span class="q-ic"><svg class="ic"><use href="#i-download"/></svg></span><h2>客户端下载</h2><p>各系统客户端介绍与官方下载渠道。</p></a>
+      <a class="q-card" href="/posts/clash-verge-rev-import-subscription/"><span class="q-ic"><svg class="ic"><use href="#i-link"/></svg></span><h2>订阅导入</h2><p>正确导入订阅，并识别能不能导入。</p></a>
+      <a class="q-card" href="/troubleshooting/"><span class="q-ic"><svg class="ic"><use href="#i-bug"/></svg></span><h2>连接故障</h2><p>按报错、症状反查原因与解决步骤。</p></a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div><h2>快速解决问题</h2><p class="muted">按症状直达对应的排查教程。</p></div><a class="more" href="/troubleshooting/">全部故障排查 <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+    <ul class="chips">
+      <% quick.forEach(function(q){ %><li><a href="/posts/<%= q[0] %>/"><%= q[1] %></a></li><% }) %>
+    </ul>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div><h2>精选机场</h2><p class="muted">编辑固定顺序的前五家，并非性能排名。价格以结算页为准，Clash 兼容状态来自各家资料。</p></div><a class="more" href="/airports/">查看全部 17 家 <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+    <div class="a-grid">
+      <% featured.forEach(function(a){ %><%- partial('partials/airport-card', { a: a }) %><% }) %>
+    </div>
+    <p class="note-line">含推广链接（sponsored）。订阅获取方式因家而异——购买前请先看每家详情页的「Clash 兼容」说明并向客服确认。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div><h2>最新教程</h2></div><a class="more" href="/tutorials/">教程目录 <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+    <div class="post-grid">
+      <% latest.forEach(function(p){ %><%- partial('partials/post-card', { p: p }) %><% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap two-col">
+    <div>
+      <div class="sec-head"><div><h2>Mihomo 知识库</h2><p class="muted">理解配置，才不会被更新覆盖或被 DNS 坑。</p></div><a class="more" href="/wiki/">全部 <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      <ul class="plain-list">
+        <% wiki.forEach(function(p){ %><li><a href="<%= url_for(p.path) %>"><strong><%= p.title %></strong><span><%= p.description %></span></a></li><% }) %>
+      </ul>
+    </div>
+    <div class="callout-card">
+      <h2>节点测速专题</h2>
+      <p>延迟、下载速度、丢包不是一回事。先学会读图，再看数据。</p>
+      <p class="muted">本站目前没有带原图凭证的测速。没有凭证的数据只标注来源，不当作结论。</p>
+      <p><a class="btn btn-soft" href="/speedtests/">查看测速专区 <svg class="ic"><use href="#i-arrow"/></svg></a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="sec-head"><div><h2>新手学习路径</h2><p class="muted">按顺序走，少绕弯路。</p></div></div>
+    <ol class="path">
+      <li><span>1</span><h3>安装客户端</h3><p>选择适合系统的客户端并从官方渠道下载。</p><a href="/posts/clash-verge-rev-windows-install/">Windows 安装教程</a></li>
+      <li><span>2</span><h3>确认订阅方式</h3><p>先确认机场是否提供可兼容的订阅，别盲目导入。</p><a href="/airports/">查看各家兼容状态</a></li>
+      <li><span>3</span><h3>导入与配置</h3><p>导入订阅、选节点、理解规则与全局模式。</p><a href="/posts/clash-verge-rev-import-subscription/">订阅导入教程</a></li>
+      <li><span>4</span><h3>测试与排查</h3><p>遇到超时、DNS、TUN 问题按症状排查。</p><a href="/troubleshooting/">故障排查索引</a></li>
+    </ol>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap two-col">
+    <div>
+      <div class="sec-head"><div><h2>常见问题</h2></div><a class="more" href="/faq/">全部问题 <svg class="ic"><use href="#i-arrow"/></svg></a></div>
+      <div class="faq-list">
+        <% faqs.forEach(function(f){ %><details><summary><%= f.q %></summary><div class="faq-a"><%- f.a %></div></details><% }) %>
+      </div>
+    </div>
+    <div class="callout-card">
+      <h2>关于本站的数据</h2>
+      <p>机场价格、地区、线路与优惠码均来自各品牌提供的资料文件，页面标注资料来源。资料没有的内容显示「未提供」，不会用估算数字填空。</p>
+      <p>本站含推广链接并可能获得佣金，详见<a href="/about/">关于与编辑原则</a>。</p>
+    </div>
+  </div>
+</section>

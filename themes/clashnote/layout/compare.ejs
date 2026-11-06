@@ -1,0 +1,27 @@
+<%
+page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+  { '@type': 'ListItem', position: 1, name: '首页', item: 'https://clashnote.blog/' },
+  { '@type': 'ListItem', position: 2, name: '套餐对比', item: 'https://clashnote.blog/compare/' } ] });
+%>
+<div class="wrap"><nav class="crumbs" aria-label="面包屑"><a href="/">首页</a><span>/</span><span aria-current="page">套餐对比</span></nav></div>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">套餐对比</p>
+    <h1>机场套餐对比：选 2–4 家并排看</h1>
+    <p class="lead">只比较资料里有明确周期的数据。月付与年付分开列出，不把年付折算成月付冒充常规价格；缺失字段显示「未提供」。</p>
+  </div>
+</section>
+<div class="wrap" id="compareApp">
+  <div class="cmp-pick">
+    <h2>选择机场 <span class="muted" id="cmpCount">已选 0 / 4</span></h2>
+    <div class="cmp-chips" id="cmpChips" role="group" aria-label="可选机场">
+      <% site.data.airports.forEach(function(a){ %><button type="button" class="chip-btn" data-slug="<%= a.slug %>" aria-pressed="false"><%= a.name %></button><% }) %>
+    </div>
+    <div class="f-bar"><p id="cmpMsg" role="status" aria-live="polite" class="muted">至少选择 2 家开始对比。</p><button type="button" class="btn btn-ghost" id="cmpClear">清空选择</button></div>
+  </div>
+  <div id="cmpResult" hidden>
+    <div class="table-wrap"><table class="tbl cmp-tbl" id="cmpTable"></table></div>
+    <p class="note-line">月付 ¥/GB = 月付价 ÷ 月流量，仅对有月付价的周期套餐计算。起价为常规周期套餐最低月付，不含限时活动。点击机场名称可进入详情页核对完整套餐。</p>
+  </div>
+  <noscript><p class="callout callout-mid">对比功能需要启用 JavaScript。你仍可在<a href="/airports/">机场列表</a>中逐家查看详情。</p></noscript>
+</div>

@@ -1,0 +1,53 @@
+- title: 基础概念
+  items:
+    - id: what-is-clash
+      q: Clash、Mihomo、Clash Verge Rev 是什么关系？
+      a: "<p>Clash 是一类规则代理内核的统称；原 Clash 项目停止维护后，社区主要使用 Mihomo（原 Clash.Meta）内核。Clash Verge Rev 是基于 Mihomo 内核的图形客户端。本站不是上述任何项目的官方网站。</p>"
+    - id: clash-not-airport
+      q: Clash 本身是机场吗？
+      a: "<p>不是。Clash 是客户端 / 内核，机场是提供节点的商业服务。你需要机场提供的、格式兼容的订阅，客户端才能读到节点。</p>"
+    - id: official-client
+      q: 机场说「只支持官方客户端」，我还能用 Clash 吗？
+      a: "<p>如果机场明确不提供订阅链接或不支持第三方客户端，就不应该再购买转售订阅来强行导入。请在<a href=\"/airports/\">机场推荐</a>各家详情页的「Clash 兼容说明」核对：状态分为「支持导入 Clash」「暂不支持导入 Clash」「Clash 兼容待核实」，并附核实依据。不支持或待核实的，请先向客服确认，优先使用官方客户端。</p>"
+- title: 订阅与导入
+  items:
+    - id: how-to-import
+      q: 订阅链接应该怎么导入 Clash Verge Rev？
+      a: "<p>在「订阅」页粘贴链接并导入。详细步骤与失败分支见<a href=\"/posts/clash-verge-rev-import-subscription/\">导入订阅教程</a>。</p>"
+    - id: sub-401
+      q: 导入时报 401、403、404 怎么办？
+      a: "<p>这三类状态码含义不同，排查方向也不同，见<a href=\"/posts/subscription-error-401-403-404/\">订阅导入报错排查</a>。</p>"
+    - id: no-nodes
+      q: 导入成功但节点列表是空的？
+      a: "<p>常见原因是订阅内容为空、格式不兼容或被过滤。见<a href=\"/posts/no-nodes-after-import/\">导入后没有节点</a>。</p>"
+    - id: share-sub
+      q: 可以把我的订阅链接发给别人排查吗？
+      a: "<p>不要。订阅链接含个人凭证，泄露后他人可使用你的流量。向别人求助时请遮挡链接，只提供报错截图与客户端版本。</p>"
+- title: 连接与排查
+  items:
+    - id: all-timeout
+      q: 节点全部显示超时？
+      a: "<p>先排除本地网络、系统时间与系统代理冲突，再看节点本身。见<a href=\"/posts/all-nodes-timeout/\">节点全部超时排查</a>。</p>"
+    - id: tun-vs-system
+      q: 系统代理和 TUN 模式有什么区别？
+      a: "<p>系统代理依赖应用遵守系统设置；TUN 在网卡层接管流量，覆盖面更广但需要权限。见<a href=\"/posts/system-proxy-vs-tun/\">系统代理与 TUN 区别</a>。</p>"
+    - id: no-internet-after-exit
+      q: 退出 Clash 后电脑无法联网？
+      a: "<p>多数是系统代理残留。见<a href=\"/posts/windows-no-internet-after-exit/\">退出后 Windows 无法联网</a>。</p>"
+    - id: dns-leak
+      q: 怎么检查 DNS 有没有泄露？
+      a: "<p>见<a href=\"/posts/dns-leak-check/\">DNS 泄露与 DNS 请求路径检查</a>。</p>"
+- title: 机场资料与商业
+  items:
+    - id: ranking
+      q: 机场推荐的顺序是性能排名吗？
+      a: "<p>不是。顺序是编辑固定顺序，并非测速或质量排名。本站目前没有附原图凭证的测速。</p>"
+    - id: price-source
+      q: 价格数据从哪里来？准吗？
+      a: "<p>来自各品牌提供的资料文件，页面标注资料文件名。资料没有标注日期，实际价格以官网结算页为准；资料没有的内容显示「未提供」。</p>"
+    - id: affiliate
+      q: 本站有推广链接吗？
+      a: "<p>有。机场入口使用 sponsored 推广链接，通过链接注册可能为本站带来佣金，不会提高你的价格。详见<a href=\"/about/\">关于与编辑原则</a>。</p>"
+    - id: coupon
+      q: 优惠码一定有效吗？
+      a: "<p>优惠码抄录自品牌资料，是否生效、适用哪些套餐以结算页为准，并且部分码限新用户或限首单。</p>"

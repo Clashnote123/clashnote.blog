@@ -1,0 +1,82 @@
+<%
+const HUBS = {
+  tutorials: ['Clash 教程', '/tutorials/'], troubleshooting: ['故障排查', '/troubleshooting/'],
+  wiki: ['Mihomo 知识库', '/wiki/'], speedtests: ['节点测速', '/speedtests/']
+};
+const hub = HUBS[page.hub] || HUBS.tutorials;
+const all = site.posts.toArray().sort((a, b) => (a.order || 99) - (b.order || 99));
+const idx = all.findIndex(p => p.slug === page.slug);
+const prev = idx > 0 ? all[idx - 1] : null;
+const next = idx >= 0 && idx < all.length - 1 ? all[idx + 1] : null;
+const myTags = page.tags.map(t => t.name);
+const related = all.filter(p => p.slug !== page.slug).map(p => ({ p, s: p.tags.toArray().filter(t => myTags.includes(t.name)).length + (p.hub === page.hub ? 0.5 : 0) })).sort((a, b) => b.s - a.s).slice(0, 3).map(x => x.p);
+const url = abs(page.path);
+const published = page.date.format('YYYY-MM-DD');
+const modified = (page.updated || page.date).format('YYYY-MM-DD');
+page.extraHead = jsonld({
+  '@context': 'https://schema.org', '@type': 'Article', headline: page.title, description: page.description,
+  datePublished: published, dateModified: modified, inLanguage: 'zh-CN', mainEntityOfPage: url,
+  author: { '@type': 'Organization', name: 'Clash Note 编辑部' },
+  publisher: { '@type': 'Organization', name: 'Clash Note', url: 'https://clashnote.blog/' }
+}) + jsonld({
+  '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: '首页', item: 'https://clashnote.blog/' },
+    { '@type': 'ListItem', position: 2, name: hub[0], item: abs(hub[1]) },
+    { '@type': 'ListItem', position: 3, name: page.title, item: url }
+  ]
+});
+%>
+<div class="wrap">
+  <nav class="crumbs" aria-label="面包屑"><a href="/">首页</a><span>/</span><a href="<%= hub[1] %>"><%= hub[0] %></a><span>/</span><span aria-current="page"><%= page.title %></span></nav>
+</div>
+<article class="article-wrap wrap" data-article>
+  <header class="article-head">
+    <p class="eyebrow"><%= hub[0] %></p>
+    <h1><%= page.title %></h1>
+    <p class="lead"><%= page.description %></p>
+    <ul class="meta-row">
+      <li>发布 <time datetime="<%= published %>"><%= published %></time></li>
+      <li>更新 <time datetime="<%= modified %>"><%= modified %></time></li>
+      <% if (page.applies) { %><li>适用：<%= page.applies %></li><% } %>
+    </ul>
+    <% if (page.verified) { %><p class="verify-note"><strong>验证状态：</strong><%= page.verified %></p><% } %>
+  </header>
+
+  <div class="article-grid">
+    <aside class="toc-box">
+      <details class="toc-details" open>
+        <summary>本文目录</summary>
+        <%- toc(page.content, { list_number: false, min_depth: 2, max_depth: 3 }) %>
+      </details>
+    </aside>
+    <div class="article-main">
+      <div class="prose" id="articleBody"><%- page.content %></div>
+
+      <% if (page.faq && page.faq.length) { %>
+      <section class="post-faq" aria-labelledby="faq-h">
+        <h2 id="faq-h">常见问题</h2>
+        <% page.faq.forEach(function(f){ %><details><summary><%= f.q %></summary><div class="faq-a"><p><%- f.a %></p></div></details><% }) %>
+      </section>
+      <% } %>
+
+      <% if (page.sources && page.sources.length) { %>
+      <section class="post-sources" aria-labelledby="src-h">
+        <h2 id="src-h">参考与来源</h2>
+        <ul><% page.sources.forEach(function(s){ %><li><a href="<%= s.u %>" target="_blank" rel="noopener noreferrer"><%= s.t %></a></li><% }) %></ul>
+      </section>
+      <% } %>
+
+      <nav class="pn" aria-label="上一篇下一篇">
+        <% if (prev) { %><a class="pn-prev" href="<%= url_for(prev.path) %>"><small>上一篇</small><strong><%= prev.title %></strong></a><% } else { %><span></span><% } %>
+        <% if (next) { %><a class="pn-next" href="<%= url_for(next.path) %>"><small>下一篇</small><strong><%= next.title %></strong></a><% } %>
+      </nav>
+
+      <section class="related" aria-labelledby="rel-h">
+        <h2 id="rel-h">相关阅读</h2>
+        <div class="post-grid">
+          <% related.forEach(function(p){ %><%- partial('partials/post-card', { p: p }) %><% }) %>
+        </div>
+      </section>
+    </div>
+  </div>
+</article>

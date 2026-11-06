@@ -1,0 +1,134 @@
+<%
+const isHome = page.type === 'home';
+const pTitle = page.seoTitle || (isHome ? 'Clash Note - Clash Verge Rev 教程、机场推荐与 Mihomo 配置指南' : (page.title ? page.title + ' | ' + config.title : config.title));
+const pDesc = page.description || (page.content ? strip_html_text(page.excerpt || page.content, 150) : config.description);
+let pPath = page.path || '';
+if (page.type === 'home') pPath = '/';
+const canonical = abs(page.canonical || pPath);
+const noindex = page.noindex || page.type === 'archive' || page.type === 'tag' || page.type === 'category' || page.type === 'search' || (page.current && page.current > 1 && page.base);
+const navPath = (p) => url_for(p);
+const activeNav = (p) => {
+  const cur = '/' + String(pPath).replace(/index\.html$/, '').replace(/^\//, '');
+  if (p === '/') return cur === '/' ;
+  if (p === '/airports/') return cur.indexOf('/airports/') === 0;
+  if (p === '/tutorials/') return cur.indexOf('/tutorials/') === 0 || (page.layout === 'post' && page.hub === 'tutorials');
+  if (p === '/troubleshooting/') return cur.indexOf('/troubleshooting/') === 0 || (page.layout === 'post' && page.hub === 'troubleshooting');
+  if (p === '/wiki/') return cur.indexOf('/wiki/') === 0 || (page.layout === 'post' && page.hub === 'wiki');
+  if (p === '/speedtests/') return cur.indexOf('/speedtests/') === 0 || (page.layout === 'post' && page.hub === 'speedtests');
+  return cur === p;
+};
+%><!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%= pTitle %></title>
+<meta name="description" content="<%= pDesc %>">
+<link rel="canonical" href="<%= canonical %>">
+<% if (noindex) { %><meta name="robots" content="noindex,follow"><% } else { %><meta name="robots" content="index,follow,max-image-preview:large"><% } %>
+<meta name="theme-color" content="#4169E1">
+<meta property="og:type" content="<%= page.layout === 'post' ? 'article' : 'website' %>">
+<meta property="og:site_name" content="Clash Note">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="<%= pTitle %>">
+<meta property="og:description" content="<%= pDesc %>">
+<meta property="og:url" content="<%= canonical %>">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="<%= pTitle %>">
+<meta name="twitter:description" content="<%= pDesc %>">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/css/main.css">
+<script>try{var t=localStorage.getItem('cn-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+<% if (isHome) { %><%- jsonld({ '@context': 'https://schema.org', '@type': 'WebSite', name: 'Clash Note', url: 'https://clashnote.blog/', inLanguage: 'zh-CN', description: config.description, potentialAction: { '@type': 'SearchAction', target: 'https://clashnote.blog/search/?q={search_term_string}', 'query-input': 'required name=search_term_string' } }) %><% } %>
+<%- page.extraHead || '' %>
+</head>
+<body class="t-<%= page.type || page.layout || 'page' %>">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5z M8 7h7M8 11h7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 11l5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-bug" viewBox="0 0 24 24"><path d="M12 3v3M8 8h8a3 3 0 0 1 3 3v3a7 7 0 0 1-14 0v-3a3 3 0 0 1 3-3zM3 13h3M18 13h3M5 19l3-2M19 19l-3-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-in">
+    <a class="brand" href="/" aria-label="Clash Note 首页">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#4169E1"/><path d="M21.5 11.2A7.2 7.2 0 1 0 21.5 20.8" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><circle cx="22.2" cy="16" r="1.9" fill="#fff"/></svg>
+      <span class="brand-name">Clash Note</span>
+    </a>
+    <nav class="nav" id="mainNav" aria-label="主导航">
+      <% theme.nav.forEach(function(n){ %>
+        <a href="<%= navPath(n.path) %>"<%- activeNav(n.path) ? ' class="is-active" aria-current="page"' : '' %>><%= n.name %></a>
+      <% }) %>
+    </nav>
+    <div class="header-actions">
+      <button type="button" class="icon-btn search-btn" data-open-search aria-label="搜索（Ctrl+K）"><svg class="ic"><use href="#i-search"/></svg><span class="search-btn-text">搜索</span><kbd>Ctrl K</kbd></button>
+      <button type="button" class="icon-btn" id="themeToggle" aria-label="切换深色模式"><svg class="ic ic-moon"><use href="#i-moon"/></svg><svg class="ic ic-sun"><use href="#i-sun"/></svg></button>
+      <button type="button" class="icon-btn menu-btn" id="menuBtn" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer"><svg class="ic"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+  <div class="progress" id="readProgress" aria-hidden="true"></div>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <div class="drawer-bg" data-close-drawer></div>
+  <div class="drawer-panel" role="dialog" aria-modal="true" aria-label="站点菜单">
+    <div class="drawer-head"><span class="brand-name">菜单</span><button type="button" class="icon-btn" data-close-drawer aria-label="关闭菜单"><svg class="ic"><use href="#i-close"/></svg></button></div>
+    <nav class="drawer-nav" aria-label="移动端导航">
+      <% theme.nav.forEach(function(n){ %><a href="<%= navPath(n.path) %>"><%= n.name %></a><% }) %>
+      <button type="button" class="drawer-search" data-open-search><svg class="ic"><use href="#i-search"/></svg> 搜索全站</button>
+    </nav>
+  </div>
+</div>
+
+<main id="main"><%- body %></main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="/"><svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#4169E1"/><path d="M21.5 11.2A7.2 7.2 0 1 0 21.5 20.8" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/><circle cx="22.2" cy="16" r="1.9" fill="#fff"/></svg><span class="brand-name">Clash Note</span></a>
+        <p>Clash 教程、Mihomo 配置与机场选择指南。本站为独立内容站，不是 Clash、Mihomo 或任何客户端、机场的官方网站。</p>
+      </div>
+      <% Object.keys(theme.footer_links).forEach(function(g){ %>
+      <div class="foot-col">
+        <h2><%= g %></h2>
+        <ul><% theme.footer_links[g].forEach(function(l){ %><li><a href="<%= navPath(l.path) %>"><%= l.name %></a></li><% }) %></ul>
+      </div>
+      <% }) %>
+    </div>
+    <div class="foot-note">
+      <p><strong>商业披露：</strong>本站机场页面含推广链接（标注 sponsored），通过链接注册可能为本站带来佣金，不影响你的价格。机场顺序为编辑固定顺序，并非性能排名。</p>
+      <p>© 2026 Clash Note · clashnote.blog · 所有价格与规则以各机场官网结算页为准。</p>
+    </div>
+  </div>
+</footer>
+
+<button type="button" class="to-top" id="toTop" aria-label="回到顶部" hidden><svg class="ic"><use href="#i-up"/></svg></button>
+
+<div class="search-modal" id="searchModal" hidden>
+  <div class="search-bg" data-close-search></div>
+  <div class="search-box" role="dialog" aria-modal="true" aria-label="站内搜索">
+    <form class="search-form" role="search" action="/search/" method="get" data-search-form>
+      <svg class="ic"><use href="#i-search"/></svg>
+      <input type="search" name="q" id="modalSearchInput" placeholder="搜索教程、报错、机场名称…" autocomplete="off" aria-label="搜索关键词">
+      <button type="button" class="icon-btn" data-close-search aria-label="关闭搜索"><svg class="ic"><use href="#i-close"/></svg></button>
+    </form>
+    <div class="search-results" id="modalResults" aria-live="polite"></div>
+  </div>
+</div>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<%
+const A = site.data.airports;
+const allRegions = ['香港', '台湾', '日本', '新加坡', '美国', '韩国', '马来西亚', '英国', '德国', '法国', '日本'].filter((v, i, s) => s.indexOf(v) === i);
+page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+  { '@type': 'ListItem', position: 1, name: '首页', item: 'https://clashnote.blog/' },
+  { '@type': 'ListItem', position: 2, name: '机场推荐', item: 'https://clashnote.blog/airports/' } ] });
+%>
+<div class="wrap"><nav class="crumbs" aria-label="面包屑"><a href="/">首页</a><span>/</span><span aria-current="page">机场推荐</span></nav></div>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">机场资料库</p>
+    <h1>17 家机场资料：套餐、节点与 Clash 兼容状态</h1>
+    <p class="lead">顺序为编辑固定顺序，不是性能排名。所有数字来自各品牌提供的资料文件，缺失项显示「未提供」。含推广链接，详见<a href="/about/">披露说明</a>。</p>
+    <p class="warn-strip"><strong>先看这个：</strong>各家的订阅获取方式、是否提供公开订阅链接并不相同，每家的状态（支持 / 暂不支持 / 待核实）及核实依据见详情页「Clash 兼容说明」。只有确认依据的才标「支持导入 Clash」，购买前仍请向客服确认。</p>
+  </div>
+</section>
+
+<div class="wrap">
+  <form class="filters" id="airFilters" aria-label="筛选机场">
+    <div class="f-row">
+      <label class="f-field f-grow"><span>搜索品牌 / 别名</span><input type="search" id="fQ" placeholder="例如：灵动、flyv、V2云"></label>
+      <label class="f-field"><span>节点地区</span>
+        <select id="fRegion"><option value="">不限</option><% allRegions.forEach(function(r){ %><option value="<%= r %>"><%= r %></option><% }) %></select>
+      </label>
+      <label class="f-field"><span>Clash 兼容</span>
+        <select id="fClash"><option value="">不限</option><option value="supported">支持导入 Clash</option><option value="unknown">Clash 兼容待核实</option></select>
+      </label>
+      <label class="f-field"><span>月付起价</span>
+        <select id="fBudget"><option value="">不限</option><option value="20">≤ ¥20</option><option value="25">≤ ¥25</option><option value="30">≤ ¥30</option></select>
+      </label>
+      <label class="f-field"><span>线路</span>
+        <select id="fLine"><option value="">不限</option><option value="IEPL">IEPL</option><option value="IPLC">IPLC</option><option value="BGP">BGP</option></select>
+      </label>
+      <label class="f-field"><span>排序</span>
+        <select id="fSort"><option value="rank">编辑顺序（默认）</option><option value="price">月付起价 低→高</option><option value="gb">最大月流量 高→低</option></select>
+      </label>
+    </div>
+    <div class="f-bar"><p id="fCount" role="status" aria-live="polite">共 17 家</p><button type="button" class="btn btn-ghost" id="fReset">重置筛选</button></div>
+  </form>
+
+  <div class="a-grid" id="airGrid">
+    <% A.forEach(function(a){ %><%- partial('partials/airport-card', { a: a }) %><% }) %>
+  </div>
+  <div class="empty" id="fEmpty" hidden><h3>没有符合条件的机场</h3><p>放宽条件，或点击「重置筛选」。注意：资料中没有的字段不会被当作符合。</p></div>
+  <p class="note-line">月付起价指资料中常规周期套餐的最低月付价，不含限时活动、年付小包与不限时流量包；实际价格以结算页为准。</p>
+</div>

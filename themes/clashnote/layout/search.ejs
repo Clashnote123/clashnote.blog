@@ -1,0 +1,14 @@
+<% page.type = 'search'; page.noindex = true; %>
+<section class="page-hero"><div class="wrap">
+  <h1>站内搜索</h1>
+  <form class="hero-search" role="search" action="/search/" method="get" data-search-page>
+    <svg class="ic"><use href="#i-search"/></svg>
+    <input type="search" name="q" id="pageSearchInput" placeholder="搜索教程、报错、机场名称…" autocomplete="off" aria-label="搜索关键词">
+    <button type="submit" class="btn btn-primary">搜索</button>
+  </form>
+</div></section>
+<div class="wrap narrow">
+  <p id="pageSearchMeta" class="muted" role="status" aria-live="polite"></p>
+  <div id="pageSearchResults" class="results-page"></div>
+  <noscript><p class="callout callout-mid">搜索需要启用 JavaScript。你可以从<a href="/tutorials/">教程目录</a>或<a href="/airports/">机场列表</a>浏览。</p></noscript>
+</div>

@@ -1,0 +1,10 @@
+<%
+page.type = page.tag ? 'tag' : (page.category ? 'category' : 'archive');
+const heading = page.tag ? '标签：' + page.tag : (page.category ? '分类：' + page.category : '文章归档');
+page.title = heading;
+%>
+<div class="wrap"><nav class="crumbs" aria-label="面包屑"><a href="/">首页</a><span>/</span><span aria-current="page"><%= heading %></span></nav></div>
+<section class="page-hero"><div class="wrap"><h1><%= heading %></h1><p class="lead">共 <%= page.posts.length %> 篇。想按主题浏览，请从<a href="/tutorials/">教程目录</a>进入。</p></div></section>
+<div class="wrap">
+  <div class="post-grid"><% page.posts.sort('-date').forEach(function(p){ %><%- partial('partials/post-card', { p: p }) %><% }) %></div>
+</div>

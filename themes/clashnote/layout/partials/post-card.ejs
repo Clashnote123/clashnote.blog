@@ -1,0 +1,6 @@
+<% const p = locals.p; %>
+<article class="p-card">
+  <div class="p-meta"><span class="tag-pill"><%= p.categories.length ? p.categories.first().name : '教程' %></span><time datetime="<%= p.date.format('YYYY-MM-DD') %>"><%= p.date.format('YYYY-MM-DD') %></time></div>
+  <h3><a href="<%= url_for(p.path) %>"><%= p.title %></a></h3>
+  <p><%= p.description %></p>
+</article>

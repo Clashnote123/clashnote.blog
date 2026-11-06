@@ -1,0 +1,27 @@
+# Clash Note 主题配置
+nav:
+  - { name: 首页, path: / }
+  - { name: Clash 教程, path: /tutorials/ }
+  - { name: 客户端下载, path: /clients/ }
+  - { name: 故障排查, path: /troubleshooting/ }
+  - { name: 机场推荐, path: /airports/ }
+  - { name: 套餐对比, path: /compare/ }
+  - { name: 节点测速, path: /speedtests/ }
+  - { name: Mihomo 知识库, path: /wiki/ }
+  - { name: 关于, path: /about/ }
+footer_links:
+  学习:
+    - { name: Clash 教程, path: /tutorials/ }
+    - { name: 客户端下载, path: /clients/ }
+    - { name: 故障排查, path: /troubleshooting/ }
+    - { name: Mihomo 知识库, path: /wiki/ }
+  机场资料:
+    - { name: 机场推荐（17 家）, path: /airports/ }
+    - { name: 套餐对比, path: /compare/ }
+    - { name: 节点测速, path: /speedtests/ }
+    - { name: 常见问题, path: /faq/ }
+  站点:
+    - { name: 关于与编辑原则, path: /about/ }
+    - { name: 隐私说明, path: /privacy/ }
+    - { name: 文章归档, path: /archives/ }
+    - { name: 站点地图, path: /sitemap.xml }

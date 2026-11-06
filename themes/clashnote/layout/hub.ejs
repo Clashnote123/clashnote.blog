@@ -1,0 +1,54 @@
+<%
+const HUBNAME = { tutorials: 'Clash 教程', troubleshooting: '故障排查', wiki: 'Mihomo 知识库', speedtests: '节点测速' };
+const list = page.hub === 'tutorials' ? site.posts.toArray().sort((a, b) => (a.order || 99) - (b.order || 99)) : hub_posts(page.hub);
+const bc = [['首页', '/'], [page.title, null]];
+page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+  { '@type': 'ListItem', position: 1, name: '首页', item: 'https://clashnote.blog/' },
+  { '@type': 'ListItem', position: 2, name: page.title, item: abs(page.path) } ] });
+%>
+<div class="wrap"><nav class="crumbs" aria-label="面包屑"><a href="/">首页</a><span>/</span><span aria-current="page"><%= page.title %></span></nav></div>
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow"><%= HUBNAME[page.hub] %></p>
+    <h1><%= page.h1 || page.title %></h1>
+    <p class="lead"><%= page.description %></p>
+  </div>
+</section>
+<div class="wrap hub-body">
+  <% if (page.content && page.content.trim()) { %><div class="prose hub-intro"><%- page.content %></div><% } %>
+  <% if (page.hub === 'troubleshooting') { %>
+  <section class="section-tight">
+    <h2>按报错或症状查找</h2>
+    <div class="table-wrap"><table class="tbl">
+      <thead><tr><th>你看到的现象</th><th>常见方向</th><th>对应教程</th></tr></thead>
+      <tbody>
+        <tr><td>导入订阅提示 401 / 403 / 404 / 超时</td><td>链接失效、被拒绝、地址错误、网络不通</td><td><a href="/posts/subscription-error-401-403-404/">订阅导入报错排查</a></td></tr>
+        <tr><td>导入成功但节点列表为空</td><td>订阅内容为空、格式不兼容、被过滤</td><td><a href="/posts/no-nodes-after-import/">导入后没有节点</a></td></tr>
+        <tr><td>节点全部显示超时</td><td>本地网络、时间、系统代理冲突、节点失效</td><td><a href="/posts/all-nodes-timeout/">节点全部超时</a></td></tr>
+        <tr><td>显示已连接，但网页打不开</td><td>模式、系统代理、DNS、规则</td><td><a href="/posts/connected-but-no-web/">已连接但无法访问网页</a></td></tr>
+        <tr><td>TUN 开关打不开或开了没效果</td><td>权限、服务模式、冲突软件</td><td><a href="/posts/tun-mode-cannot-enable/">TUN 无法开启</a></td></tr>
+        <tr><td>订阅更新失败或更新后配置丢失</td><td>链接失效、内核版本、覆盖</td><td><a href="/posts/subscription-update-failed/">订阅更新失败</a> · <a href="/posts/override-keep-config-on-update/">覆写防覆盖</a></td></tr>
+        <tr><td>退出 Clash 后电脑无法联网</td><td>系统代理残留</td><td><a href="/posts/windows-no-internet-after-exit/">退出后无法联网</a></td></tr>
+        <tr><td>担心 DNS 泄露</td><td>DNS 请求路径</td><td><a href="/posts/dns-leak-check/">DNS 泄露检查</a></td></tr>
+      </tbody>
+    </table></div>
+  </section>
+  <% } %>
+  <section class="section-tight">
+    <h2><%= page.listTitle || '全部文章' %><span class="count"><%= list.length %> 篇</span></h2>
+    <div class="post-grid">
+      <% list.forEach(function(p){ %><%- partial('partials/post-card', { p: p }) %><% }) %>
+    </div>
+  </section>
+  <% if (page.hub === 'tutorials') { %>
+  <section class="section-tight">
+    <h2>推荐学习顺序</h2>
+    <ol class="steps-list">
+      <li>先读 <a href="/posts/clash-verge-rev-windows-install/">Windows 安装与使用</a>，装好客户端。</li>
+      <li>读 <a href="/posts/clash-verge-rev-import-subscription/">正确导入订阅</a>，同时对照 <a href="/airports/">各机场的 Clash 兼容状态</a>。</li>
+      <li>读 <a href="/posts/clash-rule-global-direct-mode/">规则、全局、直连模式</a> 与 <a href="/posts/system-proxy-vs-tun/">系统代理与 TUN</a>。</li>
+      <li>遇到问题进入 <a href="/troubleshooting/">故障排查</a>，需要深入再看 <a href="/wiki/">Mihomo 知识库</a>。</li>
+    </ol>
+  </section>
+  <% } %>
+</div>
