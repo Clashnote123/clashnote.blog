@@ -9,10 +9,10 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 3075,
-   "inAll": 101,
-   "inMain": 99,
-   "outMain": 28,
+   "chars": 3182,
+   "inAll": 112,
+   "inMain": 110,
+   "outMain": 31,
    "ogImage": false
   },
   {
@@ -40,7 +40,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1104,
-   "inAll": 101,
+   "inAll": 112,
    "inMain": 3,
    "outMain": 5,
    "ogImage": false
@@ -54,10 +54,10 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 2872,
-   "inAll": 101,
-   "inMain": 30,
-   "outMain": 19,
+   "chars": 2930,
+   "inAll": 112,
+   "inMain": 32,
+   "outMain": 20,
    "ogImage": false
   },
   {
@@ -324,8 +324,8 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 1331,
-   "inAll": 101,
+   "chars": 1433,
+   "inAll": 112,
    "inMain": 0,
    "outMain": 14,
    "ogImage": false
@@ -339,7 +339,7 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 1331,
+   "chars": 1433,
    "inAll": 0,
    "inMain": 0,
    "outMain": 14,
@@ -354,7 +354,7 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 1331,
+   "chars": 1433,
    "inAll": 0,
    "inMain": 0,
    "outMain": 14,
@@ -369,10 +369,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 390,
+   "chars": 703,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 5,
+   "outMain": 8,
    "ogImage": false
   },
   {
@@ -384,10 +384,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 390,
+   "chars": 703,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 5,
+   "outMain": 8,
    "ogImage": false
   },
   {
@@ -399,10 +399,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 390,
+   "chars": 703,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 5,
+   "outMain": 8,
    "ogImage": false
   },
   {
@@ -444,10 +444,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 497,
+   "chars": 648,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 6,
+   "outMain": 7,
    "ogImage": false
   },
   {
@@ -459,10 +459,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 421,
+   "chars": 685,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 5,
+   "outMain": 7,
    "ogImage": false
   },
   {
@@ -474,10 +474,10 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 1376,
-   "inAll": 101,
+   "chars": 1413,
+   "inAll": 112,
    "inMain": 1,
-   "outMain": 5,
+   "outMain": 6,
    "ogImage": false
   },
   {
@@ -490,8 +490,8 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 303,
-   "inAll": 101,
-   "inMain": 17,
+   "inAll": 112,
+   "inMain": 18,
    "outMain": 2,
    "ogImage": false
   },
@@ -505,7 +505,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1235,
-   "inAll": 101,
+   "inAll": 112,
    "inMain": 2,
    "outMain": 10,
    "ogImage": false
@@ -535,8 +535,8 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1566,
-   "inAll": 16,
-   "inMain": 16,
+   "inAll": 17,
+   "inMain": 17,
    "outMain": 8,
    "ogImage": false
   },
@@ -549,10 +549,25 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 1684,
-   "inAll": 32,
-   "inMain": 32,
-   "outMain": 8,
+   "chars": 1725,
+   "inAll": 33,
+   "inMain": 33,
+   "outMain": 9,
+   "ogImage": false
+  },
+  {
+   "url": "/posts/clash-verge-rev-macos/",
+   "title": "Clash Verge Rev macOS 安装与使用指南 | Clash Note",
+   "tl": 42,
+   "dl": 112,
+   "h1": "Clash Verge Rev macOS 安装与使用指南",
+   "canonOK": true,
+   "noindex": false,
+   "inSitemap": true,
+   "chars": 2137,
+   "inAll": 17,
+   "inMain": 17,
+   "outMain": 9,
    "ogImage": false
   },
   {
@@ -564,10 +579,25 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 2021,
+   "chars": 2119,
    "inAll": 13,
    "inMain": 13,
    "outMain": 7,
+   "ogImage": false
+  },
+  {
+   "url": "/posts/clash-yaml-error-fix/",
+   "title": "Clash 配置文件 YAML 报错怎么看、怎么改 | Clash Note",
+   "tl": 38,
+   "dl": 90,
+   "h1": "Clash 配置文件 YAML 报错怎么看、怎么改",
+   "canonOK": true,
+   "noindex": false,
+   "inSitemap": true,
+   "chars": 2703,
+   "inAll": 17,
+   "inMain": 17,
+   "outMain": 10,
    "ogImage": false
   },
   {
@@ -594,9 +624,9 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 2124,
-   "inAll": 18,
-   "inMain": 18,
+   "chars": 2143,
+   "inAll": 20,
+   "inMain": 20,
    "outMain": 7,
    "ogImage": false
   },
@@ -609,10 +639,25 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 1493,
-   "inAll": 13,
-   "inMain": 13,
-   "outMain": 6,
+   "chars": 1523,
+   "inAll": 15,
+   "inMain": 15,
+   "outMain": 7,
+   "ogImage": false
+  },
+  {
+   "url": "/posts/iepl-iplc-bgp-explained/",
+   "title": "IEPL、IPLC、BGP 机场线路有什么区别，怎么看资料 | Clash Note",
+   "tl": 42,
+   "dl": 80,
+   "h1": "IEPL、IPLC、BGP 机场线路有什么区别，怎么看资料",
+   "canonOK": true,
+   "noindex": false,
+   "inSitemap": true,
+   "chars": 2088,
+   "inAll": 15,
+   "inMain": 15,
+   "outMain": 10,
    "ogImage": false
   },
   {
@@ -624,10 +669,10 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 1871,
-   "inAll": 16,
-   "inMain": 16,
-   "outMain": 7,
+   "chars": 1919,
+   "inAll": 18,
+   "inMain": 18,
+   "outMain": 8,
    "ogImage": false
   },
   {
@@ -640,8 +685,8 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1384,
-   "inAll": 15,
-   "inMain": 15,
+   "inAll": 16,
+   "inMain": 16,
    "outMain": 6,
    "ogImage": false
   },
@@ -654,9 +699,9 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 1892,
-   "inAll": 18,
-   "inMain": 18,
+   "chars": 1902,
+   "inAll": 19,
+   "inMain": 19,
    "outMain": 7,
    "ogImage": false
   },
@@ -699,7 +744,7 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 1498,
+   "chars": 1549,
    "inAll": 14,
    "inMain": 14,
    "outMain": 6,
@@ -714,9 +759,9 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 1736,
-   "inAll": 15,
-   "inMain": 15,
+   "chars": 1775,
+   "inAll": 16,
+   "inMain": 16,
    "outMain": 6,
    "ogImage": false
   },
@@ -745,7 +790,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 520,
-   "inAll": 101,
+   "inAll": 112,
    "inMain": 1,
    "outMain": 1,
    "ogImage": false
@@ -775,7 +820,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 953,
-   "inAll": 101,
+   "inAll": 112,
    "inMain": 3,
    "outMain": 3,
    "ogImage": false
@@ -834,10 +879,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 170,
+   "chars": 321,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 3,
+   "outMain": 4,
    "ogImage": false
   },
   {
@@ -1036,6 +1081,21 @@
    "ogImage": false
   },
   {
+   "url": "/tags/机场线路/",
+   "title": "标签：机场线路 | Clash Note",
+   "tl": 20,
+   "dl": 84,
+   "h1": "标签：机场线路",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 170,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
+   "ogImage": false
+  },
+  {
    "url": "/tags/兼容/",
    "title": "标签：兼容 | Clash Note",
    "tl": 18,
@@ -1156,6 +1216,21 @@
    "ogImage": false
   },
   {
+   "url": "/tags/排查/",
+   "title": "标签：排查 | Clash Note",
+   "tl": 18,
+   "dl": 84,
+   "h1": "标签：排查",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 180,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
+   "ogImage": false
+  },
+  {
    "url": "/tags/配置文件/",
    "title": "标签：配置文件 | Clash Note",
    "tl": 20,
@@ -1164,10 +1239,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 164,
+   "chars": 303,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 3,
+   "outMain": 4,
    "ogImage": false
   },
   {
@@ -1209,10 +1284,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 358,
+   "chars": 509,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 5,
+   "outMain": 6,
    "ogImage": false
   },
   {
@@ -1306,6 +1381,36 @@
    "ogImage": false
   },
   {
+   "url": "/tags/专线/",
+   "title": "标签：专线 | Clash Note",
+   "tl": 18,
+   "dl": 84,
+   "h1": "标签：专线",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 166,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
+   "ogImage": false
+  },
+  {
+   "url": "/tags/BGP/",
+   "title": "标签：BGP | Clash Note",
+   "tl": 19,
+   "dl": 84,
+   "h1": "标签：BGP",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 168,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
+   "ogImage": false
+  },
+  {
    "url": "/tags/Clash-Verge-Rev/",
    "title": "标签：Clash Verge Rev | Clash Note",
    "tl": 31,
@@ -1314,10 +1419,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 306,
+   "chars": 457,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 4,
+   "outMain": 5,
    "ogImage": false
   },
   {
@@ -1366,6 +1471,51 @@
    "ogImage": false
   },
   {
+   "url": "/tags/IEPL/",
+   "title": "标签：IEPL | Clash Note",
+   "tl": 20,
+   "dl": 84,
+   "h1": "标签：IEPL",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 170,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
+   "ogImage": false
+  },
+  {
+   "url": "/tags/IPLC/",
+   "title": "标签：IPLC | Clash Note",
+   "tl": 20,
+   "dl": 84,
+   "h1": "标签：IPLC",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 170,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
+   "ogImage": false
+  },
+  {
+   "url": "/tags/macOS/",
+   "title": "标签：macOS | Clash Note",
+   "tl": 21,
+   "dl": 84,
+   "h1": "标签：macOS",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 198,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
+   "ogImage": false
+  },
+  {
    "url": "/tags/Merge/",
    "title": "标签：Merge | Clash Note",
    "tl": 21,
@@ -1389,10 +1539,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 410,
+   "chars": 549,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 5,
+   "outMain": 6,
    "ogImage": false
   },
   {
@@ -1419,10 +1569,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 246,
+   "chars": 397,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 4,
+   "outMain": 5,
    "ogImage": false
   },
   {
@@ -1456,6 +1606,21 @@
    "ogImage": false
   },
   {
+   "url": "/tags/YAML-错误/",
+   "title": "标签：YAML 错误 | Clash Note",
+   "tl": 23,
+   "dl": 84,
+   "h1": "标签：YAML 错误",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 190,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
+   "ogImage": false
+  },
+  {
    "url": "/tags/YAML/",
    "title": "标签：YAML | Clash Note",
    "tl": 20,
@@ -1464,10 +1629,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 164,
+   "chars": 303,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 3,
+   "outMain": 4,
    "ogImage": false
   },
   {
@@ -1480,7 +1645,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1231,
-   "inAll": 101,
+   "inAll": 112,
    "inMain": 11,
    "outMain": 10,
    "ogImage": false
@@ -1494,10 +1659,10 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 2021,
-   "inAll": 101,
-   "inMain": 64,
-   "outMain": 19,
+   "chars": 2436,
+   "inAll": 112,
+   "inMain": 73,
+   "outMain": 22,
    "ogImage": false
   },
   {
@@ -1509,10 +1674,10 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 538,
-   "inAll": 101,
-   "inMain": 5,
-   "outMain": 5,
+   "chars": 802,
+   "inAll": 112,
+   "inMain": 7,
+   "outMain": 7,
    "ogImage": false
   }
  ],
@@ -1523,7 +1688,7 @@
   },
   "Clash 教程": {
    "inTitle": [],
-   "inBody": 7
+   "inBody": 8
   },
   "Clash下载": {
    "inTitle": [],
@@ -1532,9 +1697,10 @@
   "Clash Verge Rev": {
    "inTitle": [
     "/posts/clash-verge-rev-import-subscription/",
+    "/posts/clash-verge-rev-macos/",
     "/posts/clash-verge-rev-windows-install/"
    ],
-   "inBody": 39
+   "inBody": 45
   },
   "Clash订阅": {
    "inTitle": [],
@@ -1544,7 +1710,7 @@
    "inTitle": [
     "/posts/subscription-update-failed/"
    ],
-   "inBody": 38
+   "inBody": 40
   },
   "订阅导入": {
    "inTitle": [
@@ -1556,7 +1722,7 @@
    "inTitle": [
     "/posts/clash-verge-rev-import-subscription/"
    ],
-   "inBody": 36
+   "inBody": 37
   },
   "Clash节点": {
    "inTitle": [],
@@ -1568,32 +1734,32 @@
   },
   "机场推荐": {
    "inTitle": [],
-   "inBody": 29
+   "inBody": 31
   },
   "规则模式": {
    "inTitle": [
     "/posts/clash-rule-global-direct-mode/"
    ],
-   "inBody": 17
+   "inBody": 18
   },
   "全局模式": {
    "inTitle": [
     "/posts/clash-rule-global-direct-mode/"
    ],
-   "inBody": 17
+   "inBody": 18
   },
   "TUN": {
    "inTitle": [
     "/posts/system-proxy-vs-tun/",
     "/posts/tun-mode-cannot-enable/"
    ],
-   "inBody": 23
+   "inBody": 28
   },
   "DNS 泄露": {
    "inTitle": [
     "/posts/dns-leak-check/"
    ],
-   "inBody": 19
+   "inBody": 21
   },
   "DNS泄露": {
    "inTitle": [],
@@ -1618,13 +1784,13 @@
     "/posts/all-nodes-timeout/",
     "/posts/subscription-error-401-403-404/"
    ],
-   "inBody": 28
+   "inBody": 24
   },
   "Mihomo": {
    "inTitle": [
     "/posts/mihomo-yaml-basics/"
    ],
-   "inBody": 47
+   "inBody": 59
   },
   "Windows 11": {
    "inTitle": [
@@ -1638,15 +1804,17 @@
   },
   "配置文件": {
    "inTitle": [
+    "/posts/clash-yaml-error-fix/",
     "/posts/mihomo-yaml-basics/"
    ],
-   "inBody": 17
+   "inBody": 22
   },
   "YAML": {
    "inTitle": [
+    "/posts/clash-yaml-error-fix/",
     "/posts/mihomo-yaml-basics/"
    ],
-   "inBody": 18
+   "inBody": 23
   },
   "无法上网": {
    "inTitle": [],
@@ -1657,16 +1825,22 @@
    "inBody": 0
   },
   "IEPL": {
-   "inTitle": [],
-   "inBody": 9
+   "inTitle": [
+    "/posts/iepl-iplc-bgp-explained/"
+   ],
+   "inBody": 23
   },
   "IPLC": {
-   "inTitle": [],
-   "inBody": 15
+   "inTitle": [
+    "/posts/iepl-iplc-bgp-explained/"
+   ],
+   "inBody": 29
   },
   "macOS": {
-   "inTitle": [],
-   "inBody": 13
+   "inTitle": [
+    "/posts/clash-verge-rev-macos/"
+   ],
+   "inBody": 29
   },
   "Android": {
    "inTitle": [],
@@ -1704,18 +1878,6 @@
   },
   {
    "a": "/posts/all-nodes-timeout/",
-   "b": "/posts/tun-mode-cannot-enable/",
-   "r": 1,
-   "t": "Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查"
-  },
-  {
-   "a": "/posts/all-nodes-timeout/",
-   "b": "/posts/clash-verge-rev-import-subscription/",
-   "r": 1,
-   "t": "Clash 订阅显示导入成功但代理页没有节点：从订阅内容是否为空、格式是否兼容、扩展配置过滤和 Mi"
-  },
-  {
-   "a": "/posts/all-nodes-timeout/",
    "b": "/posts/subscription-error-401-403-404/",
    "r": 1,
    "t": "Clash 订阅显示导入成功但代理页没有节点：从订阅内容是否为空、格式是否兼容、扩展配置过滤和 Mi"
@@ -1740,6 +1902,18 @@
   },
   {
    "a": "/posts/clash-rule-global-direct-mode/",
+   "b": "/posts/clash-yaml-error-fix/",
+   "r": 1,
+   "t": "理解 DNS 请求在 Clash 中怎么走，如何用第三方检测站和日志判断是否泄露，以及 fake-i"
+  },
+  {
+   "a": "/posts/clash-rule-global-direct-mode/",
+   "b": "/posts/iepl-iplc-bgp-explained/",
+   "r": 1,
+   "t": "理解 DNS 请求在 Clash 中怎么走，如何用第三方检测站和日志判断是否泄露，以及 fake-i"
+  },
+  {
+   "a": "/posts/clash-rule-global-direct-mode/",
    "b": "/posts/mihomo-yaml-basics/",
    "r": 1,
    "t": "理解 DNS 请求在 Clash 中怎么走，如何用第三方检测站和日志判断是否泄露，以及 fake-i"
@@ -1752,7 +1926,19 @@
   },
   {
    "a": "/posts/clash-rule-global-direct-mode/",
+   "b": "/posts/clash-yaml-error-fix/",
+   "r": 1,
+   "t": "读懂 Mihomo 配置文件的结构：基础端口、DNS、proxies、proxy-groups、ru"
+  },
+  {
+   "a": "/posts/clash-rule-global-direct-mode/",
    "b": "/posts/dns-leak-check/",
+   "r": 1,
+   "t": "读懂 Mihomo 配置文件的结构：基础端口、DNS、proxies、proxy-groups、ru"
+  },
+  {
+   "a": "/posts/clash-rule-global-direct-mode/",
+   "b": "/posts/iepl-iplc-bgp-explained/",
    "r": 1,
    "t": "读懂 Mihomo 配置文件的结构：基础端口、DNS、proxies、proxy-groups、ru"
   },
@@ -1764,13 +1950,7 @@
   },
   {
    "a": "/posts/clash-verge-rev-import-subscription/",
-   "b": "/posts/how-to-read-speedtest-images/",
-   "r": 1,
-   "t": "在 Windows 11 上从 GitHub Releases 下载并安装 Clash Verge "
-  },
-  {
-   "a": "/posts/clash-verge-rev-import-subscription/",
-   "b": "/posts/override-keep-config-on-update/",
+   "b": "/posts/clash-verge-rev-macos/",
    "r": 1,
    "t": "在 Windows 11 上从 GitHub Releases 下载并安装 Clash Verge "
   },
@@ -1778,37 +1958,85 @@
    "a": "/posts/clash-verge-rev-import-subscription/",
    "b": "/posts/how-to-read-speedtest-images/",
    "r": 1,
-   "t": "Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查"
+   "t": "在 Windows 11 上从 GitHub Releases 下载并安装 Clash Verge "
   },
   {
    "a": "/posts/clash-verge-rev-import-subscription/",
-   "b": "/posts/no-nodes-after-import/",
+   "b": "/posts/clash-verge-rev-windows-install/",
    "r": 1,
-   "t": "Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查"
+   "t": "在 macOS 上从官方 Releases 下载 Clash Verge Rev，区分 Apple "
   },
   {
    "a": "/posts/clash-verge-rev-import-subscription/",
-   "b": "/posts/subscription-update-failed/",
+   "b": "/posts/system-proxy-vs-tun/",
    "r": 1,
-   "t": "Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查"
+   "t": "在 macOS 上从官方 Releases 下载 Clash Verge Rev，区分 Apple "
   },
   {
    "a": "/posts/clash-verge-rev-import-subscription/",
    "b": "/posts/tun-mode-cannot-enable/",
    "r": 1,
+   "t": "在 macOS 上从官方 Releases 下载 Clash Verge Rev，区分 Apple "
+  },
+  {
+   "a": "/posts/clash-verge-rev-import-subscription/",
+   "b": "/posts/how-to-read-speedtest-images/",
+   "r": 1,
    "t": "Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查"
   },
   {
    "a": "/posts/clash-verge-rev-import-subscription/",
-   "b": "/posts/subscription-error-401-403-404/",
+   "b": "/posts/no-nodes-after-import/",
    "r": 1,
-   "t": "Clash 订阅显示导入成功但代理页没有节点：从订阅内容是否为空、格式是否兼容、扩展配置过滤和 Mi"
+   "t": "Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查"
   },
   {
    "a": "/posts/clash-verge-rev-import-subscription/",
    "b": "/posts/subscription-update-failed/",
    "r": 1,
-   "t": "Clash 订阅显示导入成功但代理页没有节点：从订阅内容是否为空、格式是否兼容、扩展配置过滤和 Mi"
+   "t": "Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查"
+  },
+  {
+   "a": "/posts/clash-verge-rev-macos/",
+   "b": "/posts/how-to-read-speedtest-images/",
+   "r": 1,
+   "t": "在 Windows 11 上从 GitHub Releases 下载并安装 Clash Verge "
+  },
+  {
+   "a": "/posts/clash-verge-rev-macos/",
+   "b": "/posts/clash-verge-rev-windows-install/",
+   "r": 1,
+   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+  },
+  {
+   "a": "/posts/clash-verge-rev-macos/",
+   "b": "/posts/how-to-read-speedtest-images/",
+   "r": 1,
+   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+  },
+  {
+   "a": "/posts/clash-verge-rev-macos/",
+   "b": "/posts/no-nodes-after-import/",
+   "r": 1,
+   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+  },
+  {
+   "a": "/posts/clash-verge-rev-macos/",
+   "b": "/posts/subscription-error-401-403-404/",
+   "r": 1,
+   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+  },
+  {
+   "a": "/posts/clash-verge-rev-windows-install/",
+   "b": "/posts/system-proxy-vs-tun/",
+   "r": 1,
+   "t": "在 macOS 上从官方 Releases 下载 Clash Verge Rev，区分 Apple "
+  },
+  {
+   "a": "/posts/clash-verge-rev-windows-install/",
+   "b": "/posts/tun-mode-cannot-enable/",
+   "r": 1,
+   "t": "在 macOS 上从官方 Releases 下载 Clash Verge Rev，区分 Apple "
   },
   {
    "a": "/posts/clash-verge-rev-windows-install/",
@@ -1827,6 +2055,12 @@
    "b": "/posts/subscription-error-401-403-404/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+  },
+  {
+   "a": "/posts/clash-verge-rev-windows-install/",
+   "b": "/posts/clash-yaml-error-fix/",
+   "r": 1,
+   "t": "一张表讲清 Clash 三种出站模式：规则（Rule）按规则分流，全局（Global）全走同一节点，"
   },
   {
    "a": "/posts/clash-verge-rev-windows-install/",
@@ -1842,6 +2076,60 @@
   },
   {
    "a": "/posts/clash-verge-rev-windows-install/",
+   "b": "/posts/mihomo-yaml-basics/",
+   "r": 1,
+   "t": "一张表讲清 Clash 三种出站模式：规则（Rule）按规则分流，全局（Global）全走同一节点，"
+  },
+  {
+   "a": "/posts/clash-yaml-error-fix/",
+   "b": "/posts/dns-leak-check/",
+   "r": 1,
+   "t": "读懂 Mihomo 配置文件的结构：基础端口、DNS、proxies、proxy-groups、ru"
+  },
+  {
+   "a": "/posts/clash-yaml-error-fix/",
+   "b": "/posts/iepl-iplc-bgp-explained/",
+   "r": 1,
+   "t": "读懂 Mihomo 配置文件的结构：基础端口、DNS、proxies、proxy-groups、ru"
+  },
+  {
+   "a": "/posts/clash-yaml-error-fix/",
+   "b": "/posts/override-keep-config-on-update/",
+   "r": 1,
+   "t": "读懂 Mihomo 配置文件的结构：基础端口、DNS、proxies、proxy-groups、ru"
+  },
+  {
+   "a": "/posts/clash-yaml-error-fix/",
+   "b": "/posts/iepl-iplc-bgp-explained/",
+   "r": 1,
+   "t": "理解 DNS 请求在 Clash 中怎么走，如何用第三方检测站和日志判断是否泄露，以及 fake-i"
+  },
+  {
+   "a": "/posts/clash-yaml-error-fix/",
+   "b": "/posts/mihomo-yaml-basics/",
+   "r": 1,
+   "t": "理解 DNS 请求在 Clash 中怎么走，如何用第三方检测站和日志判断是否泄露，以及 fake-i"
+  },
+  {
+   "a": "/posts/clash-yaml-error-fix/",
+   "b": "/posts/override-keep-config-on-update/",
+   "r": 1,
+   "t": "理解 DNS 请求在 Clash 中怎么走，如何用第三方检测站和日志判断是否泄露，以及 fake-i"
+  },
+  {
+   "a": "/posts/clash-yaml-error-fix/",
+   "b": "/posts/connected-but-no-web/",
+   "r": 1,
+   "t": "一张表讲清 Clash 三种出站模式：规则（Rule）按规则分流，全局（Global）全走同一节点，"
+  },
+  {
+   "a": "/posts/clash-yaml-error-fix/",
+   "b": "/posts/dns-leak-check/",
+   "r": 1,
+   "t": "一张表讲清 Clash 三种出站模式：规则（Rule）按规则分流，全局（Global）全走同一节点，"
+  },
+  {
+   "a": "/posts/clash-yaml-error-fix/",
    "b": "/posts/mihomo-yaml-basics/",
    "r": 1,
    "t": "一张表讲清 Clash 三种出站模式：规则（Rule）按规则分流，全局（Global）全走同一节点，"
@@ -1872,6 +2160,12 @@
   },
   {
    "a": "/posts/dns-leak-check/",
+   "b": "/posts/iepl-iplc-bgp-explained/",
+   "r": 1,
+   "t": "读懂 Mihomo 配置文件的结构：基础端口、DNS、proxies、proxy-groups、ru"
+  },
+  {
+   "a": "/posts/dns-leak-check/",
    "b": "/posts/override-keep-config-on-update/",
    "r": 1,
    "t": "读懂 Mihomo 配置文件的结构：基础端口、DNS、proxies、proxy-groups、ru"
@@ -1880,19 +2174,19 @@
    "a": "/posts/dns-leak-check/",
    "b": "/posts/mihomo-yaml-basics/",
    "r": 1,
-   "t": "一张表讲清 Clash 三种出站模式：规则（Rule）按规则分流，全局（Global）全走同一节点，"
+   "t": "Clash / Mihomo 配置文件 YAML 报错的读法：根据日志里的行号和提示定位 Tab、缺"
+  },
+  {
+   "a": "/posts/dns-leak-check/",
+   "b": "/posts/override-keep-config-on-update/",
+   "r": 1,
+   "t": "Clash / Mihomo 配置文件 YAML 报错的读法：根据日志里的行号和提示定位 Tab、缺"
   },
   {
    "a": "/posts/dns-leak-check/",
    "b": "/posts/mihomo-yaml-basics/",
    "r": 1,
-   "t": "订阅更新会覆盖手动修改。用 Clash Verge Rev 的扩展配置（Merge 与 Script"
-  },
-  {
-   "a": "/posts/how-to-read-speedtest-images/",
-   "b": "/posts/override-keep-config-on-update/",
-   "r": 1,
-   "t": "在 Windows 11 上从 GitHub Releases 下载并安装 Clash Verge "
+   "t": "一张表讲清 Clash 三种出站模式：规则（Rule）按规则分流，全局（Global）全走同一节点，"
   },
   {
    "a": "/posts/how-to-read-speedtest-images/",
@@ -1919,10 +2213,28 @@
    "t": "Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查"
   },
   {
-   "a": "/posts/how-to-read-speedtest-images/",
-   "b": "/posts/tun-mode-cannot-enable/",
+   "a": "/posts/iepl-iplc-bgp-explained/",
+   "b": "/posts/mihomo-yaml-basics/",
    "r": 1,
-   "t": "Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查"
+   "t": "理解 DNS 请求在 Clash 中怎么走，如何用第三方检测站和日志判断是否泄露，以及 fake-i"
+  },
+  {
+   "a": "/posts/iepl-iplc-bgp-explained/",
+   "b": "/posts/override-keep-config-on-update/",
+   "r": 1,
+   "t": "理解 DNS 请求在 Clash 中怎么走，如何用第三方检测站和日志判断是否泄露，以及 fake-i"
+  },
+  {
+   "a": "/posts/iepl-iplc-bgp-explained/",
+   "b": "/posts/override-keep-config-on-update/",
+   "r": 1,
+   "t": "读懂 Mihomo 配置文件的结构：基础端口、DNS、proxies、proxy-groups、ru"
+  },
+  {
+   "a": "/posts/mihomo-yaml-basics/",
+   "b": "/posts/override-keep-config-on-update/",
+   "r": 1,
+   "t": "Clash / Mihomo 配置文件 YAML 报错的读法：根据日志里的行号和提示定位 Tab、缺"
   },
   {
    "a": "/posts/mihomo-yaml-basics/",
@@ -1933,12 +2245,6 @@
   {
    "a": "/posts/no-nodes-after-import/",
    "b": "/posts/subscription-update-failed/",
-   "r": 1,
-   "t": "Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查"
-  },
-  {
-   "a": "/posts/no-nodes-after-import/",
-   "b": "/posts/tun-mode-cannot-enable/",
    "r": 1,
    "t": "Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查"
   },
@@ -1955,10 +2261,10 @@
    "t": "Clash 订阅显示导入成功但代理页没有节点：从订阅内容是否为空、格式是否兼容、扩展配置过滤和 Mi"
   },
   {
-   "a": "/posts/subscription-update-failed/",
+   "a": "/posts/system-proxy-vs-tun/",
    "b": "/posts/tun-mode-cannot-enable/",
    "r": 1,
-   "t": "Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查"
+   "t": "在 macOS 上从官方 Releases 下载 Clash Verge Rev，区分 Apple "
   },
   {
    "a": "/posts/system-proxy-vs-tun/",

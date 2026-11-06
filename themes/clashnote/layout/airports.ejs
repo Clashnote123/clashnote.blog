@@ -42,5 +42,5 @@ page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'Breadcrumb
     <% A.forEach(function(a){ %><%- partial('partials/airport-card', { a: a }) %><% }) %>
   </div>
   <div class="empty" id="fEmpty" hidden><h3>没有符合条件的机场</h3><p>放宽条件，或点击「重置筛选」。注意：资料中没有的字段不会被当作符合。</p></div>
-  <p class="note-line">月付起价指资料中常规周期套餐的最低月付价，不含限时活动、年付小包与不限时流量包；实际价格以结算页为准。</p>
+  <p class="note-line">线路类型（IEPL / IPLC / BGP）的含义与读法见<a href="/posts/iepl-iplc-bgp-explained/">《IEPL、IPLC、BGP 机场线路有什么区别》</a>。月付起价指资料中常规周期套餐的最低月付价，不含限时活动、年付小包与不限时流量包；实际价格以结算页为准。</p>
 </div>

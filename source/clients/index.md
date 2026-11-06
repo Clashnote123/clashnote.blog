@@ -38,5 +38,6 @@ Clash for Windows 作者已在 2023 年停止维护并删除项目。现在网�
 ## 安装之后
 
 - Windows：[Clash Verge Rev Windows 11 安装与使用](/posts/clash-verge-rev-windows-install/)
+- macOS：[Clash Verge Rev macOS 安装与使用指南](/posts/clash-verge-rev-macos/)
 - 订阅导入：[正确导入订阅链接](/posts/clash-verge-rev-import-subscription/)
 - 遇到问题：[故障排查索引](/troubleshooting/)

@@ -63,6 +63,8 @@ Get-FileHash .\你下载的安装包.exe -Algorithm SHA256
 
 此时还**没有节点**是正常的。下一步请读[《Clash Verge Rev 正确导入订阅链接》](/posts/clash-verge-rev-import-subscription/)。
 
+macOS 用户请看[Clash Verge Rev macOS 安装与使用指南](/posts/clash-verge-rev-macos/)。
+
 ## 五、不要这样做
 
 - 不要把订阅链接截图发到群里求助，链接等同于你的账号凭证。

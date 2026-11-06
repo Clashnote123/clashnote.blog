@@ -33,3 +33,11 @@ Git：检查点 `a0b13f5`（审计前）→ 修复提交 `bda893f`。回滚：`g
 5. 线上响应头、Core Web Vitals、Bing 收录与排名：**未验证**。
 6. 文章未实机验证，Verge Rev 界面名称需上线前核对版本。
 7. `npm audit` 6 个 low（构建期依赖）。
+
+## 追加（2026-11-07）：新增 3 篇文章
+- `/posts/clash-yaml-error-fix/`（Clash YAML 错误，order 16，知识库）
+- `/posts/iepl-iplc-bgp-explained/`（IEPL / IPLC / BGP，order 17，知识库）
+- `/posts/clash-verge-rev-macos/`（macOS 指南，order 18，教程）
+- 内链：mihomo-yaml-basics → YAML 报错；windows-install 与 /clients/ → macOS；/airports/ → IEPL 解释。
+- 验证：构建 120 文件；check-site 112 页 / 4773 链接 0 错误；可索引 46、sitemap 46、无孤岛页。
+- 对应 KEYWORD_PAGE1_STRATEGY.md 中 #13、#19、#20（macOS 部分）已建页；Android、Clash Party、选机场指南仍缺。文章未实机验证，已在"验证状态"标注。
