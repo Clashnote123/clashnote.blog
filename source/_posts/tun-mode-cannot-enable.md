@@ -6,7 +6,7 @@ order: 8
 hub: troubleshooting
 categories: [故障排查]
 tags: [TUN, 服务模式, 管理员权限, Windows]
-description: TUN 开关打不开、开了没效果或报错：按服务模式、管理员权限、冲突软件、配置项与日志的顺序排查。
+description: Clash TUN 模式开关打不开、开了没效果或报错：按服务模式、管理员权限、冲突软件、TUN 配置项与日志的顺序逐步排查，并给出回退方案。
 applies: Windows 10 / 11，Clash Verge Rev（Mihomo 内核）
 verified: 排查顺序依据 Mihomo TUN 机制与 Clash Verge Rev 的服务模式设计整理，未复现所有环境下的失败场景。
 faq:

@@ -1,14 +1,15 @@
 ---
 title: 客户端下载
-h1: Clash 客户端：各系统怎么选、去哪里下载
+h1: Clash 下载：各系统客户端怎么选、去哪里下载
 layout: page
-description: Windows、macOS、Android、iOS 的 Clash/Mihomo 客户端介绍与官方项目下载渠道，说明停更客户端与安全下载注意事项。
+seoTitle: Clash 下载：Windows / macOS / Android 客户端与官方下载渠道 | Clash Note
+description: Clash 下载前先看：Windows、macOS、Android 的 Clash / Mihomo 客户端（Clash Verge Rev、Clash Party、FlClash）与官方下载渠道、安全注意事项。
 updated: 2026-11-06
 ---
 
 先说结论：**客户端请只从项目的官方发布页下载**，不要使用网盘、第三方站点转发的安装包。本站不托管任何客户端安装文件。
 
-> 重要：本站收录的 17 家机场资料中，没有任何一家明确提供"可直接导入 Clash 的标准订阅"。多数机场要求或推荐使用自家官方客户端。下表的客户端适用于**你的服务商确实提供兼容订阅**的情况。
+> 重要：Clash 客户端本身不提供节点，需要服务商提供兼容订阅。本站各机场的 Clash 兼容状态（支持 / 待核实）及核实依据见[机场推荐](/airports/)；官方客户端不等同于 Clash 客户端。
 
 ## 客户端一览
 
@@ -16,6 +17,7 @@ updated: 2026-11-06
 |---|---|---|---|
 | Windows / macOS / Linux | Clash Verge Rev | [github.com/clash-verge-rev/clash-verge-rev](https://github.com/clash-verge-rev/clash-verge-rev/releases) | 基于 Mihomo 内核的图形客户端，本站教程以它为主 |
 | Windows / macOS / Linux / Android | FlClash | [github.com/chen08209/FlClash](https://github.com/chen08209/FlClash/releases) | 跨平台开源客户端，同样基于 Mihomo 内核 |
+| Windows / macOS / Linux | Clash Party（原 Mihomo Party） | [github.com/mihomo-party-org/clash-party](https://github.com/mihomo-party-org/clash-party/releases) | 同样基于 Mihomo 内核的图形客户端，下载前请在项目页确认项目名称与维护状态 |
 | Android | Clash Meta for Android | [github.com/MetaCubeX/ClashMetaForAndroid](https://github.com/MetaCubeX/ClashMetaForAndroid/releases) | 下载前请在项目页确认当前维护状态 |
 | iOS | 无开源官方 Clash 客户端 | App Store | iOS 上常见的是付费闭源应用，请自行核对开发者与评价，本站不做推荐 |
 | 内核 | Mihomo | [github.com/MetaCubeX/mihomo](https://github.com/MetaCubeX/mihomo) | 客户端内置内核，一般无需单独安装 |

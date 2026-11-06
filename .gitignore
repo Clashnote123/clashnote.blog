@@ -6,3 +6,5 @@ db.json
 .claude/
 raw-data/
 
+
+.indexnow-state.json

@@ -6,7 +6,7 @@ order: 4
 hub: troubleshooting
 categories: [故障排查]
 tags: [订阅导入, 没有节点, 订阅格式]
-description: 订阅显示导入成功但代理页没有节点：从订阅内容、格式兼容、过滤规则和内核版本四个方向逐步排查。
+description: Clash 订阅显示导入成功但代理页没有节点：从订阅内容是否为空、格式是否兼容、扩展配置过滤和 Mihomo 内核版本四个方向逐步排查并验证。
 applies: Clash Verge Rev（Mihomo 内核）
 verified: 排查思路依据 Clash 订阅与配置的通用机制整理，未对任何具体机场的订阅内容做验证。
 faq:

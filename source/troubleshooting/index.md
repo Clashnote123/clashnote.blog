@@ -4,6 +4,7 @@ h1: Clash 故障排查：按报错与症状查找
 layout: hub
 hub: troubleshooting
 listTitle: 故障排查文章
+seoTitle: Clash 故障排查：订阅 401、节点超时、TUN、连接不上 | Clash Note
 description: 订阅导入 401/403/404、没有节点、节点超时、TUN 无法开启、已连接但无法上网、退出后无法联网等问题的排查路径索引。
 updated: 2026-11-06
 ---

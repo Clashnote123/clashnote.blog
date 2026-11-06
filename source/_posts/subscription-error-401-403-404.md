@@ -6,7 +6,7 @@ order: 3
 hub: troubleshooting
 categories: [故障排查]
 tags: [订阅导入, 401, 403, 404, 超时]
-description: 区分订阅导入时 401、403、404 和超时四类报错的含义，给出每一类的检查顺序与处理方式。
+description: Clash 导入订阅时报 401、403、404 或超时怎么办？区分四类报错的含义，给出每一类的检查顺序、处理方式与仍然失败时的下一步。
 applies: Clash Verge Rev 及其他通过 HTTP 下载订阅的 Clash 客户端
 verified: HTTP 状态码含义为通用标准；客户端提示文字随版本不同。各机场的具体拦截策略本站未逐家验证。
 faq:
@@ -57,5 +57,5 @@ sources:
 
 ## 三、仍然失败
 
-- 确认这家服务商是否真的提供 Clash 兼容订阅，见[机场推荐](/airports/)中的 Clash 兼容说明。多数官方客户端型机场根本没有可导入的链接。
+- 确认这家服务商是否真的提供 Clash 兼容订阅，见[机场推荐](/airports/)中的 Clash 兼容说明。部分机场只提供官方客户端、不公开订阅链接，是否支持导入需向客服确认。
 - 导入成功但没有节点，见[导入后没有节点](/posts/no-nodes-after-import/)。

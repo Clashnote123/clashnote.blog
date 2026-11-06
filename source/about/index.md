@@ -2,7 +2,7 @@
 title: 关于
 h1: 关于 Clash Note 与编辑原则
 layout: page
-description: Clash Note 的定位、编辑原则、数据来源、更正方式，以及推广链接与商业关系的披露说明。
+description: 了解 Clash Note 的定位与编辑原则、机场资料的数据来源与核实方式、更正渠道，以及推广链接与佣金等商业关系的披露说明。
 updated: 2026-11-06
 ---
 
