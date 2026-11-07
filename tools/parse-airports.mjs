@@ -21,12 +21,12 @@ const SLUGS = {
 // 规则：只有"有确认依据"才标 supported；资料明确写不支持 → unsupported；资料仅写"不推荐"、既未确认支持也未确认不支持 → unknown。
 // lastVerified 一律为 null：本次没有联网核验服务商后台或实际订阅。
 const DISPLAY = { supported: '支持导入 Clash', unsupported: '暂不支持导入 Clash', unknown: 'Clash 兼容待核实' };
-const OWNER = '站长在《全站统一开发指令》中声明：通过客服/工单领取适用 Clash 客户端的订阅配置';
+const OWNER = '站长证实：可以导入 Clash 并连接，订阅配置必须通过客服 / 工单领取（站长另在总指令中声明同一做法）';
 const UNSUP_NEW = '品牌资料：2026 年 10 月起新订单不提供订阅、不支持导入第三方客户端；老用户原有订阅不受影响';
 const DISCOURAGED = '品牌资料仅写"不推荐"导入第三方客户端（避免订阅外泄），未明确支持也未明确不支持，待向服务商确认';
-const OPCONF = '站长转述：该服务商运营方已向站长确认支持导入 Clash（2026-11-07，为口头/转述确认，未取得书面记录或截图）；品牌资料早期记载与之不同：';
+const OPCONF = '站长证实：该服务商可以导入 Clash 并连接成功，但订阅链接必须通过客服渠道询问获取，没有公开的订阅入口（2026-11-07，站长证实，本站未取得书面记录或截图）；品牌资料早期记载与之不同：';
 const CLASH_SUPPORT = {
-  lingdongyun: { status: 'supported', evidence: OWNER + '；同一份品牌资料注明官方公开订阅链接已暂停提供（平台遭遇异常流量攻击）。支持依据为站长声明，未经服务商公开文档或实际订阅验证', subscriptionAvailable: null, method: 'contact-support',
+  lingdongyun: { status: 'supported', evidence: OWNER + '；同一份品牌资料注明官方公开订阅链接已暂停提供（平台遭遇异常流量攻击）。依据为站长证实，本站未取得服务商公开文档或书面记录', subscriptionAvailable: null, method: 'contact-support',
     howTo: ['在官网用户中心通过 Crisp 在线客服或工单联系客服（资料：工单 24 小时内回复）', '说明需要「适用于 Clash 客户端的订阅配置」，按客服指引领取', '订阅含个人凭证，不要公开或转发；网上出售的订阅不是官方渠道', '领取后按《Clash Verge Rev 正确导入订阅链接》导入'] },
   'muguang-jiasu': { status: 'supported', evidence: OPCONF + (DISCOURAGED).replace(/^品牌资料：?/, ''), subscriptionAvailable: null, verifiedOn: '2026-11-07' },
   breezenet: { status: 'supported', evidence: OPCONF + (UNSUP_NEW).replace(/^品牌资料：?/, ''), subscriptionAvailable: null, verifiedOn: '2026-11-07' },
@@ -45,12 +45,16 @@ const CLASH_SUPPORT = {
   shanyue: { status: 'unknown', evidence: DISCOURAGED, subscriptionAvailable: null },
   sogoyun: { status: 'supported', evidence: OPCONF + ('品牌资料：不提供订阅链接，只能使用自研官方客户端，不支持导入第三方客户端').replace(/^品牌资料：?/, ''), subscriptionAvailable: null, verifiedOn: '2026-11-07' },
 };
-function buildClashSupport(slug, dev) {
+function supportSteps(service) {
+  const ch = service && (service['客服渠道'] || service['客服时间']) ? '（资料所列：' + [service['客服渠道'], service['客服时间'] ? '客服时间 ' + service['客服时间'] : null].filter(Boolean).join('；') + '）' : '（具体渠道以官网用户中心为准）';
+  return ['通过官网用户中心的客服渠道联系客服' + ch, '询问：「是否提供适用于 Clash / Mihomo 客户端的订阅？我的套餐如何获取？」', '按客服指引领取订阅；订阅含个人凭证，不要公开、转发，也不要购买网上转售的订阅', '领取后按《Clash Verge Rev 正确导入订阅链接》导入并验证节点'];
+}
+function buildClashSupport(slug, dev, service) {
   const c = CLASH_SUPPORT[slug];
   if (!c) throw new Error('缺少 Clash 状态: ' + slug);
   return {
     status: c.status, displayName: DISPLAY[c.status], evidence: c.evidence, lastVerified: c.verifiedOn || null,
-    subscriptionAvailable: c.subscriptionAvailable, method: c.method || null, howTo: c.howTo || null,
+    subscriptionAvailable: c.subscriptionAvailable, method: c.method || (c.status === 'supported' ? 'contact-support' : null), howTo: c.howTo || (c.status === 'supported' ? supportSteps(service) : null),
     sourceRaw: { subscription: dev['订阅链接'] || null, thirdParty: dev['第三方客户端'] || null },
   };
 }
@@ -201,7 +205,7 @@ function parseFile(file) {
       excludes: coupon['不适用'] || null, limit: coupon['使用限制'] || null,
     } : null,
     service,
-    clashSupport: buildClashSupport(slug, dev),
+    clashSupport: buildClashSupport(slug, dev, service),
     derived: { minMonthly, maxMonthlyGB: maxGB, cyclePlanCount: groups.cycle.length },
     measured: null,
   };

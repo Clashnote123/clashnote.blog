@@ -41,3 +41,9 @@ Git：检查点 `a0b13f5`（审计前）→ 修复提交 `bda893f`。回滚：`g
 - 内链：mihomo-yaml-basics → YAML 报错；windows-install 与 /clients/ → macOS；/airports/ → IEPL 解释。
 - 验证：构建 120 文件；check-site 112 页 / 4773 链接 0 错误；可索引 46、sitemap 46、无孤岛页。
 - 对应 KEYWORD_PAGE1_STRATEGY.md 中 #13、#19、#20（macOS 部分）已建页；Android、Clash Party、选机场指南仍缺。文章未实机验证，已在"验证状态"标注。
+
+## 追加（2026-11-07）：再新增 3 篇
+- `/posts/clash-party-install-import/`（Clash Party，order 19）、`/posts/clash-android-import-guide/`（Android，order 20）、`/posts/how-to-choose-clash-airport/`（Clash 机场怎么选，order 21）。
+- 机场兼容依据更新为"站长证实：可以导入 Clash，订阅链接必须通过客服渠道询问获取"；11 家 supported 页面均显示客服领取步骤与资料所列客服渠道；依据仍无书面记录。
+- 内链：clients 页、import-subscription、/airports/ 指向新文章；新文章互链并指向报错排查。
+- 对应策略表 #11（Clash Party）、#20（Android）、#17（选机场指南）已建页。

@@ -251,3 +251,7 @@ summary::-webkit-details-marker { display: none; } summary::after { content: "+"
   .hero-search { padding: 8px 8px 8px 14px; } .hero-search .btn { padding: 9px 14px; } .d-sec { padding: 18px; } .prose { font-size: 1rem; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+
+.social-btn { padding: 0; width: 40px; } .social-btn:hover { color: var(--primary); text-decoration: none; }
+.social-btn.is-off { opacity: .45; cursor: not-allowed; } .social-btn.is-off:hover { background: var(--card); border-color: var(--border); color: var(--text); }
+@media (max-width: 640px) { .header-actions .social-btn { display: none; } }

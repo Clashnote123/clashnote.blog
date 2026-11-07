@@ -56,6 +56,8 @@ const activeNav = (p) => {
   <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
   <symbol id="i-bug" viewBox="0 0 24 24"><path d="M12 3v3M8 8h8a3 3 0 0 1 3 3v3a7 7 0 0 1-14 0v-3a3 3 0 0 1 3-3zM3 13h3M18 13h3M5 19l3-2M19 19l-3-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
   <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M5 15V6a2 2 0 0 1 2-2h8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21.5 4.3 2.9 11.5c-.9.4-.9 1 0 1.3l4.7 1.5 1.8 5.6c.2.6.4.8.8.8s.6-.2.9-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8L22.9 5.7c.3-1.2-.4-1.8-1.4-1.4zM8.8 13.6l9.4-5.9c.4-.3.8-.1.5.2l-7.8 7-.3 3.4-1.8-4.7z" fill="currentColor"/></symbol>
+  <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.2-3.4-1.2-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.300.1-2.700 0 0 .8-.3 2.800 1a9.600 9.600 0 0 1 5.100 0c1.900-1.300 2.800-1 2.800-1 .5 1.400.2 2.400.1 2.700.6.7 1 1.600 1 2.700 0 3.900-2.400 4.700-4.600 5 .4.3.7.9.7 1.900v2.800c0 .3.2.6.7.5A10 10 0 0 0 12 2z" fill="currentColor"/></symbol>
   <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 
@@ -75,6 +77,8 @@ const activeNav = (p) => {
     <div class="header-actions">
       <button type="button" class="icon-btn search-btn" data-open-search aria-label="搜索（Ctrl+K）"><svg class="ic"><use href="#i-search"/></svg><span class="search-btn-text">搜索</span><kbd>Ctrl K</kbd></button>
       <button type="button" class="icon-btn" id="themeToggle" aria-label="切换深色模式"><svg class="ic ic-moon"><use href="#i-moon"/></svg><svg class="ic ic-sun"><use href="#i-sun"/></svg></button>
+      <% if (theme.telegram_url) { %><a class="icon-btn social-btn" href="<%= theme.telegram_url %>" target="_blank" rel="noopener noreferrer nofollow" aria-label="Telegram 频道（新窗口）" title="Telegram"><svg class="ic"><use href="#i-telegram"/></svg></a><% } %>
+      <% if (theme.github_url) { %><a class="icon-btn social-btn" href="<%= theme.github_url %>" target="_blank" rel="noopener noreferrer" aria-label="GitHub（新窗口）" title="GitHub"><svg class="ic"><use href="#i-github"/></svg></a><% } else { %><span class="icon-btn social-btn is-off" role="img" aria-label="GitHub 链接待添加" title="GitHub 链接待添加"><svg class="ic"><use href="#i-github"/></svg></span><% } %>
       <button type="button" class="icon-btn menu-btn" id="menuBtn" aria-label="打开菜单" aria-expanded="false" aria-controls="drawer"><svg class="ic"><use href="#i-menu"/></svg></button>
     </div>
   </div>
@@ -87,6 +91,8 @@ const activeNav = (p) => {
     <div class="drawer-head"><span class="brand-name">菜单</span><button type="button" class="icon-btn" data-close-drawer aria-label="关闭菜单"><svg class="ic"><use href="#i-close"/></svg></button></div>
     <nav class="drawer-nav" aria-label="移动端导航">
       <% theme.nav.forEach(function(n){ %><a href="<%= navPath(n.path) %>"><%= n.name %></a><% }) %>
+      <% if (theme.telegram_url) { %><a href="<%= theme.telegram_url %>" target="_blank" rel="noopener noreferrer nofollow"><svg class="ic"><use href="#i-telegram"/></svg> Telegram 频道</a><% } %>
+      <% if (theme.github_url) { %><a href="<%= theme.github_url %>" target="_blank" rel="noopener noreferrer"><svg class="ic"><use href="#i-github"/></svg> GitHub</a><% } %>
       <button type="button" class="drawer-search" data-open-search><svg class="ic"><use href="#i-search"/></svg> 搜索全站</button>
     </nav>
   </div>

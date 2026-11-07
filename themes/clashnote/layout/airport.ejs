@@ -59,7 +59,7 @@ const ctaRel = a.referralUrl ? 'sponsored nofollow noopener noreferrer' : 'nofol
       <% if (cs.status === 'supported' && cs.howTo) { %>
       <h3>如何获取适用 Clash 的订阅</h3>
       <ol class="steps-list"><% cs.howTo.forEach(function(s){ %><li><%= s %></li><% }) %></ol>
-      <p class="tiny">以上步骤来自站长提供的信息，本站没有、也不会公开任何订阅链接或令牌。获取后请到 <a href="/posts/clash-verge-rev-import-subscription/">订阅导入教程</a> 查看导入方法。</p>
+      <p class="tiny">以上步骤依据站长的证实整理，没有公开的订阅入口；本站没有、也不会公开任何订阅链接或令牌。获取后请到 <a href="/posts/clash-verge-rev-import-subscription/">订阅导入教程</a> 查看导入方法。</p>
       <% } else if (cs.status === 'supported') { %>
       <p>该状态来自站长转述：服务商运营方已确认支持导入 Clash，但<strong>具体订阅获取方式（是否需联系客服、哪些套餐可用）未公开</strong>，请先向客服确认。本站不提供也不公开任何订阅链接或令牌，获取后请参考 <a href="/posts/clash-verge-rev-import-subscription/">订阅导入教程</a>。</p>
       <% } else if (cs.status === 'unknown') { %>

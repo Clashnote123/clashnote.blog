@@ -25,3 +25,7 @@ footer_links:
     - { name: 隐私说明, path: /privacy/ }
     - { name: 文章归档, path: /archives/ }
     - { name: 站点地图, path: /sitemap.xml }
+
+# 社交入口（github_url 留空时图标显示为未启用，不生成假链接）
+telegram_url: https://t.me/+kjVMROObuUI5YTk1
+github_url: ''
