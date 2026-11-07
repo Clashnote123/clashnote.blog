@@ -85,3 +85,12 @@
 | unsupported（0） | — | 筛选项已隐藏 |
 
 同步修改：	ools/parse-airports.mjs（状态与依据）、	ools/sync-editorial.mjs → source/_data/editorial.yml（这 10 家的 SEO 描述、编辑提示、FAQ 中与新状态矛盾的"不支持/不推荐"表述；SEO 描述因此变动）、irport.ejs、irports.ejs。
+
+## 7. 站长决定：不展示兼容状态标签（2026-11-07，覆盖第 5、6 节的展示方式）
+
+站长决定站内**不再显示「支持 / 暂不支持 / 待核实」标签**，改为在机场推荐中用中性的"Clash 订阅与导入指引"和文章把 Clash、订阅、机场联系起来。已执行：
+- 移除：机场卡片与详情页徽章、Clash 兼容筛选、对比页的"Clash 兼容 / 订阅链接"行、公开的 /data/airports.json 中的 clashSupport、SEO 描述与 FAQ 中的状态措辞。
+- 保留（仅内部，不在页面展示）：irports.json 里的 clashSupport（evidence、lastVerified 等），作为站长证实的审计记录。
+- 详情页新增「Clash 订阅与导入指引」：说明没有公开订阅入口、需通过官网客服询问，并列出资料所列客服渠道；品牌资料中的客户端说明原文放在折叠区，标注"可能不是最新"。
+- 新增文章：/posts/airport-subscription-link-explained/、/posts/get-clash-subscription-from-support/。
+- 工具：	ools/neutralize-editorial.mjs。

@@ -9,9 +9,9 @@ page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'Breadcrumb
 <section class="page-hero">
   <div class="wrap">
     <p class="eyebrow">机场资料库</p>
-    <h1>17 家机场资料：套餐、节点与 Clash 兼容状态</h1>
+    <h1>17 家机场资料：套餐、节点与 Clash 订阅获取指引</h1>
     <p class="lead">顺序为编辑固定顺序，不是性能排名。所有数字来自各品牌提供的资料文件，缺失项显示「未提供」。含推广链接，详见<a href="/about/">披露说明</a>。</p>
-    <p class="warn-strip"><strong>先看这个：</strong>各家的订阅获取方式、是否提供公开订阅链接并不相同，每家的状态（支持 / 暂不支持 / 待核实）及核实依据见详情页「Clash 兼容说明」。只有确认依据的才标「支持导入 Clash」，购买前仍请向客服确认。</p>
+    <p class="info-strip"><strong>想用 Clash 导入？</strong>这些机场没有公开的订阅入口，订阅需通过官网客服渠道询问。先读：<a href="/posts/airport-subscription-link-explained/">机场订阅链接是什么</a> · <a href="/posts/get-clash-subscription-from-support/">向客服索取 Clash 订阅</a> · <a href="/posts/how-to-choose-clash-airport/">Clash 机场怎么选</a>。</p>
   </div>
 </section>
 
@@ -21,9 +21,6 @@ page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'Breadcrumb
       <label class="f-field f-grow"><span>搜索品牌 / 别名</span><input type="search" id="fQ" placeholder="例如：灵动、flyv、V2云"></label>
       <label class="f-field"><span>节点地区</span>
         <select id="fRegion"><option value="">不限</option><% allRegions.forEach(function(r){ %><option value="<%= r %>"><%= r %></option><% }) %></select>
-      </label>
-      <label class="f-field"><span>Clash 兼容</span>
-        <select id="fClash"><option value="">不限</option><option value="supported">支持导入 Clash</option><option value="unknown">Clash 兼容待核实</option></select>
       </label>
       <label class="f-field"><span>月付起价</span>
         <select id="fBudget"><option value="">不限</option><option value="20">≤ ¥20</option><option value="25">≤ ¥25</option><option value="30">≤ ¥30</option></select>

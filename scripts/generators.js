@@ -27,8 +27,6 @@ function lite(a) {
     devices: a.devices,
     multiplier: a.multiplier,
     nativeIp: a.nativeIp, residentialIp: a.residentialIp,
-    clashSupport: a.clashSupport,
-    subscription: a.subscription,
     coupon: a.coupon,
     plans: cyc.map(p => ({ name: p.name, gb: p.trafficGB, prices: p.prices, perGbMonthly: p.perGbMonthly || null })),
     hasOneTime: a.plans.onetime.length > 0,
@@ -46,8 +44,8 @@ hexo.extend.generator.register('clashnote-routes', function (locals) {
     path: 'airports/index.html', layout: ['airports'],
     data: {
       title: '机场推荐：17 家机场资料库', path: 'airports/', type: 'airports',
-      seoTitle: '机场推荐：17 家机场资料、套餐与 Clash 兼容状态 | Clash Note',
-      description: '按固定编辑顺序整理 17 家机场的节点地区、线路类型、套餐价格与 Clash 兼容状态，数据来自各品牌提供的资料，可按地区、预算和线路筛选。',
+      seoTitle: '机场推荐：17 家机场资料、套餐与 Clash 订阅获取指引 | Clash Note',
+      description: '按固定编辑顺序整理 17 家机场的节点地区、线路类型与套餐价格，并附 Clash 订阅获取指引；数据来自各品牌提供的资料，可按地区、预算和线路筛选。',
     },
   });
 
@@ -56,9 +54,9 @@ hexo.extend.generator.register('clashnote-routes', function (locals) {
     routes.push({
       path: `airports/${a.slug}/index.html`, layout: ['airport'],
       data: {
-        title: ed.h1 || `${a.name}：套餐、节点与 Clash 兼容说明`,
-        seoTitle: ed.seoTitle || `${a.name}套餐、节点与 Clash 兼容说明 | Clash Note`,
-        description: ed.seoDesc || `${a.name}的节点地区、线路、套餐价格与 Clash 兼容状态整理。`,
+        title: ed.h1 || `${a.name}：套餐、节点与 Clash 订阅获取指引`,
+        seoTitle: ed.seoTitle || `${a.name}套餐、节点与 Clash 订阅获取指引 | Clash Note`,
+        description: ed.seoDesc || `${a.name}的节点地区、线路、套餐价格整理，附 Clash 订阅获取指引。`,
         path: `airports/${a.slug}/`, type: 'airport',
         airport: a, ed,
         prevA: airports[i - 1] || null, nextA: airports[i + 1] || null,
@@ -70,8 +68,8 @@ hexo.extend.generator.register('clashnote-routes', function (locals) {
     path: 'compare/index.html', layout: ['compare'],
     data: {
       title: '机场套餐对比', path: 'compare/', type: 'compare',
-      seoTitle: '机场套餐对比：2–4 家并排比较价格、流量与 Clash 兼容 | Clash Note',
-      description: '选择 2–4 家机场并排比较月付起价、月流量、节点地区、线路与 Clash 兼容状态，价格口径区分月付与年付，缺失数据明确标注。',
+      seoTitle: '机场套餐对比：2–4 家并排比较价格、流量与线路 | Clash Note',
+      description: '选择 2–4 家机场并排比较月付起价、月流量、节点地区与线路，价格口径区分月付与年付，缺失数据明确标注。',
     },
   });
 
@@ -105,13 +103,13 @@ hexo.extend.generator.register('clashnote-routes', function (locals) {
     const key = p.path.replace(/index\.html$/, '');
     if (pageMeta[key]) index.push({ t: p.title, u: '/' + key, c: '栏目', s: p.description || '', k: pageMeta[key], b: strip(p.content, 600) });
   });
-  index.push({ t: '机场推荐：17 家机场资料库', u: '/airports/', c: '机场', s: '17 家机场固定顺序目录，可按地区、预算、线路、Clash 兼容状态筛选。', k: '机场推荐 机场列表 筛选', b: '' });
-  index.push({ t: '机场套餐对比', u: '/compare/', c: '机场', s: '2–4 家机场并排比较价格、流量、线路与 Clash 兼容状态。', k: '套餐对比 比较 价格', b: '' });
+  index.push({ t: '机场推荐：17 家机场资料库', u: '/airports/', c: '机场', s: '17 家机场固定顺序目录，可按地区、预算、线路筛选。', k: '机场推荐 机场列表 筛选', b: '' });
+  index.push({ t: '机场套餐对比', u: '/compare/', c: '机场', s: '2–4 家机场并排比较价格、流量与线路。', k: '套餐对比 比较 价格', b: '' });
   airports.forEach(a => {
     const l = lite(a);
     index.push({
       t: `${a.name}${a.englishName ? '（' + a.englishName + '）' : ''}`, u: `/airports/${a.slug}/`, c: '机场',
-      s: a.positioning || '', k: [a.name, ...(a.aliases || []), a.regions, l.lines.join(' '), (a.clashSupport || {}).displayName, a.coupon ? a.coupon.code : ''].join(' '),
+      s: a.positioning || '', k: [a.name, ...(a.aliases || []), a.regions, l.lines.join(' '), a.coupon ? a.coupon.code : ''].join(' '),
       b: [a.advantage, a.audience, a.lineTypeText].filter(Boolean).join(' '),
     });
   });

@@ -142,7 +142,7 @@
   /* ---------- airports filter ---------- */
   var grid = $('#airGrid');
   if (grid) {
-    var cards = $$('[data-airport]', grid), F = { q: $('#fQ'), region: $('#fRegion'), clash: $('#fClash'), budget: $('#fBudget'), line: $('#fLine'), sort: $('#fSort') };
+    var cards = $$('[data-airport]', grid), F = { q: $('#fQ'), region: $('#fRegion'), budget: $('#fBudget'), line: $('#fLine'), sort: $('#fSort') };
     var count = $('#fCount'), empty = $('#fEmpty');
     function applyF() {
       var q = norm(F.q.value).trim(), n = 0;
@@ -150,7 +150,6 @@
         var d = c.dataset, show = true;
         if (q && d.name.indexOf(q) === -1) show = false;
         if (F.region.value && d.regions.split(',').indexOf(F.region.value) === -1) show = false;
-        if (F.clash.value && d.clash !== F.clash.value) show = false;
         if (F.budget.value && !(d.min !== '' && parseFloat(d.min) <= parseFloat(F.budget.value))) show = false;
         if (F.line.value && d.lines.split(',').indexOf(F.line.value) === -1) show = false;
         c.hidden = !show; if (show) n++;
@@ -189,7 +188,6 @@
       function bestIdx(arr, low) { var v = arr.filter(function (x) { return x !== null && x !== undefined; }); if (v.length < 2) return -1; var t = low ? Math.min.apply(null, v) : Math.max.apply(null, v); return arr.indexOf(t); }
       var rows = [
         ['编辑顺序', function (a) { return '#' + String(a.rank).padStart(2, '0'); }],
-        ['Clash 兼容', function (a) { return (a.clashSupport && a.clashSupport.displayName) || 'Clash 兼容待核实'; }],
         ['月付起价', function (a, i) { return a.minMonthly ? money(a.minMonthly.price) + '（' + a.minMonthly.plan + ' · ' + gbt(a.minMonthly.gb) + '）' : '未提供'; }, bestIdx(mins, true)],
         ['最低月付 ¥/GB', function (a, i) { var b = bestPerGb(a); return b ? '¥' + b.v + '（' + b.n + '）' : '未提供'; }, bestIdx(pgs, true)],
         ['最大月流量', function (a) { return gbt(a.maxMonthlyGB); }, bestIdx(gbs, false)],
@@ -197,7 +195,6 @@
         ['线路类型', function (a) { return a.lines.length ? a.lines.join(' / ') : '未提供'; }],
         ['倍率', function (a) { return a.multiplier || '未提供'; }],
         ['同时在线设备', function (a) { return a.devices || '未提供'; }],
-        ['订阅链接', function (a) { return a.subscription || '未提供'; }],
         ['优惠码（资料所列）', function (a) { return a.coupon ? a.coupon.code + (a.coupon.discount ? '（' + a.coupon.discount + '）' : '') : '未提供'; }],
         ['详情', function (a) { return null; }]
       ];

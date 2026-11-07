@@ -4,8 +4,6 @@ const regs = airport_regions(a), lines = airport_lines(a);
 const mm = a.derived.minMonthly;
 const keys = ['month', 'quarter', 'halfyear', 'year', 'twoyear', 'threeyear'];
 const used = keys.filter(k => a.plans.cycle.some(p => p.prices[k] !== undefined));
-const cs = a.clashSupport || { status: 'unknown', displayName: 'Clash 兼容待核实', evidence: '', howTo: null, sourceRaw: {} };
-const csTone = { supported: 'ok', unsupported: 'warn', unknown: 'mid' }[cs.status] || 'mid';
 page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
   { '@type': 'ListItem', position: 1, name: '首页', item: 'https://clashnote.blog/' },
   { '@type': 'ListItem', position: 2, name: '机场推荐', item: 'https://clashnote.blog/airports/' },
@@ -19,7 +17,7 @@ const ctaRel = a.referralUrl ? 'sponsored nofollow noopener noreferrer' : 'nofol
     <p class="eyebrow">编辑顺序 #<%= String(a.rank).padStart(2, '0') %> · 共 17 家</p>
     <h1><%= page.title %></h1>
     <p class="lead"><%= ed.lead || a.positioning %></p>
-    <p class="badges"><%- clash_badge(cs) %>
+    <p class="badges">
       <% if (a.nativeIp) { %><span class="badge badge-info">资料称：原生 IP</span><% } %>
       <% if (a.residentialIp) { %><span class="badge badge-info">资料称：住宅 IP</span><% } %>
     </p>
@@ -50,31 +48,31 @@ const ctaRel = a.referralUrl ? 'sponsored nofollow noopener noreferrer' : 'nofol
     </section>
 
     <section class="d-sec" id="clash">
-      <h2>Clash 兼容说明</h2>
-      <div class="callout callout-<%= csTone %>">
-        <p><strong><%= cs.displayName %></strong></p>
-        <p><strong>核实依据：</strong><%= cs.evidence || '暂无' %>。</p>
-        <p class="tiny">核验日期：<%= cs.lastVerified || '尚未联网核验服务商后台或实际订阅' %></p>
-      </div>
-      <% if (cs.status === 'supported' && cs.howTo) { %>
-      <h3>如何获取适用 Clash 的订阅</h3>
-      <ol class="steps-list"><% cs.howTo.forEach(function(s){ %><li><%= s %></li><% }) %></ol>
-      <p class="tiny">以上步骤依据站长的证实整理，没有公开的订阅入口；本站没有、也不会公开任何订阅链接或令牌。获取后请到 <a href="/posts/clash-verge-rev-import-subscription/">订阅导入教程</a> 查看导入方法。</p>
-      <% } else if (cs.status === 'supported') { %>
-      <p>该状态来自站长转述：服务商运营方已确认支持导入 Clash，但<strong>具体订阅获取方式（是否需联系客服、哪些套餐可用）未公开</strong>，请先向客服确认。本站不提供也不公开任何订阅链接或令牌，获取后请参考 <a href="/posts/clash-verge-rev-import-subscription/">订阅导入教程</a>。</p>
-      <% } else if (cs.status === 'unknown') { %>
-      <p>该状态表示<strong>尚未确认</strong>，不是"支持"也不是"不支持"。购买前请向服务商客服确认是否提供 Clash / Mihomo 兼容订阅，并先读 <a href="/posts/clash-verge-rev-import-subscription/">订阅导入教程</a> 中的核对清单。</p>
-      <% } else if (cs.status === 'unsupported') { %>
-      <p>请直接使用该机场的官方客户端，不要购买网上转售的订阅来强行导入。</p>
-      <% } %>
-      <h3>品牌资料原文（早期记录）</h3>
-      <ul class="kv-list">
-        <li><span>使用方式</span><span><%= a.usage || '未提供' %></span></li>
-        <li><span>订阅链接</span><span><%= cs.sourceRaw.subscription || a.subscription || '未提供' %></span></li>
-        <li><span>第三方客户端</span><span><%= cs.sourceRaw.thirdParty || a.thirdParty || '未提供' %></span></li>
-        <li><span>下载渠道</span><span><%= a.download || '未提供' %></span></li>
+      <h2>Clash 订阅与导入指引</h2>
+      <p>Clash 客户端本身不提供节点，需要服务商提供<strong>兼容 Clash / Mihomo 的订阅</strong>。<%= a.name %> 的资料里没有公开的订阅入口，是否提供、如何获取，请通过官网客服渠道询问，以客服答复为准。</p>
+      <ol class="steps-list">
+        <li>通过官网用户中心联系客服<%= (a.service['客服渠道'] || a.service['客服时间']) ? '（资料所列：' + [a.service['客服渠道'], a.service['客服时间'] ? '客服时间 ' + a.service['客服时间'] : null].filter(Boolean).join('；') + '）' : '（具体渠道以官网为准）' %>。</li>
+        <li>询问：「是否提供适用于 Clash / Mihomo 客户端的订阅？我的套餐如何获取？」</li>
+        <li>按客服指引领取；订阅含个人凭证，不要公开或转发，也不要购买转售订阅。</li>
+        <li>领取后按教程导入并验证节点。</li>
+      </ol>
+      <p class="tiny">本站不提供、也不公开任何订阅链接或令牌。官方客户端不等同于 Clash 客户端，官方客户端的账号登录与 Clash 订阅是两种不同机制。</p>
+      <h3>相关阅读</h3>
+      <ul class="bullets">
+        <li><a href="/posts/airport-subscription-link-explained/">机场订阅链接是什么？官方客户端、订阅与 Clash 导入的关系</a></li>
+        <li><a href="/posts/get-clash-subscription-from-support/">向机场客服索取 Clash 订阅：流程、话术与客服渠道</a></li>
+        <li><a href="/posts/clash-verge-rev-import-subscription/">Clash Verge Rev 正确导入订阅链接</a></li>
+        <li><a href="/posts/how-to-choose-clash-airport/">Clash 机场怎么选</a></li>
       </ul>
-      <p class="tiny">官方客户端不等同于 Clash 客户端；官方客户端账号登录与 Clash 订阅是两种不同机制。</p>
+      <details class="raw-src">
+        <summary>品牌资料中的客户端说明（原文，可能不是最新）</summary>
+        <ul class="kv-list">
+          <li><span>使用方式</span><span><%= a.usage || '未提供' %></span></li>
+          <li><span>订阅链接</span><span><%= a.subscription || '未提供' %></span></li>
+          <li><span>第三方客户端</span><span><%= a.thirdParty || '未提供' %></span></li>
+          <li><span>下载渠道</span><span><%= a.download || '未提供' %></span></li>
+        </ul>
+      </details>
     </section>
 
     <section class="d-sec" id="plans">
@@ -190,7 +188,7 @@ const ctaRel = a.referralUrl ? 'sponsored nofollow noopener noreferrer' : 'nofol
       <% if (a.referralUrl) { %><p class="tiny">推广链接（sponsored）。只通过官网注册购买，价格以结算页为准。</p><% } else { %><p class="tiny">资料中未提供推广链接，仅提供官网入口。</p><% } %>
       <a class="btn btn-ghost btn-block" href="/compare/?add=<%= a.slug %>">加入对比</a>
       <ul class="side-links">
-        <li><a href="#plans">套餐与价格</a></li><li><a href="#clash">Clash 兼容</a></li><li><a href="#traffic">流量与优惠码</a></li><li><a href="#source">数据来源</a></li>
+        <li><a href="#plans">套餐与价格</a></li><li><a href="#clash">Clash 订阅指引</a></li><li><a href="#traffic">流量与优惠码</a></li><li><a href="#source">数据来源</a></li>
       </ul>
     </div>
   </aside>

@@ -21,7 +21,7 @@ sources:
 
 **结论：** 在 macOS 上，从 Clash Verge Rev 官方发布页下载与你芯片匹配的 dmg，拖入"应用程序"后首次打开处理好系统的开发者提示，再按需开启系统代理或 TUN 即可。
 
-> 提示：客户端本身不提供节点，需要服务商提供兼容订阅。本站各机场的 Clash 兼容状态与核实依据见[机场推荐](/airports/)；导入方法见[正确导入订阅链接](/posts/clash-verge-rev-import-subscription/)。
+> 提示：客户端本身不提供节点，需要服务商提供兼容订阅。订阅怎么向客服索取见[向机场客服索取 Clash 订阅](/posts/get-clash-subscription-from-support/)；导入方法见[正确导入订阅链接](/posts/clash-verge-rev-import-subscription/)。
 
 ## 一、确认芯片并下载
 

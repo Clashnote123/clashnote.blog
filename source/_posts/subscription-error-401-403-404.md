@@ -57,5 +57,5 @@ sources:
 
 ## 三、仍然失败
 
-- 确认这家服务商是否真的提供 Clash 兼容订阅，见[机场推荐](/airports/)中的 Clash 兼容说明。部分机场只提供官方客户端、不公开订阅链接，是否支持导入需向客服确认。
+- 确认这家服务商是否真的提供 Clash 兼容订阅，流程见[向机场客服索取 Clash 订阅](/posts/get-clash-subscription-from-support/)。部分机场不公开订阅链接，需向客服确认。
 - 导入成功但没有节点，见[导入后没有节点](/posts/no-nodes-after-import/)。

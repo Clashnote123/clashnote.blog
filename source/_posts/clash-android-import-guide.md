@@ -22,7 +22,7 @@ sources:
 
 **结论：** Android 上用 Clash 的流程是"下载官方 APK → 允许安装 → 导入订阅 → 授予 VPN 权限 → 启动并验证"。最关键的前提仍然是：你要有一份**服务商确实提供、且兼容 Clash 的订阅**。
 
-> 提示：客户端不提供节点。各机场的 Clash 兼容状态与订阅获取方式见[机场推荐](/airports/)，选择思路见[Clash 机场怎么选](/posts/how-to-choose-clash-airport/)。
+> 提示：客户端不提供节点。订阅怎么向客服索取见[向机场客服索取 Clash 订阅](/posts/get-clash-subscription-from-support/)，选择思路见[Clash 机场怎么选](/posts/how-to-choose-clash-airport/)。
 
 ## 一、选客户端
 

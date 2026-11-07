@@ -21,7 +21,7 @@ sources:
 
 **结论：** 用 Clash Party 导入订阅分四步——从官方发布页下载匹配系统的安装包、拿到一份**确实兼容 Clash 的订阅**、在订阅管理里粘贴导入、选节点后开启系统代理并验证。其中最容易被忽略的是第二步：没有兼容订阅，客户端再好用也没有节点。
 
-> 提示：客户端本身不提供节点。本站各机场是否支持导入 Clash、订阅如何获取，见[机场推荐](/airports/)的「Clash 兼容说明」；多数需要通过客服渠道询问订阅，选择思路见[Clash 机场怎么选](/posts/how-to-choose-clash-airport/)。
+> 提示：客户端本身不提供节点。机场订阅通常需要通过客服渠道询问，流程见[向机场客服索取 Clash 订阅](/posts/get-clash-subscription-from-support/)，选择思路见[Clash 机场怎么选](/posts/how-to-choose-clash-airport/)。
 
 ## 一、下载与安装
 

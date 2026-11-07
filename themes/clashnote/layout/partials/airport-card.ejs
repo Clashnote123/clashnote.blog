@@ -6,11 +6,9 @@ const mm = a.derived.minMonthly;
 %>
 <article class="a-card" data-airport
   data-name="<%= [a.name, a.englishName].concat(a.aliases || []).filter(Boolean).join(' ').toLowerCase() %>"
-  data-regions="<%= regs.join(',') %>" data-lines="<%= lines.join(',') %>"
-  data-clash="<%= (a.clashSupport || {}).status || 'unknown' %>" data-min="<%= mm ? mm.price : '' %>" data-maxgb="<%= a.derived.maxMonthlyGB || '' %>" data-rank="<%= a.rank %>">
+  data-regions="<%= regs.join(',') %>" data-lines="<%= lines.join(',') %>" data-min="<%= mm ? mm.price : '' %>" data-maxgb="<%= a.derived.maxMonthlyGB || '' %>" data-rank="<%= a.rank %>">
   <div class="a-top">
     <span class="a-rank" aria-label="编辑顺序第 <%= a.rank %>">#<%= String(a.rank).padStart(2, '0') %></span>
-    <%- clash_badge(a.clashSupport) %>
   </div>
   <h3 class="a-name"><a href="/airports/<%= a.slug %>/"><%= a.name %></a><% if (a.englishName) { %> <small><%= a.englishName %></small><% } %></h3>
   <p class="a-pos"><%= a.positioning %></p>
