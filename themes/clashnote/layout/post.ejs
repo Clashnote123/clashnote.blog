@@ -15,7 +15,7 @@ const published = page.date.format('YYYY-MM-DD');
 const modified = (page.updated || page.date).format('YYYY-MM-DD');
 page.extraHead = jsonld({
   '@context': 'https://schema.org', '@type': 'Article', headline: page.title, description: page.description,
-  datePublished: published, dateModified: modified, inLanguage: 'zh-CN', mainEntityOfPage: url,
+  image: 'https://clashnote.blog/img/og-image.jpg', datePublished: published, dateModified: modified, inLanguage: 'zh-CN', mainEntityOfPage: url,
   author: { '@type': 'Organization', name: 'Clash Note 编辑部' },
   publisher: { '@type': 'Organization', name: 'Clash Note', url: 'https://clashnote.blog/' }
 }) + jsonld({
