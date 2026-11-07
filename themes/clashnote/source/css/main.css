@@ -255,3 +255,7 @@ summary::-webkit-details-marker { display: none; } summary::after { content: "+"
 .social-btn { padding: 0; width: 40px; } .social-btn:hover { color: var(--primary); text-decoration: none; }
 .social-btn.is-off { opacity: .45; cursor: not-allowed; } .social-btn.is-off:hover { background: var(--card); border-color: var(--border); color: var(--text); }
 @media (max-width: 640px) { .header-actions .social-btn { display: none; } }
+
+/* 标题换行均衡，避免末尾只剩一两个字符 */
+.pn strong, .p-card h3, .article-head h1, .page-hero h1, .sr-item strong { text-wrap: balance; }
+.pn strong { display: block; line-break: strict; word-break: keep-all; overflow-wrap: anywhere; }
