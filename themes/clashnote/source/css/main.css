@@ -263,3 +263,6 @@ summary::-webkit-details-marker { display: none; } summary::after { content: "+"
 .info-strip { background: var(--soft); color: var(--text); border-radius: 12px; padding: 12px 16px; font-size: .94rem; max-width: 900px; }
 .raw-src { margin-top: 14px; } .raw-src .kv-list { margin: 0 16px 14px; }
 @media (min-width: 1025px) { .f-row { grid-template-columns: repeat(5, 1fr); } }
+
+.sum-box { margin-top: 18px; background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 18px 22px; max-width: 900px; } .sum-box h2 { font-size: 1.05rem; margin-bottom: 8px; }
+.sum-list { margin: 0 0 8px; padding-left: 1.2em; } .sum-list li { margin: 6px 0; }
