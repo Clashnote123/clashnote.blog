@@ -125,7 +125,7 @@ small { font-size: .82em; }
 .a-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
 .a-rank { font-family: var(--mono); font-size: .8rem; color: var(--muted); }
 .a-name { margin: 0; font-size: 1.25rem; } .a-name a { color: var(--text); } .a-name small { color: var(--muted); font-weight: 500; font-size: .75em; }
-.a-pos { color: var(--muted); font-size: .9rem; margin: 0; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.a-pos { color: var(--muted); font-size: .9rem; margin: 0; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; overflow: hidden; }
 .a-facts { margin: 4px 0; display: grid; gap: 6px; } .a-facts div { display: grid; grid-template-columns: 72px 1fr; gap: 8px; font-size: .88rem; }
 .a-facts dt { color: var(--muted); } .a-facts dd { margin: 0; }
 .a-actions { display: flex; gap: 8px; margin-top: auto; padding-top: 6px; flex-wrap: wrap; } .a-actions .btn { padding: 8px 12px; font-size: .86rem; }

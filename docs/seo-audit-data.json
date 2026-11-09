@@ -9,9 +9,9 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 3181,
-   "inAll": 137,
-   "inMain": 135,
+   "chars": 3528,
+   "inAll": 143,
+   "inMain": 141,
    "outMain": 32,
    "ogImage": true
   },
@@ -40,7 +40,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1107,
-   "inAll": 137,
+   "inAll": 143,
    "inMain": 5,
    "outMain": 5,
    "ogImage": true
@@ -54,10 +54,10 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 3376,
-   "inAll": 137,
-   "inMain": 26,
-   "outMain": 23,
+   "chars": 4581,
+   "inAll": 143,
+   "inMain": 27,
+   "outMain": 24,
    "ogImage": true
   },
   {
@@ -324,8 +324,8 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 1585,
-   "inAll": 137,
+   "chars": 1630,
+   "inAll": 143,
    "inMain": 0,
    "outMain": 14,
    "ogImage": true
@@ -339,7 +339,7 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 1585,
+   "chars": 1630,
    "inAll": 0,
    "inMain": 0,
    "outMain": 14,
@@ -354,7 +354,7 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 1585,
+   "chars": 1630,
    "inAll": 0,
    "inMain": 0,
    "outMain": 14,
@@ -369,10 +369,25 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 1340,
+   "chars": 1331,
    "inAll": 0,
    "inMain": 0,
    "outMain": 14,
+   "ogImage": true
+  },
+  {
+   "url": "/archives/2026/11/page/3/",
+   "title": "文章归档 | Clash Note",
+   "tl": 17,
+   "dl": 88,
+   "h1": "文章归档",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 168,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
    "ogImage": true
   },
   {
@@ -384,10 +399,25 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 1340,
+   "chars": 1331,
    "inAll": 0,
    "inMain": 0,
    "outMain": 14,
+   "ogImage": true
+  },
+  {
+   "url": "/archives/2026/page/3/",
+   "title": "文章归档 | Clash Note",
+   "tl": 17,
+   "dl": 88,
+   "h1": "文章归档",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 168,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
    "ogImage": true
   },
   {
@@ -399,10 +429,25 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 1340,
+   "chars": 1331,
    "inAll": 0,
    "inMain": 0,
    "outMain": 14,
+   "ogImage": true
+  },
+  {
+   "url": "/archives/page/3/",
+   "title": "文章归档 | Clash Note",
+   "tl": 17,
+   "dl": 88,
+   "h1": "文章归档",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 168,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
    "ogImage": true
   },
   {
@@ -429,10 +474,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 561,
+   "chars": 726,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 6,
+   "outMain": 7,
    "ogImage": true
   },
   {
@@ -490,7 +535,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1482,
-   "inAll": 137,
+   "inAll": 143,
    "inMain": 1,
    "outMain": 9,
    "ogImage": true
@@ -505,7 +550,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 303,
-   "inAll": 137,
+   "inAll": 143,
    "inMain": 20,
    "outMain": 2,
    "ogImage": true
@@ -520,7 +565,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1276,
-   "inAll": 137,
+   "inAll": 143,
    "inMain": 2,
    "outMain": 10,
    "ogImage": true
@@ -534,10 +579,10 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 3214,
-   "inAll": 29,
-   "inMain": 29,
-   "outMain": 26,
+   "chars": 3254,
+   "inAll": 30,
+   "inMain": 30,
+   "outMain": 27,
    "ogImage": true
   },
   {
@@ -550,8 +595,8 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1994,
-   "inAll": 31,
-   "inMain": 31,
+   "inAll": 32,
+   "inMain": 32,
    "outMain": 8,
    "ogImage": true
   },
@@ -565,8 +610,8 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1328,
-   "inAll": 18,
-   "inMain": 18,
+   "inAll": 19,
+   "inMain": 19,
    "outMain": 6,
    "ogImage": true
   },
@@ -580,8 +625,8 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 2441,
-   "inAll": 14,
-   "inMain": 14,
+   "inAll": 15,
+   "inMain": 15,
    "outMain": 12,
    "ogImage": true
   },
@@ -625,8 +670,8 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1765,
-   "inAll": 39,
-   "inMain": 39,
+   "inAll": 40,
+   "inMain": 40,
    "outMain": 10,
    "ogImage": true
   },
@@ -640,8 +685,8 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 2180,
-   "inAll": 18,
-   "inMain": 18,
+   "inAll": 19,
+   "inMain": 19,
    "outMain": 10,
    "ogImage": true
   },
@@ -655,8 +700,8 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 2128,
-   "inAll": 16,
-   "inMain": 16,
+   "inAll": 17,
+   "inMain": 17,
    "outMain": 7,
    "ogImage": true
   },
@@ -670,8 +715,8 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 2703,
-   "inAll": 18,
-   "inMain": 18,
+   "inAll": 19,
+   "inMain": 19,
    "outMain": 10,
    "ogImage": true
   },
@@ -714,10 +759,10 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 2036,
-   "inAll": 39,
-   "inMain": 39,
-   "outMain": 25,
+   "chars": 2078,
+   "inAll": 40,
+   "inMain": 40,
+   "outMain": 26,
    "ogImage": true
   },
   {
@@ -729,10 +774,10 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 2367,
-   "inAll": 36,
-   "inMain": 36,
-   "outMain": 16,
+   "chars": 2422,
+   "inAll": 37,
+   "inMain": 37,
+   "outMain": 17,
    "ogImage": true
   },
   {
@@ -790,8 +835,8 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1426,
-   "inAll": 21,
-   "inMain": 21,
+   "inAll": 22,
+   "inMain": 22,
    "outMain": 7,
    "ogImage": true
   },
@@ -811,6 +856,21 @@
    "ogImage": true
   },
   {
+   "url": "/posts/register-official-account-get-clash-subscription/",
+   "title": "想用 Clash 或第三方客户端？先注册官方账号，再向客服索取订阅链接 | Clash Note",
+   "tl": 48,
+   "dl": 112,
+   "h1": "想用 Clash 或第三方客户端？先注册官方账号，再向客服索取订阅链接",
+   "canonOK": true,
+   "noindex": false,
+   "inSitemap": true,
+   "chars": 2505,
+   "inAll": 15,
+   "inMain": 15,
+   "outMain": 16,
+   "ogImage": true
+  },
+  {
    "url": "/posts/subscription-error-401-403-404/",
    "title": "订阅导入报错 401、403、404 与超时怎么排查 | Clash Note",
    "tl": 39,
@@ -820,8 +880,8 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1733,
-   "inAll": 23,
-   "inMain": 23,
+   "inAll": 24,
+   "inMain": 24,
    "outMain": 6,
    "ogImage": true
   },
@@ -895,7 +955,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 520,
-   "inAll": 137,
+   "inAll": 143,
    "inMain": 1,
    "outMain": 1,
    "ogImage": true
@@ -925,7 +985,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1880,
-   "inAll": 137,
+   "inAll": 143,
    "inMain": 4,
    "outMain": 4,
    "ogImage": true
@@ -1036,6 +1096,21 @@
    "ogImage": true
   },
   {
+   "url": "/tags/第三方客户端/",
+   "title": "标签：第三方客户端 | Clash Note",
+   "tl": 22,
+   "dl": 88,
+   "h1": "标签：第三方客户端",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 214,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
+   "ogImage": true
+  },
+  {
    "url": "/tags/订阅导入/",
    "title": "标签：订阅导入 | Clash Note",
    "tl": 20,
@@ -1089,10 +1164,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 544,
+   "chars": 709,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 6,
+   "outMain": 7,
    "ogImage": true
   },
   {
@@ -1165,6 +1240,21 @@
    "noindex": true,
    "inSitemap": false,
    "chars": 170,
+   "inAll": 0,
+   "inMain": 0,
+   "outMain": 3,
+   "ogImage": true
+  },
+  {
+   "url": "/tags/官方账号/",
+   "title": "标签：官方账号 | Clash Note",
+   "tl": 20,
+   "dl": 88,
+   "h1": "标签：官方账号",
+   "canonOK": true,
+   "noindex": true,
+   "inSitemap": false,
+   "chars": 210,
    "inAll": 0,
    "inMain": 0,
    "outMain": 3,
@@ -1344,10 +1434,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 307,
+   "chars": 472,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 4,
+   "outMain": 5,
    "ogImage": true
   },
   {
@@ -1689,10 +1779,10 @@
    "canonOK": true,
    "noindex": true,
    "inSitemap": false,
-   "chars": 184,
+   "chars": 349,
    "inAll": 0,
    "inMain": 0,
-   "outMain": 3,
+   "outMain": 4,
    "ogImage": true
   },
   {
@@ -2020,7 +2110,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 1231,
-   "inAll": 137,
+   "inAll": 143,
    "inMain": 11,
    "outMain": 10,
    "ogImage": true
@@ -2034,10 +2124,10 @@
    "canonOK": true,
    "noindex": false,
    "inSitemap": true,
-   "chars": 3217,
-   "inAll": 137,
-   "inMain": 98,
-   "outMain": 27,
+   "chars": 3382,
+   "inAll": 143,
+   "inMain": 104,
+   "outMain": 28,
    "ogImage": true
   },
   {
@@ -2050,7 +2140,7 @@
    "noindex": false,
    "inSitemap": true,
    "chars": 802,
-   "inAll": 137,
+   "inAll": 143,
    "inMain": 7,
    "outMain": 7,
    "ogImage": true
@@ -2063,7 +2153,7 @@
   },
   "Clash 教程": {
    "inTitle": [],
-   "inBody": 14
+   "inBody": 15
   },
   "Clash下载": {
    "inTitle": [],
@@ -2075,7 +2165,7 @@
     "/posts/clash-verge-rev-macos/",
     "/posts/clash-verge-rev-windows-install/"
    ],
-   "inBody": 67
+   "inBody": 76
   },
   "Clash订阅": {
    "inTitle": [],
@@ -2086,20 +2176,21 @@
     "/posts/get-clash-subscription-from-support/",
     "/posts/subscription-update-failed/"
    ],
-   "inBody": 58
+   "inBody": 59
   },
   "订阅导入": {
    "inTitle": [
     "/posts/subscription-error-401-403-404/"
    ],
-   "inBody": 34
+   "inBody": 35
   },
   "订阅链接": {
    "inTitle": [
     "/posts/airport-subscription-link-explained/",
-    "/posts/clash-verge-rev-import-subscription/"
+    "/posts/clash-verge-rev-import-subscription/",
+    "/posts/register-official-account-get-clash-subscription/"
    ],
-   "inBody": 51
+   "inBody": 56
   },
   "Clash节点": {
    "inTitle": [],
@@ -2111,7 +2202,7 @@
   },
   "机场推荐": {
    "inTitle": [],
-   "inBody": 26
+   "inBody": 27
   },
   "规则模式": {
    "inTitle": [
@@ -2161,25 +2252,25 @@
     "/posts/all-nodes-timeout/",
     "/posts/subscription-error-401-403-404/"
    ],
-   "inBody": 26
+   "inBody": 27
   },
   "Mihomo": {
    "inTitle": [
     "/posts/mihomo-yaml-basics/"
    ],
-   "inBody": 81
+   "inBody": 82
   },
   "Windows 11": {
    "inTitle": [
     "/posts/clash-verge-rev-windows-install/"
    ],
-   "inBody": 16
+   "inBody": 17
   },
   "Clash Party": {
    "inTitle": [
     "/posts/clash-party-install-import/"
    ],
-   "inBody": 20
+   "inBody": 28
   },
   "配置文件": {
    "inTitle": [
@@ -2193,7 +2284,7 @@
     "/posts/clash-yaml-error-fix/",
     "/posts/mihomo-yaml-basics/"
    ],
-   "inBody": 28
+   "inBody": 29
   },
   "无法上网": {
    "inTitle": [],
@@ -2219,13 +2310,13 @@
    "inTitle": [
     "/posts/clash-verge-rev-macos/"
    ],
-   "inBody": 32
+   "inBody": 33
   },
   "Android": {
    "inTitle": [
     "/posts/clash-android-import-guide/"
    ],
-   "inBody": 28
+   "inBody": 29
   },
   "iOS": {
    "inTitle": [],
@@ -2242,6 +2333,12 @@
   {
    "a": "/posts/airport-differences-by-need/",
    "b": "/posts/get-clash-subscription-from-support/",
+   "r": 1,
+   "t": "想用 Clash 导入机场订阅，购买前该确认什么：订阅能否获取、如何向客服索取、给客服的提问模板、套"
+  },
+  {
+   "a": "/posts/airport-differences-by-need/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
    "r": 1,
    "t": "想用 Clash 导入机场订阅，购买前该确认什么：订阅能否获取、如何向客服索取、给客服的提问模板、套"
   },
@@ -2301,12 +2398,6 @@
   },
   {
    "a": "/posts/airport-differences-by-need/",
-   "b": "/posts/how-to-choose-clash-airport/",
-   "r": 1,
-   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
-  },
-  {
-   "a": "/posts/airport-differences-by-need/",
    "b": "/posts/how-to-read-speedtest-images/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
@@ -2314,6 +2405,12 @@
   {
    "a": "/posts/airport-differences-by-need/",
    "b": "/posts/no-nodes-after-import/",
+   "r": 1,
+   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+  },
+  {
+   "a": "/posts/airport-differences-by-need/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
   },
@@ -2349,12 +2446,6 @@
   },
   {
    "a": "/posts/airport-subscription-link-explained/",
-   "b": "/posts/how-to-choose-clash-airport/",
-   "r": 1,
-   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
-  },
-  {
-   "a": "/posts/airport-subscription-link-explained/",
    "b": "/posts/how-to-read-speedtest-images/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
@@ -2362,6 +2453,12 @@
   {
    "a": "/posts/airport-subscription-link-explained/",
    "b": "/posts/no-nodes-after-import/",
+   "r": 1,
+   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+  },
+  {
+   "a": "/posts/airport-subscription-link-explained/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
   },
@@ -2379,7 +2476,19 @@
   },
   {
    "a": "/posts/airport-subscription-link-explained/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
+   "r": 1,
+   "t": "想用 Clash 导入机场订阅，购买前该确认什么：订阅能否获取、如何向客服索取、给客服的提问模板、套"
+  },
+  {
+   "a": "/posts/airport-subscription-link-explained/",
    "b": "/posts/how-to-choose-clash-airport/",
+   "r": 1,
+   "t": "机场没有公开订阅入口时，如何通过官网客服渠道索取适用于 Clash 的订阅：四步流程、可直接使用的提"
+  },
+  {
+   "a": "/posts/airport-subscription-link-explained/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
    "r": 1,
    "t": "机场没有公开订阅入口时，如何通过官网客服渠道索取适用于 Clash 的订阅：四步流程、可直接使用的提"
   },
@@ -2451,12 +2560,6 @@
   },
   {
    "a": "/posts/clash-android-import-guide/",
-   "b": "/posts/how-to-choose-clash-airport/",
-   "r": 1,
-   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
-  },
-  {
-   "a": "/posts/clash-android-import-guide/",
    "b": "/posts/how-to-read-speedtest-images/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
@@ -2464,6 +2567,12 @@
   {
    "a": "/posts/clash-android-import-guide/",
    "b": "/posts/no-nodes-after-import/",
+   "r": 1,
+   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+  },
+  {
+   "a": "/posts/clash-android-import-guide/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
   },
@@ -2577,12 +2686,6 @@
   },
   {
    "a": "/posts/clash-party-install-import/",
-   "b": "/posts/how-to-choose-clash-airport/",
-   "r": 1,
-   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
-  },
-  {
-   "a": "/posts/clash-party-install-import/",
    "b": "/posts/how-to-read-speedtest-images/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
@@ -2590,6 +2693,12 @@
   {
    "a": "/posts/clash-party-install-import/",
    "b": "/posts/no-nodes-after-import/",
+   "r": 1,
+   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+  },
+  {
+   "a": "/posts/clash-party-install-import/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
   },
@@ -2745,12 +2854,6 @@
   },
   {
    "a": "/posts/clash-verge-rev-windows-install/",
-   "b": "/posts/how-to-choose-clash-airport/",
-   "r": 1,
-   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
-  },
-  {
-   "a": "/posts/clash-verge-rev-windows-install/",
    "b": "/posts/how-to-read-speedtest-images/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
@@ -2758,6 +2861,12 @@
   {
    "a": "/posts/clash-verge-rev-windows-install/",
    "b": "/posts/no-nodes-after-import/",
+   "r": 1,
+   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+  },
+  {
+   "a": "/posts/clash-verge-rev-windows-install/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
   },
@@ -2891,7 +3000,13 @@
    "a": "/posts/get-clash-subscription-from-support/",
    "b": "/posts/how-to-choose-clash-airport/",
    "r": 1,
-   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+   "t": "想用 Clash、Clash Verge Rev、Clash Party 等第三方客户端的用户，完整"
+  },
+  {
+   "a": "/posts/get-clash-subscription-from-support/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
+   "r": 1,
+   "t": "想用 Clash 导入机场订阅，购买前该确认什么：订阅能否获取、如何向客服索取、给客服的提问模板、套"
   },
   {
    "a": "/posts/get-clash-subscription-from-support/",
@@ -2907,31 +3022,31 @@
   },
   {
    "a": "/posts/get-clash-subscription-from-support/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
+   "r": 1,
+   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+  },
+  {
+   "a": "/posts/get-clash-subscription-from-support/",
    "b": "/posts/subscription-error-401-403-404/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
   },
   {
    "a": "/posts/how-to-choose-clash-airport/",
-   "b": "/posts/how-to-read-speedtest-images/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
    "r": 1,
-   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+   "t": "机场没有公开订阅入口时，如何通过官网客服渠道索取适用于 Clash 的订阅：四步流程、可直接使用的提"
   },
   {
-   "a": "/posts/how-to-choose-clash-airport/",
+   "a": "/posts/how-to-read-speedtest-images/",
    "b": "/posts/no-nodes-after-import/",
-   "r": 1,
-   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
-  },
-  {
-   "a": "/posts/how-to-choose-clash-airport/",
-   "b": "/posts/subscription-error-401-403-404/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
   },
   {
    "a": "/posts/how-to-read-speedtest-images/",
-   "b": "/posts/no-nodes-after-import/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
   },
@@ -2991,6 +3106,12 @@
   },
   {
    "a": "/posts/no-nodes-after-import/",
+   "b": "/posts/register-official-account-get-clash-subscription/",
+   "r": 1,
+   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
+  },
+  {
+   "a": "/posts/no-nodes-after-import/",
    "b": "/posts/subscription-error-401-403-404/",
    "r": 1,
    "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
@@ -3000,6 +3121,12 @@
    "b": "/posts/subscription-error-401-403-404/",
    "r": 1,
    "t": "Clash Party（原 Mihomo Party）的下载安装与订阅导入步骤：如何选对安装包、导入"
+  },
+  {
+   "a": "/posts/register-official-account-get-clash-subscription/",
+   "b": "/posts/subscription-error-401-403-404/",
+   "r": 1,
+   "t": "导入前先确认你的订阅是否真的兼容 Clash，再在 Clash Verge Rev 中粘贴链接导入、"
   },
   {
    "a": "/posts/subscription-error-401-403-404/",
