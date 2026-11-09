@@ -30,7 +30,7 @@ sources:
 |---|---|
 | ¥19 | [无忧](/airports/wuyou/)（100 GB） |
 | ¥19.9 | [唯兔云](/airports/weituyun/)（150 GB；另有节假日限时档 ¥14.9，不计入） |
-| ¥19.99 | [大佬云](/airports/dalaoyun/)（120 GB，仅支持支付宝，资料称 2026 年 9 月新上线） |
+| ¥19.99 | [大佬云](/airports/dalaoyun/)（120 GB，资料称 2026 年 9 月新上线） |
 | ¥20 | [灵动云](/airports/lingdongyun/)（100 GB）、[暮光加速](/airports/muguang-jiasu/)（120 GB）、[全球云](/airports/quanqiuyun/)（120 GB）、[跨界](/airports/kuajie/)（120 GB） |
 | ¥24–25 | [隐形人](/airports/yinxingren/)、[闪跃](/airports/shanyue/)、[微风网络](/airports/breezenet/)、[飞猫云](/airports/feimaoyun/)、[梯子云](/airports/tiziyun/)、[飞V](/airports/flyv/)、[Firefly](/airports/firefly/)、[灵猫](/airports/lingmao/)、[Sogo云](/airports/sogoyun/) |
 | ¥30 | [浪网](/airports/wanglang/)（150 GB） |
@@ -85,7 +85,7 @@ sources:
 - **Linux：** [隐形人](/airports/yinxingren/)、[闪跃](/airports/shanyue/)资料列出支持。
 - **路由器：** [全球云](/airports/quanqiuyun/)、[Sogo云](/airports/sogoyun/)（主流软路由）资料列出支持。
 - **iOS 通过 Nextin：** [微风网络](/airports/breezenet/)、[大佬云](/airports/dalaoyun/)。
-- **付款方式：** [全球云](/airports/quanqiuyun/)支持支付宝、微信、USDT；[跨界](/airports/kuajie/)支持微信和支付宝；[大佬云](/airports/dalaoyun/)仅支持支付宝；[暮光加速](/airports/muguang-jiasu/)资料列出支付宝，微信和 USDT 需联系客服。
+- **付款方式：** 本站这 17 家统一通过支付宝付款；金额较大（超过 ¥500–¥1000）时，可联系客服使用微信或 USDT 渠道。
 
 ## 七、各家一句话差异
 
@@ -95,7 +95,7 @@ sources:
 | [暮光加速](/airports/muguang-jiasu/) | 大流量阶梯清晰，四大系统官方客户端，24 小时工单 |
 | [微风网络](/airports/breezenet/) | 全 IPLC，资料称全节点住宅 IP，所有设备共用流量 |
 | [飞猫云](/airports/feimaoyun/) | 地区覆盖广，有 ¥84 / 年学生版 |
-| [大佬云](/airports/dalaoyun/) | 新上线，120 GB 档 ¥19.99，仅支付宝 |
+| [大佬云](/airports/dalaoyun/) | 新上线，120 GB 档 ¥19.99 |
 | [隐形人](/airports/yinxingren/) | 最高 1600 GB，支持 Linux，不满意退款 |
 | [梯子云](/airports/tiziyun/) | 梯度与长周期折扣清楚，自研全平台客户端 |
 | [飞V](/airports/flyv/) | 各地区线路类型逐项标注，无推广链接 |

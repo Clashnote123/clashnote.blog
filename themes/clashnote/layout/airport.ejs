@@ -42,7 +42,8 @@ const ctaRel = a.referralUrl ? 'sponsored nofollow noopener noreferrer' : 'nofol
         <div><dt>线路类型</dt><dd><%= a.lineTypeText || (a.lineDetail ? '见下方' : '未提供') %></dd></div>
         <div><dt>倍率</dt><dd><%= a.multiplier || '未提供' %></dd></div>
         <div><dt>同时在线设备</dt><dd><%= a.devices || '未提供' %></dd></div>
-        <div><dt>支持系统</dt><dd><%= a.platforms || '未提供' %></dd></div>
+        <div><dt>支持系统</dt><dd><%= a.platforms || '以官网下载页为准（资料未列）' %></dd></div>
+        <div><dt>付款方式</dt><dd>支付宝；金额较大（超过 ¥500–¥1000）可联系客服使用微信或 USDT 渠道</dd></div>
       </dl>
       <% if (a.lineDetail) { %><p class="muted pre-line"><strong>各地区线路：</strong><br><%= a.lineDetail %></p><% } %>
     </section>
