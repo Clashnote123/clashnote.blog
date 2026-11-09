@@ -94,3 +94,9 @@
 - 详情页新增「Clash 订阅与导入指引」：说明没有公开订阅入口、需通过官网客服询问，并列出资料所列客服渠道；品牌资料中的客户端说明原文放在折叠区，标注"可能不是最新"。
 - 新增文章：/posts/airport-subscription-link-explained/、/posts/get-clash-subscription-from-support/。
 - 工具：	ools/neutralize-editorial.mjs。
+
+## 8. 测速记录更新（2026-11-09）
+- 新增 `source/_data/speedtests.yml`：灵动云 2026-11-09 12:00（北京时间，时间由测试者提供）记录，来源为站长提供的测速截图汇总图，**本站未独立复测**。图片 `/img/lingdongyun-speedtest-20261109.webp` 已用 `tools/redact-speedtest.mjs` 遮挡图中的完整出口 IP（IPCheck 面板原本已模糊）。
+- 取代：旧的 2026-10-28 品牌资料文字记录（含"Claude 三地无法连接"）不再在页面展示。
+- 记录内的不一致已如实标注：测速服务器 NRT 日本、出口 IP 在日本千叶，而客户端选择的是台湾8（图中也注明不能据此确认流量经台湾8）；上传 654.82 明显高于下载 87.01，单次样本不作结论。
+- 站内"没有测速"的表述已改为"1 条站长提供、未独立复测的记录"。

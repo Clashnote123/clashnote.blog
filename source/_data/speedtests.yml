@@ -1,0 +1,41 @@
+﻿# 站长提供的测速记录。图片为测试者提供的截图汇总图，本站未独立复测；发布前已遮挡完整 IP。
+- brand: lingdongyun
+  id: lingdongyun-20261109
+  time: 2026-11-09 12:00
+  timezone: 北京时间 UTC+8
+  timeNote: 时间由测试者提供
+  source: 站长提供的测速截图汇总图（Cloudflare 网速测试、IPCheck.ing、客户端节点列表）
+  verifiedBy: 未独立复测
+  tools: ['Cloudflare 网速测试', 'IPCheck.ing']
+  server: NRT（日本东京）
+  download: 87.01
+  upload: 654.82
+  latency: 108.95
+  jitter: 68.88
+  exit:
+    location: 日本 · 千叶县 · 船桥市
+    network: Dodo K.K.
+    asn: AS45691
+    tz: Asia/Tokyo +09:00
+  selectedNode: 台湾8（客户端自动选择），延迟约 109 ms
+  nodeRanges:
+    - { region: 台湾, range: 78–119 ms }
+    - { region: 香港, range: 92–147 ms }
+    - { region: 日本, range: 98–117 ms }
+    - { region: 新加坡, range: 131–143 ms }
+    - { region: 美国, range: 约 219–224 ms }
+  connectivity:
+    note: IPCheck.ing 网络连通性检测显示"可用"与响应毫秒数，只说明测试时该站点可以连通，不代表账号、地区资格或功能可用
+    groups:
+      - { name: AI 与开发, items: ['Claude：可用 110 ms', 'ChatGPT：可用 107 ms', 'GitHub：可用 102 ms'] }
+      - { name: 常用网站, items: ['Google：可用 104 ms', 'Cloudflare：可用 121 ms', '微信：可用 13 ms'] }
+      - { name: 视频与音乐, items: ['YouTube：可用 112 ms', 'TikTok：可用 109 ms', 'Twitch：可用 102 ms', 'Apple TV+：可用 13 ms', 'Spotify：可用 108 ms', 'TIDAL：可用 137 ms', 'YouTube Music：可用 110 ms', 'Apple Music：可用 19 ms'] }
+  image: /img/lingdongyun-speedtest-20261109.webp
+  imageAlt: 灵动云 2026-11-09 测速与节点记录汇总图：Cloudflare 网速测试（NRT 日本）、IPCheck.ing 出口信息与连通性、客户端节点延迟
+  caveats:
+    - 测速服务器为日本 NRT，出口 IP 定位在日本千叶县；而客户端当时自动选择的是台湾8。图中也注明：节点列表延迟与 Cloudflare 测速为不同截图记录，不能据此确认测速流量经由台湾8节点。
+    - 上传（654.82 Mbps）明显高于下载（87.01 Mbps），与常见情况不同，可能与测试路径、服务器或时段有关；这是单次样本，不作结论。
+    - 抖动 68.88 ms 偏高，同样只是单次结果。
+    - 汇总图的节点延迟、IPCheck.ing 连通性均为客户端 / 检测站在当时显示的数值，受线路、时段和设备环境影响。
+    - 本站未独立复测；只有一次、一个时段、一个网络（运营商未说明）、一台设备（未说明）。
+  missing: ['测试设备与客户端版本', '本地运营商与接入方式', '多次重复与晚高峰对比']

@@ -266,3 +266,5 @@ summary::-webkit-details-marker { display: none; } summary::after { content: "+"
 
 .sum-box { margin-top: 18px; background: var(--card); border: 1px solid var(--border); border-radius: var(--r); padding: 18px 22px; max-width: 900px; } .sum-box h2 { font-size: 1.05rem; margin-bottom: 8px; }
 .sum-list { margin: 0 0 8px; padding-left: 1.2em; } .sum-list li { margin: 6px 0; }
+
+.shot { margin: 18px 0; } .shot img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); } .shot figcaption { font-size: .85rem; color: var(--muted); margin-top: 6px; }

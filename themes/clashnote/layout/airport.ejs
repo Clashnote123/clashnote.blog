@@ -141,18 +141,19 @@ const ctaRel = a.referralUrl ? 'sponsored nofollow noopener noreferrer' : 'nofol
       </dl>
     </section>
 
-    <% if (a.measured) { %>
+    <% const st = (site.data.speedtests || []).filter(r => r.brand === a.slug); if (st.length) { const r = st[0]; %>
     <section class="d-sec" id="measured">
-      <h2>资料提供方的晚高峰记录</h2>
-      <div class="callout callout-mid"><p><strong>凭证不足：</strong><%= a.measured.evidence %>。以下仅作线索，不作为本站结论。</p></div>
+      <h2>测速记录（站长提供）</h2>
+      <div class="callout callout-mid"><p><strong>未独立复测：</strong>以下来自测试者提供的截图汇总图，单次、单一时段样本，不代表长期表现，也不与其他机场比较。</p></div>
       <ul class="kv-list">
-        <li><span>测试时间</span><span><%= a.measured.time %></span></li>
-        <li><span>测试网络</span><span><%= a.measured.network %></span></li>
-        <% a.measured.rows.forEach(function(r){ var i = r.indexOf('：'); %><li><span><%= r.slice(0, i) %></span><span><%= r.slice(i + 1) %></span></li><% }) %>
-        <li><span>流媒体与 AI</span><span><%= a.measured.apps %></span></li>
-        <li><span>原资料结论</span><span><%= a.measured.conclusion %></span></li>
+        <li><span>测试时间</span><span><%= r.time %>（<%= r.timezone %>，<%= r.timeNote %>）</span></li>
+        <li><span>测速工具</span><span><%= r.tools.join('、') %>；服务器 <%= r.server %></span></li>
+        <li><span>下载 / 上传</span><span><%= r.download %> / <%= r.upload %> Mbps</span></li>
+        <li><span>延迟 / 抖动</span><span><%= r.latency %> ms / <%= r.jitter %> ms</span></li>
+        <li><span>客户端选择的节点</span><span><%= r.selectedNode %></span></li>
+        <li><span>Claude / ChatGPT 连通性</span><span>IPCheck.ing 显示均为“可用”（Claude 110 ms，ChatGPT 107 ms）；仅说明当时能连通，不代表账号或功能可用</span></li>
       </ul>
-      <p>如何看待这类数据，见 <a href="/posts/how-to-read-speedtest-images/">《如何正确阅读机场节点测速图》</a>。</p>
+      <p>完整数据、节点延迟范围、汇总图与注意事项见<a href="/speedtests/#<%= a.slug %>">测速专区</a>。读图方法见<a href="/posts/how-to-read-speedtest-images/">《如何正确阅读机场节点测速图》</a>。</p>
     </section>
     <% } %>
 
@@ -178,7 +179,7 @@ const ctaRel = a.referralUrl ? 'sponsored nofollow noopener noreferrer' : 'nofol
       <ul class="kv-list">
         <li><span>资料文件</span><span><%= a.sourceFile %></span></li>
         <li><span>资料日期</span><span>资料文件未标注日期（站内导入日期 2026-11-06）</span></li>
-        <li><span>本站实测</span><span><%= a.measured ? '无（仅有资料提供方文字记录，见上）' : '无' %></span></li>
+        <li><span>本站实测</span><span><%= (site.data.speedtests || []).some(r => r.brand === a.slug) ? '有一条站长提供的测速记录（未独立复测，见上）' : '无' %></span></li>
         <li><span>商业关系</span><span><%= a.referralUrl ? '本页入口为推广链接（sponsored），注册购买可能为本站带来佣金，但是不影响购买价格' : '本页入口为官网，资料中未提供推广链接' %></span></li>
       </ul>
     </section>

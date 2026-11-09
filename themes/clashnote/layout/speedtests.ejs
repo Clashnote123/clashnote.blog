@@ -1,5 +1,6 @@
 <%
-const ld = site.data.airports[0];
+const records = site.data.speedtests || [];
+const A = site.data.airports;
 page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
   { '@type': 'ListItem', position: 1, name: '首页', item: 'https://clashnote.blog/' },
   { '@type': 'ListItem', position: 2, name: '节点测速', item: 'https://clashnote.blog/speedtests/' } ] });
@@ -16,7 +17,7 @@ page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'Breadcrumb
   <section class="section-tight">
     <h2>本站当前的测速状态</h2>
     <div class="callout callout-mid">
-      <p><strong>目前本站没有附原图的测速记录。</strong>因此这里不展示任何测速图、榜单或评分，也不会用估算值填充。拿到带原图、工具、设备、运营商和时间的记录后，才会按下面的模板发布。</p>
+      <p><strong>目前收录 <%= records.length %> 条站长提供的测速记录（灵动云，2026-11-09）。</strong>记录来自测试者提供的截图汇总图，<strong>本站未独立复测</strong>，且只有一次、一个时段的样本，因此不排名、不评分，也不与其他机场比较。下面逐项列出已有信息与缺失项。</p>
     </div>
   </section>
 
@@ -42,18 +43,37 @@ page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'Breadcrumb
     </ul>
   </section>
 
-  <section class="section-tight">
-    <h2>已收到但凭证不足的线索</h2>
-    <p>以下内容来自品牌资料文件中的文字记录，未附截图或原始数据，因此<strong>不作为本站结论</strong>，仅供参考。</p>
-    <div class="card-flat">
-      <h3><a href="/airports/<%= ld.slug %>/#measured"><%= ld.name %></a> · <%= ld.measured.time %> · <%= ld.measured.network %></h3>
-      <div class="table-wrap"><table class="tbl">
-        <thead><tr><th>节点地区</th><th>资料所述结果</th></tr></thead>
-        <tbody><% ld.measured.rows.forEach(function(r){ var i = r.indexOf('：'); %><tr><td><%= r.slice(0, i) %></td><td><%= r.slice(i + 1) %></td></tr><% }) %></tbody>
-      </table></div>
-      <p class="muted">缺失：工具名称、设备、客户端版本、原图。仅为单次晚高峰样本，适用范围有限。</p>
-    </div>
+  <% records.forEach(function(r){ const b = A.find(x => x.slug === r.brand); %>
+  <section class="section-tight" id="<%= r.brand %>">
+    <h2>测速记录：<a href="/airports/<%= r.brand %>/"><%= b.name %></a> · <%= r.time %></h2>
+    <p class="muted"><%= r.timezone %>（<%= r.timeNote %>）。数据来源：<%= r.source %>；<%= r.verifiedBy %>。</p>
+    <dl class="fact-grid">
+      <div><dt>下载</dt><dd><%= r.download %> Mbps</dd></div>
+      <div><dt>上传</dt><dd><%= r.upload %> Mbps</dd></div>
+      <div><dt>延迟</dt><dd><%= r.latency %> ms</dd></div>
+      <div><dt>抖动</dt><dd><%= r.jitter %> ms</dd></div>
+      <div><dt>测速工具</dt><dd><%= r.tools.join('、') %></dd></div>
+      <div><dt>测速服务器</dt><dd><%= r.server %></dd></div>
+      <div><dt>出口 IP 信息</dt><dd><%= r.exit.location %>；<%= r.exit.network %>（<%= r.exit.asn %>）；<%= r.exit.tz %></dd></div>
+      <div><dt>客户端当时选择的节点</dt><dd><%= r.selectedNode %></dd></div>
+    </dl>
+    <h3>客户端节点延迟范围（图中可见）</h3>
+    <div class="table-wrap"><table class="tbl">
+      <thead><tr><th>地区</th><th>延迟范围</th></tr></thead>
+      <tbody><% r.nodeRanges.forEach(function(n){ %><tr><td><%= n.region %></td><td><%= n.range %></td></tr><% }) %></tbody>
+    </table></div>
+    <h3>网络连通性检测（IPCheck.ing，图中所示）</h3>
+    <p class="muted"><%= r.connectivity.note %>。</p>
+    <% r.connectivity.groups.forEach(function(g){ %><p><strong><%= g.name %>：</strong><%= g.items.join('；') %></p><% }) %>
+    <figure class="shot">
+      <a href="<%= r.image %>" target="_blank" rel="noopener"><img src="<%= r.image %>" alt="<%= r.imageAlt %>" width="1122" height="1402" loading="lazy"></a>
+      <figcaption>图：灵动云测速与节点记录汇总图（测试者提供，点击查看大图）。图中完整 IP 已遮挡；本站未独立复测。</figcaption>
+    </figure>
+    <h3>阅读这条记录时要注意</h3>
+    <ul class="bullets"><% r.caveats.forEach(function(c){ %><li><%= c %></li><% }) %></ul>
+    <p class="muted"><strong>仍缺：</strong><%= r.missing.join('、') %>。读图方法见<a href="/posts/how-to-read-speedtest-images/">《如何正确阅读机场节点测速图》</a>。</p>
   </section>
+  <% }) %>
 
   <% const list = hub_posts('speedtests'); if (list.length) { %>
   <section class="section-tight">
