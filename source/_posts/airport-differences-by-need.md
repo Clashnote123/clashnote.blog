@@ -98,7 +98,7 @@ sources:
 | [大佬云](/airports/dalaoyun/) | 新上线，120 GB 档 ¥19.99 |
 | [隐形人](/airports/yinxingren/) | 最高 1600 GB，支持 Linux，不满意退款 |
 | [梯子云](/airports/tiziyun/) | 梯度与长周期折扣清楚，自研全平台客户端 |
-| [飞V](/airports/flyv/) | 各地区线路类型逐项标注，无推广链接 |
+| [飞V](/airports/flyv/) | 各地区线路类型逐项标注 |
 | [浪网](/airports/wanglang/) | 单档月流量最大，月付与年付线路类型不同 |
 | [无忧](/airports/wuyou/) | 月付起价最低，TikTok 跨区直连与直播 |
 | [Firefly](/airports/firefly/) | 套餐结构最简单，IPLC、原生 IP |
