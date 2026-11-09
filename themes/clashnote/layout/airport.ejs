@@ -47,6 +47,14 @@ const ctaRel = a.referralUrl ? 'sponsored nofollow noopener noreferrer' : 'nofol
       <% if (a.lineDetail) { %><p class="muted pre-line"><strong>各地区线路：</strong><br><%= a.lineDetail %></p><% } %>
     </section>
 
+    <% if (ed.story) { %>
+    <section class="d-sec" id="diff">
+      <h2><%= a.name %> 与其他机场的不同</h2>
+      <div class="prose"><p><%= ed.story %></p></div>
+      <p class="tiny">以上内容整理自品牌提供的资料，“最低 / 最大”仅指本站这 17 份资料之间的比较；不代表性能或质量排名，价格以官网结算页为准。更多对照见<a href="/posts/airport-differences-by-need/">17 家机场各有什么不同：按需求找机场</a>。</p>
+    </section>
+    <% } %>
+
     <section class="d-sec" id="clash">
       <h2>Clash 订阅与导入指引</h2>
       <p>Clash 客户端本身不提供节点，需要服务商提供<strong>兼容 Clash / Mihomo 的订阅</strong>。<%= a.name %> 的资料里没有公开的订阅入口，是否提供、如何获取，请通过官网客服渠道询问，以客服答复为准。</p>
@@ -188,7 +196,7 @@ const ctaRel = a.referralUrl ? 'sponsored nofollow noopener noreferrer' : 'nofol
       <% if (a.referralUrl) { %><p class="tiny">推广链接（sponsored）。只通过官网注册购买，价格以结算页为准。</p><% } else { %><p class="tiny">资料中未提供推广链接，仅提供官网入口。</p><% } %>
       <a class="btn btn-ghost btn-block" href="/compare/?add=<%= a.slug %>">加入对比</a>
       <ul class="side-links">
-        <li><a href="#plans">套餐与价格</a></li><li><a href="#clash">Clash 订阅指引</a></li><li><a href="#traffic">流量与优惠码</a></li><li><a href="#source">数据来源</a></li>
+        <li><a href="#diff">与其他机场的不同</a></li><li><a href="#plans">套餐与价格</a></li><li><a href="#clash">Clash 订阅指引</a></li><li><a href="#traffic">流量与优惠码</a></li><li><a href="#source">数据来源</a></li>
       </ul>
     </div>
   </aside>

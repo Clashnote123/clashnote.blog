@@ -109,7 +109,7 @@ hexo.extend.generator.register('clashnote-routes', function (locals) {
     const l = lite(a);
     index.push({
       t: `${a.name}${a.englishName ? '（' + a.englishName + '）' : ''}`, u: `/airports/${a.slug}/`, c: '机场',
-      s: a.positioning || '', k: [a.name, ...(a.aliases || []), a.regions, l.lines.join(' '), a.coupon ? a.coupon.code : ''].join(' '),
+      s: ((editorial[a.slug] || {}).intro) || a.positioning || '', k: [a.name, ...(a.aliases || []), a.regions, l.lines.join(' '), a.coupon ? a.coupon.code : ''].join(' '),
       b: [a.advantage, a.audience, a.lineTypeText].filter(Boolean).join(' '),
     });
   });

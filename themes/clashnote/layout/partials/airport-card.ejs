@@ -3,6 +3,7 @@ const a = locals.a;
 const regs = airport_regions(a);
 const lines = airport_lines(a);
 const mm = a.derived.minMonthly;
+const edc = ((site.data.editorial || {})[a.slug]) || {};
 %>
 <article class="a-card" data-airport
   data-name="<%= [a.name, a.englishName].concat(a.aliases || []).filter(Boolean).join(' ').toLowerCase() %>"
@@ -11,7 +12,7 @@ const mm = a.derived.minMonthly;
     <span class="a-rank" aria-label="编辑顺序第 <%= a.rank %>">#<%= String(a.rank).padStart(2, '0') %></span>
   </div>
   <h3 class="a-name"><a href="/airports/<%= a.slug %>/"><%= a.name %></a><% if (a.englishName) { %> <small><%= a.englishName %></small><% } %></h3>
-  <p class="a-pos"><%= a.positioning %></p>
+  <p class="a-pos"><%= edc.intro || a.positioning %></p>
   <dl class="a-facts">
     <div><dt>月付起价</dt><dd><% if (mm) { %><strong><%= yuan(mm.price) %></strong> <span class="muted">/ <%= mm.plan %> · <%= gb(mm.gb) %></span><% } else { %>未提供<% } %></dd></div>
     <div><dt>节点地区</dt><dd><%= regs.slice(0, 5).join(' · ') %><% if (regs.length > 5) { %> +<%= regs.length - 5 %><% } %></dd></div>
