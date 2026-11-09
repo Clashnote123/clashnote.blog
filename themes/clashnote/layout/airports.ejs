@@ -25,11 +25,11 @@ page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'Breadcrumb
         <li>单档月流量最大的是 <strong><%= byGB[0].name %>（<%= gb(byGB[0].derived.maxMonthlyGB) %>）</strong>，其后是 <%= byGB[1].name %>、<%= byGB[2].name %>（均为 <%= gb(byGB[1].derived.maxMonthlyGB) %>）。</li>
         <li>全部 17 家都有年付小包，<%= withOnce %> 家提供不限时流量包；年付、不限时与月付套餐口径不同，不能直接比较。</li>
         <li><a href="/airports/lingdongyun/"><strong>灵动云</strong></a>（编辑顺序 #01）：<%= (((site.data.editorial || {}).lingdongyun) || {}).intro || A[0].positioning %> 月付起价 <%= yuan(A[0].derived.minMonthly.price) %>（<%= A[0].derived.minMonthly.plan %> · <%= gb(A[0].derived.minMonthly.gb) %>）。<a href="/airports/lingdongyun/">查看灵动云详情</a></li>
-        <li>这些机场没有公开的订阅入口，Clash 订阅需通过官网客服渠道询问，流程见<a href="/posts/get-clash-subscription-from-support/">向机场客服索取 Clash 订阅</a>。</li>
+        <li>站长已确认这些机场都可以通过订阅链接导入 Clash 等第三方客户端，订阅链接需通过官网客服渠道获取（没有公开入口），流程见<a href="/posts/get-clash-subscription-from-support/">向机场客服索取 Clash 订阅</a>。</li>
       </ul>
       <p class="tiny">以上数字均由本站机场资料自动统计，实际价格以官网结算页为准。</p>
     </div>
-    <p class="info-strip"><strong>想用 Clash 导入？</strong>这些机场没有公开的订阅入口，订阅需通过官网客服渠道询问。先读：<a href="/posts/register-official-account-get-clash-subscription/">注册官方账号并向客服索取订阅</a> · <a href="/posts/airport-subscription-link-explained/">机场订阅链接是什么</a> · <a href="/posts/get-clash-subscription-from-support/">向客服索取 Clash 订阅</a> · <a href="/posts/how-to-choose-clash-airport/">Clash 机场怎么选</a>。</p>
+    <p class="info-strip"><strong>想用 Clash 导入？</strong>想用 Clash 等第三方客户端：订阅链接需通过官网客服渠道获取，没有公开入口。先读：<a href="/posts/register-official-account-get-clash-subscription/">注册官方账号并向客服索取订阅</a> · <a href="/posts/airport-subscription-link-explained/">机场订阅链接是什么</a> · <a href="/posts/get-clash-subscription-from-support/">向客服索取 Clash 订阅</a> · <a href="/posts/how-to-choose-clash-airport/">Clash 机场怎么选</a>。</p>
   </div>
 </section>
 

@@ -58,7 +58,7 @@ const ctaRel = a.referralUrl ? 'sponsored nofollow noopener noreferrer' : 'nofol
 
     <section class="d-sec" id="clash">
       <h2>Clash 订阅与导入指引</h2>
-      <p>Clash 客户端本身不提供节点，需要服务商提供<strong>兼容 Clash / Mihomo 的订阅</strong>。<%= a.name %> 的资料里没有公开的订阅入口，是否提供、如何获取，请通过官网客服渠道询问，以客服答复为准。</p>
+      <p>Clash 客户端本身不提供节点，需要服务商提供<strong>兼容 Clash / Mihomo 的订阅</strong>。站长已确认 <%= a.name %> 可以通过订阅链接导入 Clash 等第三方客户端，订阅链接<strong>需要通过官网客服渠道获取</strong>，没有公开入口；具体套餐与获取方式以客服答复为准。</p>
       <ol class="steps-list">
         <li>通过官网用户中心联系客服<%= (a.service['客服渠道'] || a.service['客服时间']) ? '（资料所列：' + [a.service['客服渠道'], a.service['客服时间'] ? '客服时间 ' + a.service['客服时间'] : null].filter(Boolean).join('；') + '）' : '（具体渠道以官网为准）' %>。</li>
         <li>询问：「是否提供适用于 Clash / Mihomo 客户端的订阅？我的套餐如何获取？」</li>

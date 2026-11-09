@@ -50,11 +50,13 @@ function supportSteps(service) {
   return ['通过官网用户中心的客服渠道联系客服' + ch, '询问：「是否提供适用于 Clash / Mihomo 客户端的订阅？我的套餐如何获取？」', '按客服指引领取订阅；订阅含个人凭证，不要公开、转发，也不要购买网上转售的订阅', '领取后按《Clash Verge Rev 正确导入订阅链接》导入并验证节点'];
 }
 function buildClashSupport(slug, dev, service) {
+  // 2026-11-09 站长证实：17 家均可通过订阅链接导入第三方客户端（如 Clash），订阅须通过客服渠道获取（无书面记录）
+  const ALL = '站长证实（2026-11-09）：该机场可以通过订阅链接导入第三方客户端（如 Clash），订阅链接必须通过客服渠道获取，没有公开入口；本站未取得书面记录或截图。品牌资料早期记载：';
   const c = CLASH_SUPPORT[slug];
   if (!c) throw new Error('缺少 Clash 状态: ' + slug);
   return {
-    status: c.status, displayName: DISPLAY[c.status], evidence: c.evidence, lastVerified: c.verifiedOn || null,
-    subscriptionAvailable: c.subscriptionAvailable, method: c.method || (c.status === 'supported' ? 'contact-support' : null), howTo: c.howTo || (c.status === 'supported' ? supportSteps(service) : null),
+    status: 'supported', displayName: DISPLAY.supported, evidence: c.status === 'supported' && slug === 'lingdongyun' ? c.evidence : (ALL + String(c.evidence).replace(/^.*?(?:早期记载与之不同：|品牌资料：|品牌资料仅写)/, '')), lastVerified: '2026-11-09',
+    subscriptionAvailable: null, method: 'contact-support', howTo: c.howTo || supportSteps(service),
     sourceRaw: { subscription: dev['订阅链接'] || null, thirdParty: dev['第三方客户端'] || null },
   };
 }
