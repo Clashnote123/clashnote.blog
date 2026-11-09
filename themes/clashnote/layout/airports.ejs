@@ -24,6 +24,7 @@ page.extraHead = jsonld({ '@context': 'https://schema.org', '@type': 'Breadcrumb
         <li>常规周期套餐的月付起价在 <strong><%= yuan(byMin[0].derived.minMonthly.price) %>（<%= byMin[0].name %>）至 <%= yuan(byMin[byMin.length - 1].derived.minMonthly.price) %>（<%= byMin[byMin.length - 1].name %>）</strong>之间，其中 <%= le20 %> 家起价不超过 ¥20。</li>
         <li>单档月流量最大的是 <strong><%= byGB[0].name %>（<%= gb(byGB[0].derived.maxMonthlyGB) %>）</strong>，其后是 <%= byGB[1].name %>、<%= byGB[2].name %>（均为 <%= gb(byGB[1].derived.maxMonthlyGB) %>）。</li>
         <li>全部 17 家都有年付小包，<%= withOnce %> 家提供不限时流量包；年付、不限时与月付套餐口径不同，不能直接比较。</li>
+        <li><a href="/airports/lingdongyun/"><strong>灵动云</strong></a>（编辑顺序 #01）：<%= (((site.data.editorial || {}).lingdongyun) || {}).intro || A[0].positioning %> 月付起价 <%= yuan(A[0].derived.minMonthly.price) %>（<%= A[0].derived.minMonthly.plan %> · <%= gb(A[0].derived.minMonthly.gb) %>）。<a href="/airports/lingdongyun/">查看灵动云详情</a></li>
         <li>这些机场没有公开的订阅入口，Clash 订阅需通过官网客服渠道询问，流程见<a href="/posts/get-clash-subscription-from-support/">向机场客服索取 Clash 订阅</a>。</li>
       </ul>
       <p class="tiny">以上数字均由本站机场资料自动统计，实际价格以官网结算页为准。</p>
