@@ -1,6 +1,6 @@
 <%
 const isHome = page.type === 'home';
-const pTitle = page.seoTitle || (isHome ? 'Clash Note - Clash Verge Rev 教程、机场推荐与 Mihomo 配置指南' : (page.title ? page.title + ' | ' + config.title : config.title));
+const pTitle = page.seoTitle || (isHome ? 'Clash 订阅机场推荐｜支持第三方客户端导入的机场服务大全' : (page.title ? page.title + ' | ' + config.title : config.title));
 const pDesc = page.description || (page.content ? strip_html_text(page.excerpt || page.content, 150) : config.description);
 let pPath = page.path || '';
 if (page.type === 'home') pPath = '/';

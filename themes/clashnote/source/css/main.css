@@ -268,3 +268,5 @@ summary::-webkit-details-marker { display: none; } summary::after { content: "+"
 .sum-list { margin: 0 0 8px; padding-left: 1.2em; } .sum-list li { margin: 6px 0; }
 
 .shot { margin: 18px 0; } .shot img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); } .shot figcaption { font-size: .85rem; color: var(--muted); margin-top: 6px; }
+
+.hero-sub { max-width: 820px; font-size: 1rem; line-height: 1.85; text-align: left; } @media (min-width: 900px) { .hero-sub { text-align: justify; text-align-last: center; } }

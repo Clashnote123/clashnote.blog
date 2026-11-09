@@ -44,7 +44,7 @@ hexo.extend.generator.register('clashnote-routes', function (locals) {
     path: 'airports/index.html', layout: ['airports'],
     data: {
       title: '机场推荐：17 家机场资料库', path: 'airports/', type: 'airports',
-      seoTitle: '机场推荐：17 家机场资料、套餐与 Clash 订阅获取指引 | Clash Note',
+      seoTitle: '17 家机场资料库：套餐、节点、线路与订阅获取指引 | Clash Note',
       description: '按固定编辑顺序整理 17 家机场的节点地区、线路类型与套餐价格，并附 Clash 订阅获取指引；数据来自各品牌提供的资料，可按地区、预算和线路筛选。',
     },
   });
